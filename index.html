@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quintify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./assets/libs/SplitText.js"></script>
+    <script src="./assets/libs/gsap-core.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="burger-menu">
+      <nav class="burger-menu__nav">
+        <a href="#services" class="burger-menu__link">Services</a>
+        <a href="#business" class="burger-menu__link">Funding</a>
+        <a href="#" class="burger-menu__link">HubSpot</a>
+        <a href="#" class="burger-menu__link">Insights</a>
+        <a href="#touch" class="burger-menu__link">Get in touch</a>
+      </nav>
+    </div>
+      <header class="header">
+        <div class="header__top">
+          <a class="header__top-btn" href="#">Google Doc</a>
+          <p class="header__top-text">
+            To Learn more about quintify 📝 read our Online Presentation Today
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container _container">
+            <div class="header__main">
+              <div class="header__container _container">
+                <div class="header__logo-area">
+                  <img src="./assets/img/logo.png" alt="logotype" />
+                  <span>Quintify</span>
+                </div>
+                <nav class="header__nav nav-header">
+                  <a href="#services" class="nav-header__link">Services</a>
+                  <div class="nav-header__dropdown">
+                    <a
+                      href="#business"
+                      class="nav-header__link nav-header__link_dropdown"
+                    >
+                      Funding
+                      <img
+                        src="./assets/img/icons/low-arrow-down.svg"
+                        alt="dropdown"
+                      />
+                    </a>
+                    <div class="nav-header__dropdown-content">
+                      <a href="#" class="nav-header__dropdown-content-item"
+                        >Digital Discovery</a
+                      >
+                      <a href="#" class="nav-header__dropdown-content-item"
+                        >Digital Marketing</a
+                      >
+                    </div>
+                  </div>
+                  <a href="#" class="nav-header__link">HubSpot</a>
+                  <a href="#" class="nav-header__link">Insights</a>
+                </nav>
+                <a href="#touch" class="header__btn btn btn_gradient">
+                  <span> Get in touch </span>
+                </a>
+                <a class="header__burger-menu-btn" href="#">
+                  <img src="./assets/img/icons/burger-menu.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="hero__body">
+              <div class="hero__main-content">
+                <h1 class="hero__title anim-from-bottom-home-hero">
+                  <span id="silver"
+                    ><span class="hero__title-row"
+                      >We support B2B companies to</span
+                    >
+                    <span class="hero__title-row"
+                      >grow, scale and realise their</span
+                    ></span
+                  >
+                  <span id="purple-pink" class="hero__title-row"
+                    >Global Ambition</span
+                  >
+                </h1>
+                <p class="hero__subtitle anim-from-bottom-home-hero">
+                  Working with Technology, SaaS, and Professional Services
+                  businesses, we support our clients growth at every stage of
+                  their journey.
+                </p>
+                <div class="hero__buttons anim-from-bottom-home-hero">
+                  <a href="#" class="hero__btn btn">Get in touch</a>
+                  <a href="#" class="hero__btn btn btn_gradient">
+                    <span> Service suite </span>
+                  </a>
+                  <!--Test button-->
+                  <!-- <a href="#" class="hero__btn  border-btn">
+                    <svg width="100%" height="100%" viewBox="0 0 157 55" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" class="line" rx="27.5" stroke-linejoin="round" />
+                    </svg>
+
+                    <div class="inner">
+                      <p>Service suite</p>
+                    </div>
+                  </a> -->
+                </div>
+              </div>
+
+              <div class="hero__sidebar-left anim-from-bottom-home-hero">
+                <a href="#" class="hero__sidebar-link">LinkedIn</a>
+                <a href="#" class="hero__sidebar-link">Google</a>
+                <a href="#" class="hero__sidebar-link">HubSpot</a>
+                <a href="#" class="hero__sidebar-link">Apollo</a>
+              </div>
+              <a href="#" class="hero__scroll-right anim-from-bottom-home-hero">
+                <p>Scroll down</p>
+                <img src="./assets/img/icons/arrow-down.svg" alt="arrow down" />
+              </a>
+            </div>
+          </div>
+          <img src="./assets/img/hero/bg.jpg" id="bg" alt="Space" />
+        </section>
+        <section class="clients">
+          <div class="clients__container _container">
+            <div class="clients__body">
+              <h5 class="clients__title anim-from-bottom-clients-hero">
+                Redefine your go-to-market Strategy with Quintify
+              </h5>
+              <div class="clients__list-wrapper">
+                <ul class="clients__list anim-from-bottom-clients-hero">
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/google.svg" alt="google" />
+                  </li>
+                  <li class="clients__item">
+                    <img
+                      src="./assets/img/clients/linkedin.svg"
+                      alt="linkedin"
+                    />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/meta.svg" alt="meta" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/hubspot.svg" alt="hubspot" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/apollo.svg" alt="apollo" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/openai.svg" alt="openai" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/google.svg" alt="google" />
+                  </li>
+                  <li class="clients__item">
+                    <img
+                      src="./assets/img/clients/linkedin.svg"
+                      alt="linkedin"
+                    />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/meta.svg" alt="meta" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/hubspot.svg" alt="hubspot" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/apollo.svg" alt="apollo" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/openai.svg" alt="openai" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/google.svg" alt="google" />
+                  </li>
+                  <li class="clients__item">
+                    <img
+                      src="./assets/img/clients/linkedin.svg"
+                      alt="linkedin"
+                    />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/meta.svg" alt="meta" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/hubspot.svg" alt="hubspot" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/apollo.svg" alt="apollo" />
+                  </li>
+                  <li class="clients__item">
+                    <img src="./assets/img/clients/openai.svg" alt="openai" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="services" class="digital">
+          <div class="digital__container _container">
+            <div class="digital__body">
+              <div class="digital__img-area">
+                <img
+                  src="./assets/img/digital/chain.png"
+                  class="anim-from-bottom-home-accordion"
+                  alt="chain link"
+                />
+              </div>
+              <div class="digital__text-area">
+                <h2 class="digital__title anim-from-bottom-home-accordion">
+                  Digital marketing, design & web development solutions
+                </h2>
+                <p class="digital__subtitle anim-from-bottom-home-accordion">
+                  Everything we do for our clients is a commitment to processes
+                  and a clear vision for achieving their goals.
+                </p>
+                <div
+                  class="digital__accordion accordion-digital anim-from-bottom-home-accordion"
+                >
+                  <div
+                    class="accordion-digital__item accordion-digital__item_first"
+                  >
+                    <div class="accordion-digital__top-area">
+                      <h4 class="accordion-digital__title">
+                        Strategic Research & Setup
+                      </h4>
+                      <button class="accordion-trigger">
+                        <img src="./assets/img/icons/plus.svg" alt="" />
+                      </button>
+                    </div>
+                    <p class="accordion-digital__content">
+                      Lorem ipsum dolor sit amet consectetur. Nisl proin velit
+                      in egestas Sit metus volutpat velit scelerisque aliquam.
+                      Pellentesque est.
+                    </p>
+                  </div>
+                  <div class="accordion-digital__item active active-border">
+                    <div class="accordion-digital__top-area">
+                      <h4 class="accordion-digital__title">
+                        Value Proposition & Design
+                      </h4>
+                      <button class="accordion-trigger">
+                        <img src="./assets/img/icons/minus.svg" alt="" />
+                      </button>
+                    </div>
+                    <p class="accordion-digital__content">
+                      Lorem ipsum dolor sit amet consectetur. Nisl proin velit
+                      in egestas Sit metus volutpat velit scelerisque aliquam.
+                      Pellentesque est.
+                    </p>
+                  </div>
+                  <div class="accordion-digital__item">
+                    <div class="accordion-digital__top-area">
+                      <h4 class="accordion-digital__title">
+                        Digital Marketing & Support
+                      </h4>
+                      <button class="accordion-trigger">
+                        <img src="./assets/img/icons/plus.svg" alt="" />
+                      </button>
+                    </div>
+                    <p class="accordion-digital__content">
+                      Lorem ipsum dolor sit amet consectetur. Nisl proin velit
+                      in egestas Sit metus volutpat velit scelerisque aliquam.
+                      Pellentesque est.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="business" class="business">
+          <div class="business__container _container">
+            <div class="business__body">
+              <h2 class="business__title anim-from-bottom-home-business">
+                Business Funding and Support to Fuel Your Growth
+              </h2>
+              <div class="business__cards">
+                <div
+                  class="business__card card-business anim-from-bottom-home-business"
+                >
+                  <img
+                    src="./assets/img/business/blur-right-top.png"
+                    id="blur-top-right"
+                    alt=""
+                  />
+                  <div class="card-business__top">
+                    <img
+                      src="./assets/img/business/logo.png"
+                      class="card-business__logo"
+                      alt="Enterprise ireland"
+                    />
+                    <p class="card-business__text">
+                      We work closely with Enterprise Ireland clients, helping
+                      them to develop their international business growth by
+                      implementing effective digital marketing strategies.
+                    </p>
+                  </div>
+                  <div class="card-business__list">
+                    <a href="#" class="card-business__item">
+                      <h4 class="card-business__item-title">Funding Support</h4>
+                      <svg
+                        width="12"
+                        height="10"
+                        viewBox="0 0 12 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="card-business__icon-path"
+                          d="M10.9372 5.42426C11.1715 5.18995 11.1715 4.81005 10.9372 4.57574L7.11882 0.757359C6.88451 0.523045 6.50461 0.523045 6.27029 0.757359C6.03598 0.991674 6.03598 1.37157 6.27029 1.60589L9.66441 5L6.27029 8.39411C6.03598 8.62843 6.03598 9.00833 6.27029 9.24264C6.50461 9.47696 6.88451 9.47696 7.11882 9.24264L10.9372 5.42426ZM0 5.6L10.5129 5.6V4.4L0 4.4L0 5.6Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="card-business__item">
+                      <h4 class="card-business__item-title">
+                        Digital Discovery
+                      </h4>
+                      <svg
+                        width="12"
+                        height="10"
+                        viewBox="0 0 12 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="card-business__icon-path"
+                          d="M10.9372 5.42426C11.1715 5.18995 11.1715 4.81005 10.9372 4.57574L7.11882 0.757359C6.88451 0.523045 6.50461 0.523045 6.27029 0.757359C6.03598 0.991674 6.03598 1.37157 6.27029 1.60589L9.66441 5L6.27029 8.39411C6.03598 8.62843 6.03598 9.00833 6.27029 9.24264C6.50461 9.47696 6.88451 9.47696 7.11882 9.24264L10.9372 5.42426ZM0 5.6L10.5129 5.6V4.4L0 4.4L0 5.6Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="card-business__item">
+                      <h4 class="card-business__item-title">
+                        Digital Marketing Capability
+                      </h4>
+                      <svg
+                        width="12"
+                        height="10"
+                        viewBox="0 0 12 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="card-business__icon-path"
+                          d="M10.9372 5.42426C11.1715 5.18995 11.1715 4.81005 10.9372 4.57574L7.11882 0.757359C6.88451 0.523045 6.50461 0.523045 6.27029 0.757359C6.03598 0.991674 6.03598 1.37157 6.27029 1.60589L9.66441 5L6.27029 8.39411C6.03598 8.62843 6.03598 9.00833 6.27029 9.24264C6.50461 9.47696 6.88451 9.47696 7.11882 9.24264L10.9372 5.42426ZM0 5.6L10.5129 5.6V4.4L0 4.4L0 5.6Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="business__card card-business anim-from-bottom-home-business"
+                >
+                  <img
+                    src="./assets/img/business/grid-top-right.png"
+                    id="grid-top-right"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/img/business/blur-mid-bottom.png"
+                    id="blur-mid-bottom"
+                    alt=""
+                  />
+                  <div class="card-business__top">
+                    <h3 class="card-business__title">
+                      Access Advice: <br />Digital Discovery
+                    </h3>
+                    <p class="card-business__text">
+                      This is the perfect starting point to build a strong
+                      foundation for your digital success.
+                    </p>
+                    <a class="card-business__link link" href="#">View more</a>
+                  </div>
+                  <div class="card-business__progress-area">
+                    <img
+                      src="./assets/img/business/progress-80.svg"
+                      alt="progress"
+                    />
+                    <div class="card-business__stats-text">
+                      <span>80%</span>
+                      <p>Grant funding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="business__card card-business anim-from-bottom-home-business"
+                >
+                  <img
+                    src="./assets/img/business/grid-top-right.png"
+                    id="grid-top-right"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/img/business/blur-mid-bottom.png"
+                    id="blur-mid-bottom"
+                    alt=""
+                  />
+                  <div class="card-business__top">
+                    <h3 class="card-business__title">
+                      Digital Marketing <br />
+                      Capability
+                    </h3>
+                    <p class="card-business__text">
+                      With this support, you'll gain the skills to strengthen
+                      and grow your business's online presence.
+                    </p>
+                    <a class="card-business__link link" href="#">View more</a>
+                  </div>
+                  <div class="card-business__progress-area">
+                    <img
+                      src="./assets/img/business/progress-50.svg"
+                      alt="progress"
+                    />
+                    <!-- <div class="card-business__bar-overflow">
+                      <div class="card-business__bar"></div>
+                    </div> -->
+                    <div class="card-business__stats-text">
+                      <span>50%</span>
+                      <p>Grant funding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/img/business/grid-bg.png"
+            id="bg"
+            alt="background"
+          />
+        </section>
+        <section class="customers">
+          <div class="customers__container _container">
+            <div class="customers__body">
+              <div class="customers__top-area">
+                <h2 class="customers__title anim-from-bottom-home-customers">
+                  See what our customers have to say about us
+                </h2>
+                <div class="customers__buttons anim-from-bottom-home-customers">
+                  <button
+                    class="customers__btn customers__btn_prev swiper-button-prev"
+                  >
+                    <img src="./assets/img/icons/arrow-right.svg" alt="->" />
+                  </button>
+                  <button
+                    class="customers__btn customers__btn_next swiper-button-next"
+                  >
+                    <img src="./assets/img/icons/arrow-right.svg" alt="->" />
+                  </button>
+                </div>
+              </div>
+              <div class="customers__slider swiper">
+                <div class="customers__reviews-area swiper-wrapper">
+                  <div
+                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                  >
+                    <img
+                      src="./assets/img/customers/blur-mid-bottom.png"
+                      id="blur-mid-bottom"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/customers/grid-top-right.png"
+                      id="grid-top-right"
+                      alt=""
+                    />
+                    <div class="review-customers__main-area">
+                      <img
+                        src="./assets/img/customers/hrlocker.svg"
+                        class="review-customers__logo"
+                        alt="HRLocker"
+                      />
+                      <p class="review-customers__review">
+                        Quintify has been instrumental in driving the success of
+                        our Account-Based Marketing (ABM) and Paid ads (PPC)
+                        strategy, consistently exceeding our lead generation
+                        expectations.
+                      </p>
+                    </div>
+                    <div class="review-customers__customer-info">
+                      <img
+                        src="./assets/img/customers/crystel.png"
+                        alt="Crystel photo"
+                      />
+                      <div class="review-customers__customer-info-text">
+                        <h5>Crystel Robbins Rynne</h5>
+                        <span>CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                  >
+                    <img
+                      src="./assets/img/customers/blur-mid-bottom.png"
+                      id="blur-mid-bottom"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/customers/grid-top-right.png"
+                      id="grid-top-right"
+                      alt=""
+                    />
+                    <div class="review-customers__main-area">
+                      <img
+                        src="./assets/img/customers/joulica.svg"
+                        class="review-customers__logo"
+                        alt="HRLocker"
+                      />
+                      <p class="review-customers__review">
+                        Quintify has been instrumental in driving the success of
+                        our Account-Based Marketing (ABM) and Paid ads (PPC)
+                        strategy, consistently exceeding our lead generation
+                        expectations.
+                      </p>
+                    </div>
+                    <div class="review-customers__customer-info">
+                      <img
+                        src="./assets/img/customers/tony.png"
+                        alt="Crystel photo"
+                      />
+                      <div class="review-customers__customer-info-text">
+                        <h5>Crystel Robbins Rynne</h5>
+                        <span>Founder & CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customers__review review-customers swiper-slide">
+                    <img
+                      src="./assets/img/customers/blur-mid-bottom.png"
+                      id="blur-mid-bottom"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/customers/grid-top-right.png"
+                      id="grid-top-right"
+                      alt=""
+                    />
+                    <div class="review-customers__main-area">
+                      <img
+                        src="./assets/img/customers/hrlocker.svg"
+                        class="review-customers__logo"
+                        alt="HRLocker"
+                      />
+                      <p class="review-customers__review">
+                        Quintify has been instrumental in driving the success of
+                        our Account-Based Marketing (ABM) and Paid ads (PPC)
+                        strategy, consistently exceeding our lead generation
+                        expectations.
+                      </p>
+                    </div>
+                    <div class="review-customers__customer-info">
+                      <img
+                        src="./assets/img/customers/crystel.png"
+                        alt="Crystel photo"
+                      />
+                      <div class="review-customers__customer-info-text">
+                        <h5>Crystel Robbins Rynne</h5>
+                        <span>CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customers__review review-customers swiper-slide">
+                    <img
+                      src="./assets/img/customers/blur-mid-bottom.png"
+                      id="blur-mid-bottom"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/customers/grid-top-right.png"
+                      id="grid-top-right"
+                      alt=""
+                    />
+                    <div class="review-customers__main-area">
+                      <img
+                        src="./assets/img/customers/joulica.svg"
+                        class="review-customers__logo"
+                        alt="HRLocker"
+                      />
+                      <p class="review-customers__review">
+                        Quintify has been instrumental in driving the success of
+                        our Account-Based Marketing (ABM) and Paid ads (PPC)
+                        strategy, consistently exceeding our lead generation
+                        expectations.
+                      </p>
+                    </div>
+                    <div class="review-customers__customer-info">
+                      <img
+                        src="./assets/img/customers/tony.png"
+                        alt="Crystel photo"
+                      />
+                      <div class="review-customers__customer-info-text">
+                        <h5>Crystel Robbins Rynne</h5>
+                        <span>Founder & CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customers__review review-customers swiper-slide">
+                    <img
+                      src="./assets/img/customers/blur-mid-bottom.png"
+                      id="blur-mid-bottom"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/customers/grid-top-right.png"
+                      id="grid-top-right"
+                      alt=""
+                    />
+                    <div class="review-customers__main-area">
+                      <img
+                        src="./assets/img/customers/hrlocker.svg"
+                        class="review-customers__logo"
+                        alt="HRLocker"
+                      />
+                      <p class="review-customers__review">
+                        Quintify has been instrumental in driving the success of
+                        our Account-Based Marketing (ABM) and Paid ads (PPC)
+                        strategy, consistently exceeding our lead generation
+                        expectations.
+                      </p>
+                    </div>
+                    <div class="review-customers__customer-info">
+                      <img
+                        src="./assets/img/customers/crystel.png"
+                        alt="Crystel photo"
+                      />
+                      <div class="review-customers__customer-info-text">
+                        <h5>Crystel Robbins Rynne</h5>
+                        <span>CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customers__review review-customers swiper-slide">
+                    <img
+                      src="./assets/img/customers/blur-mid-bottom.png"
+                      id="blur-mid-bottom"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/customers/grid-top-right.png"
+                      id="grid-top-right"
+                      alt=""
+                    />
+                    <div class="review-customers__main-area">
+                      <img
+                        src="./assets/img/customers/joulica.svg"
+                        class="review-customers__logo"
+                        alt="HRLocker"
+                      />
+                      <p class="review-customers__review">
+                        Quintify has been instrumental in driving the success of
+                        our Account-Based Marketing (ABM) and Paid ads (PPC)
+                        strategy, consistently exceeding our lead generation
+                        expectations.
+                      </p>
+                    </div>
+                    <div class="review-customers__customer-info">
+                      <img
+                        src="./assets/img/customers/tony.png"
+                        alt="Crystel photo"
+                      />
+                      <div class="review-customers__customer-info-text">
+                        <h5>Crystel Robbins Rynne</h5>
+                        <span>Founder & CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="landscape">
+          <div class="landscape__container _container">
+            <div class="landscape__body">
+              <div class="landscape__text">
+                <h2 class="landscape__title anim-from-bottom-home-landscape">
+                  The Commercial landscape is <br />
+                  evolving rapidly.
+                </h2>
+                <p class="landscape__subtitle anim-from-bottom-home-landscape">
+                  Gone are the days when traditional methods were enough to stay
+                  competitive. Today, embracing digital solutions isn't just an
+                  option—it's a necessity.
+                </p>
+                <a
+                  href="#"
+                  class="landscape__button btn btn_gradient anim-from-bottom-home-landscape"
+                >
+                  <span> View services </span>
+                </a>
+              </div>
+              <img
+                src="./assets/img/landscape/apps/quintify.png"
+                class="landscape__icon landscape__icon_quintify anim-upscale-home-landscape-app"
+                alt="quintify"
+              />
+              <img
+                src="./assets/img/landscape/apps/open-ai.png"
+                class="landscape__icon landscape__icon_ai anim-upscale-home-landscape-app"
+                alt="open ai"
+              />
+              <img
+                src="./assets/img/landscape/apps/adwords.png"
+                class="landscape__icon landscape__icon_adwords anim-upscale-home-landscape-app"
+                alt="adwords"
+              />
+              <img
+                src="./assets/img/landscape/apps/figma.png"
+                class="landscape__icon landscape__icon_figma anim-upscale-home-landscape-app"
+                alt="figma"
+              />
+              <img
+                src="./assets/img/landscape/apps/monday.png"
+                class="landscape__icon landscape__icon_monday anim-upscale-home-landscape-app"
+                alt="monday"
+              />
+              <img
+                src="./assets/img/landscape/apps/youtube.png"
+                class="landscape__icon landscape__icon_yt anim-upscale-home-landscape-app"
+                alt="youtube"
+              />
+              <img
+                src="./assets/img/landscape/apps/google-drive.png"
+                class="landscape__icon landscape__icon_gd anim-upscale-home-landscape-app"
+                alt="google drive"
+              />
+            </div>
+          </div>
+          <img src="./assets/img/landscape/bg.png" id="bg" alt="" />
+        </section>
+      </main>
+      <footer id="touch" class="footer">
+        <div class="footer__container _container">
+          <div class="footer-top">
+            <div class="footer-top__body">
+              <h2 class="footer-top__title anim-from-bottom-home-footer-top">
+                Ready to start the <br />conversation?
+              </h2>
+              <p class="footer-top__subtitle anim-from-bottom-home-footer-top">
+                Whether you’re looking for a comprehensive digital overhaul,
+                HubSpot support or specific services, we’re here to support your
+                business.
+              </p>
+              <a
+                href="#"
+                class="footer-top__btn btn anim-from-bottom-home-footer-top"
+                >Get In Touch</a
+              >
+            </div>
+            <img
+              class="footer-top__bg"
+              id="bg"
+              src="./assets/img/footer/top/bg.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__body">
+              <div class="footer-bottom__links-area">
+                <div class="footer-bottom__column">
+                  <div class="footer-bottom__logo-area">
+                    <img src="./assets/img/logo.png" alt="Quintify" />
+                    <span>Quintify</span>
+                  </div>
+                  <p class="footer-bottom__text-content">
+                    We support Technology, SaaS, and Professional Services
+                    businesses at every stage of their journey, helping them
+                    grow, scale, and realise their global ambitions.
+                  </p>
+                  <a href="#" class="footer-bottom__link link">View more</a>
+                </div>
+                <div class="footer-bottom__column">
+                  <h4 class="footer-bottom__column-title">Quick Links</h4>
+                  <nav class="footer-bottom__nav">
+                    <a href="#" class="footer-bottom__link-default">Home</a>
+                    <a href="#" class="footer-bottom__link-default">Services</a>
+                    <a href="#" class="footer-bottom__link-default"
+                      >Funding Support</a
+                    >
+                    <a href="#" class="footer-bottom__link-default"
+                      >HubSpot Partner Ireland</a
+                    >
+                    <a href="#" class="footer-bottom__link-default">Careers</a>
+                    <a href="#" class="footer-bottom__link-default">Contact</a>
+                  </nav>
+                </div>
+                <div class="footer-bottom__column">
+                  <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
+                  <p class="footer-bottom__text-content">
+                    Quintify have the backing of HubSpot in all sales and
+                    marketing capacities. Together we can support you the entire
+                    way through your business growth.
+                  </p>
+                  <a href="#" class="footer-bottom__link link">View more</a>
+                </div>
+                <div class="footer-bottom__column">
+                  <h4 class="footer-bottom__column-title">Google Partner</h4>
+                  <p class="footer-bottom__text-content">
+                    The Google Partner badge signifies that Quintify has
+                    completed Google Ads certification exams and stays current
+                    with the latest product innovations and strategies.
+                  </p>
+                  <a href="#" class="footer-bottom__link link">View more</a>
+                </div>
+              </div>
+              <div class="footer-bottom__bottom">
+                <p class="footer-bottom__copyright">
+                  © 2025, Quintify Limited. All rights reserved.
+                  <a href="#">Privacy Policy</a>
+                </p>
+                <div class="footer-bottom__social-media">
+                  <a href="#" class="footer-bottom__social-media-item">
+                    <img src="./assets/img/icons/facebook.svg" alt="facebook" />
+                  </a>
+                  <a href="#" class="footer-bottom__social-media-item">
+                    <img src="./assets/img/icons/linkedin.svg" alt="linkedin" />
+                  </a>
+                  <a href="#" class="footer-bottom__social-media-item">
+                    <img src="./assets/img/icons/youtube.svg" alt="youtube" />
+                  </a>
+                  <a href="#" class="footer-bottom__social-media-item">
+                    <img src="./assets/img/icons/x.svg" alt="x" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
