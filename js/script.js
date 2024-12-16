@@ -388,7 +388,20 @@ gsap.from(".anim-from-bottom-marketing-questions", {
   stagger: 0.1,
   ease: "power3.out",
   scrollTrigger: {
-    trigger: ".marketing",
+    trigger: ".questions",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-hubspot-power", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".power",
     start: "top 50%",
     toggleActions: "play none none none",
   },
