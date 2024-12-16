@@ -12,20 +12,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="./assets/libs/SplitText.js"></script>
-    <script src="./assets/libs/gsap-core.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+    "></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="burger-menu">
-      <nav class="burger-menu__nav">
-        <a href="#services" class="burger-menu__link">Services</a>
-        <a href="#business" class="burger-menu__link">Funding</a>
-        <a href="#" class="burger-menu__link">HubSpot</a>
-        <a href="#" class="burger-menu__link">Insights</a>
-        <a href="#touch" class="burger-menu__link">Get in touch</a>
-      </nav>
-    </div>
+        <nav class="burger-menu__nav">
+          <a href="#services" class="burger-menu__link">Services</a>
+          <a href="#business" class="burger-menu__link">Funding</a>
+          <a href="#" class="burger-menu__link">HubSpot</a>
+          <a href="#" class="burger-menu__link">Insights</a>
+          <a href="#touch" class="burger-menu__link">Get in touch</a>
+        </nav>
+      </div>
       <header class="header">
         <div class="header__top">
           <a class="header__top-btn" href="#">Google Doc</a>
@@ -72,24 +73,28 @@
                   <span> Get in touch </span>
                 </a>
                 <a class="header__burger-menu-btn" href="#">
-                  <img src="./assets/img/icons/burger-menu.svg" alt="">
+                  <img src="./assets/img/icons/burger-menu.svg" alt="" />
                 </a>
               </div>
             </div>
             <div class="hero__body">
               <div class="hero__main-content">
-                <h1 class="hero__title anim-from-bottom-home-hero">
-                  <span id="silver"
-                    ><span class="hero__title-row"
-                      >We support B2B companies to</span
-                    >
-                    <span class="hero__title-row"
-                      >grow, scale and realise their</span
-                    ></span
-                  >
-                  <span id="purple-pink" class="hero__title-row"
-                    >Global Ambition</span
-                  >
+                <h1 class="hero__title">
+                  <span class="hero__title-row-wrapper">
+                    <span class="hero__title-row">
+                      We support B2B companies to
+                    </span>
+                  </span>
+                  <span class="hero__title-row-wrapper">
+                    <span class="hero__title-row">
+                      grow, scale and realise their
+                    </span>
+                  </span>
+                  <span id="purple-pink" class="hero__title-row-wrapper">
+                    <span class="hero__title-row">
+                      Global Ambition
+                    </span>
+                  </span>
                 </h1>
                 <p class="hero__subtitle anim-from-bottom-home-hero">
                   Working with Technology, SaaS, and Professional Services
@@ -215,7 +220,9 @@
                 />
               </div>
               <div class="digital__text-area">
-                <h2 class="digital__title anim-from-bottom-home-accordion">
+                <h2
+                  class="digital__title h2-title silver-text anim-from-bottom-home-accordion"
+                >
                   Digital marketing, design & web development solutions
                 </h2>
                 <p class="digital__subtitle anim-from-bottom-home-accordion">
@@ -241,6 +248,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
+                    <!-- <hr> -->
                   </div>
                   <div class="accordion-digital__item active active-border">
                     <div class="accordion-digital__top-area">
@@ -256,6 +264,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
+                    <!-- <hr> -->
                   </div>
                   <div class="accordion-digital__item">
                     <div class="accordion-digital__top-area">
@@ -271,6 +280,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
+                    <!-- <hr> -->
                   </div>
                 </div>
               </div>
@@ -280,7 +290,9 @@
         <section id="business" class="business">
           <div class="business__container _container">
             <div class="business__body">
-              <h2 class="business__title anim-from-bottom-home-business">
+              <h2
+                class="business__title h2-title silver-text anim-from-bottom-home-business"
+              >
                 Business Funding and Support to Fuel Your Growth
               </h2>
               <div class="business__cards">
@@ -444,7 +456,9 @@
           <div class="customers__container _container">
             <div class="customers__body">
               <div class="customers__top-area">
-                <h2 class="customers__title anim-from-bottom-home-customers">
+                <h2
+                  class="customers__title h2-title silver-text anim-from-bottom-home-customers"
+                >
                   See what our customers have to say about us
                 </h2>
                 <div class="customers__buttons anim-from-bottom-home-customers">
@@ -685,7 +699,9 @@
           <div class="landscape__container _container">
             <div class="landscape__body">
               <div class="landscape__text">
-                <h2 class="landscape__title anim-from-bottom-home-landscape">
+                <h2
+                  class="landscape__title h2-title silver-text anim-from-bottom-home-landscape"
+                >
                   The Commercial landscape is <br />
                   evolving rapidly.
                 </h2>
@@ -745,7 +761,9 @@
         <div class="footer__container _container">
           <div class="footer-top">
             <div class="footer-top__body">
-              <h2 class="footer-top__title anim-from-bottom-home-footer-top">
+              <h2
+                class="footer-top__title h2-title silver-text anim-from-bottom-home-footer-top"
+              >
                 Ready to start the <br />conversation?
               </h2>
               <p class="footer-top__subtitle anim-from-bottom-home-footer-top">
@@ -759,10 +777,12 @@
                 >Get In Touch</a
               >
             </div>
+            <video autoplay muted loop class="footer-top__bg" id="bg">
+              <source src="./assets/vid/landscape/bg.mp4" type="video/mp4" />
+            </video>
             <img
-              class="footer-top__bg"
-              id="bg"
-              src="./assets/img/footer/top/bg.jpg"
+              class="footer-top__bg-overlay"
+              src="./assets/img/footer/top/bg-overlay.png"
               alt=""
             />
           </div>

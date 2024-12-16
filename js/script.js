@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const content = parentItem.querySelector(".accordion-digital__content");
       const img = this.querySelector("img");
 
+      console.log(img)
+
       // Close all other items
       accordionItems.forEach((item) => {
         if (item !== parentItem) {
@@ -26,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
           otherContent.style.paddingTop = "0";
           const otherImg = item.querySelector(".accordion-trigger img");
           if (otherImg) {
-            otherImg.src = "./assets/img/icons/plus.svg";
+            otherImg.src =
+              img.getAttribute("id") === "marketing-accordion-trigger-icon"
+                ? "../assets/img/icons/plus.svg"
+                : "./assets/img/icons/plus.svg";;
           }
         }
       });
@@ -38,7 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.height = "0";
         content.style.opacity = "0";
         content.style.paddingTop = "0";
-        img.src = "./assets/img/icons/plus.svg";
+        img.src =
+          img.getAttribute("id") === "marketing-accordion-trigger-icon"
+            ? "../assets/img/icons/plus.svg"
+            : "./assets/img/icons/plus.svg";;
       } else {
         parentItem.classList.add("active");
         parentItem.classList.add("active-border");
@@ -47,7 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
           content.scrollHeight + parseInt(getComputedStyle(content).paddingTop);
         content.style.height = "4.25rem";
         content.style.opacity = "1";
-        img.src = "./assets/img/icons/minus.svg";
+        img.src =
+          img.getAttribute("id") === "marketing-accordion-trigger-icon"
+            ? "../assets/img/icons/minus.svg"
+            : "./assets/img/icons/minus.svg";;
       }
     });
   });
@@ -289,4 +300,110 @@ gsap.from(".anim-from-bottom-home-footer-top", {
     start: "top 50%",
     toggleActions: "play none none none",
   },
+});
+
+gsap.from(".anim-from-bottom-service-growth", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".growth",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-upscale-service-growth-app", {
+  y: 50,
+  opacity: 0,
+  scale: 0.8,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".growth",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-service-build", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".build",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-service-purpose", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".purpose",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-service-ai", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".ai",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-marketing-hero", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".marketing",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-marketing-questions", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".marketing",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+
+// split-text
+
+const heroTitleSplit = new SplitType(".hero__title-row", { types: "lines" });
+
+// console.log(heroTitleSplit.chars)
+
+gsap.from(heroTitleSplit.lines, {
+  y: 100,
+  opacity: 1,
+  stagger: 0.4,
+  duration: 0.7,
 });
