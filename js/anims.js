@@ -206,7 +206,59 @@ gsap.from(".anim-from-bottom-hubspot-power", {
   stagger: 0.1,
   ease: "power3.out",
   scrollTrigger: {
-    trigger: ".power",
+    trigger: ".hubspot",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-thankyou", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".thankyou",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-policy", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".policy",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-notfound", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".notfound",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.from(".anim-from-bottom-contact", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".contact",
     start: "top 50%",
     toggleActions: "play none none none",
   },
@@ -230,7 +282,7 @@ gsap.from(heroTitleSplit.lines, {
 
 document.addEventListener("DOMContentLoaded", function () {
   if(window.innerWidth > 768) {
-    gsap.to(".hero__scroll-right", {
+    gsap.to(".sidebar_scroll", {
       y: -60, // Move up by -60px
       duration: 1.2, // Duration of the animation
       yoyo: true, // Make the animation reverse
