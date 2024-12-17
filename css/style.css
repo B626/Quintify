@@ -2294,3 +2294,228 @@ main {
     max-width: 27rem;
   }
 }
+.contact {
+  position: relative;
+}
+.contact__body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+.contact__title {
+  max-width: 18.75rem;
+  margin-bottom: 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.contact__subtitle {
+  color: #afaec6;
+  margin-bottom: 3rem;
+}
+.contact #bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  z-index: 2;
+}
+
+.list-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 3;
+}
+.list-contact__item {
+  list-style: none;
+}
+.list-contact__title {
+  background-image: linear-gradient(90deg, #6645eb 0%, #d445eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.25rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.list-contact__main-text {
+  color: #afaec6;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 140%;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 43.75rem;
+  padding: 3.125rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.0823529412);
+  background-color: #090922;
+  position: relative;
+  z-index: 11;
+}
+.form-contact__input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.form-contact__input {
+  min-height: 4.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1254901961);
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.125rem;
+  position: relative;
+  font-weight: 400;
+}
+.form-contact__textarea {
+  resize: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1254901961);
+  min-height: 6rem;
+  color: #fff;
+  font-size: 1.125rem;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.form-contact__info {
+  color: #AFAEC6;
+  line-height: 140%;
+  margin-bottom: 2.5rem;
+}
+.form-contact__info span {
+  background-image: linear-gradient(90deg, #6645eb 0%, #d445eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-contact__btn {
+  display: flex;
+  align-self: start;
+}
+
+@media (max-width: 1200px) {
+  .form-contact {
+    max-width: 36rem;
+  }
+}
+@media (max-width: 992px) {
+  .form-contact {
+    max-width: 28rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact__body {
+    flex-direction: column;
+  }
+  .form-contact {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .contact__body {
+    padding-top: 2rem;
+  }
+}
+.thankyou__body {
+  padding-top: 6rem;
+}
+.thankyou__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0;
+  font-size: 1.125rem;
+}
+.thankyou__subtitle-area {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.thankyou__text-area {
+  position: relative;
+  z-index: 10;
+}
+.thankyou__img-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thankyou__img-area img {
+  transform: scale(1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  max-width: 22.938rem;
+}
+.thankyou .robot-bg {
+  position: absolute;
+  max-width: 40.75rem;
+  max-height: 40.75rem;
+  width: 100%;
+  z-index: 1;
+}
+.thankyou .robot-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  z-index: 2;
+}
+.thankyou .bell {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.75rem;
+  height: 4.7rem;
+}
+
+@media (max-width: 992px) {
+  .thankyou__img-area .robot {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .thankyou__img-area {
+    width: 80%;
+    margin-top: -100px;
+  }
+  .thankyou .robot-blur {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .thankyou {
+    height: 140vh;
+  }
+  .thankyou__img-area {
+    margin-top: -150px;
+  }
+  .thankyou__body {
+    padding-top: 2rem;
+  }
+}
