@@ -19,6 +19,9 @@
   <body>
     <div class="wrapper">
       <div class="burger-menu">
+        <a href="#" class="close-btn">
+          <img src="../assets/img/icons/close.svg" alt="close">
+        </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
           <a href="#business" class="burger-menu__link">Funding</a>
@@ -37,17 +40,17 @@
       </header>
       <main class="main">
         <div class="sidebars">
-        <div class="sidebar sidebar_social anim-from-bottom-marketing-hero">
-          <a href="#" class="sidebar_social__link">Linkedin</a>
-          <a href="#" class="sidebar_social__link">Google</a>
-          <a href="#" class="sidebar_social__link">Hubspot</a>
-          <a href="#" class="sidebar_social__link">Apollo</a>
+          <div class="sidebar sidebar_social anim-from-bottom-marketing-hero">
+            <a href="#" class="sidebar_social__link">Linkedin</a>
+            <a href="#" class="sidebar_social__link">Google</a>
+            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">Apollo</a>
+          </div>
+          <div class="sidebar sidebar_scroll anim-from-bottom-marketing-hero">
+            <p>Scroll down</p>
+            <img src="../assets/img/icons/arrow-down.svg" alt="arrow down" />
+          </div>
         </div>
-        <div class="sidebar sidebar_scroll anim-from-bottom-marketing-hero">
-          <p>Scroll down</p>
-          <img src="../assets/img/icons/arrow-down.svg" alt="arrow down" />
-        </div>
-      </div>
         <section class="hero marketing">
           <div class="hero__container marketing__container _container">
             <div class="header__main">
@@ -96,19 +99,17 @@
                   src="../assets/img/marketing/ei-logo.svg"
                   alt="Enterprise Ireland"
                 />
-                <h1
-                  class="hero__title marketing__title"
-                >
-                    <span class="hero__title-row-wrapper">
-                      <span class="hero__title-row marketing__title-row"
-                        >Digital Marketing Capability <br
-                      /></span>
-                    </span>
-                    <span class="hero__title-row-wrapper">
-                      <span class="hero__title-row marketing__title-row"
-                        >Grant from Enterprise Ireland</span
-                      ></span
-                    >
+                <h1 class="hero__title marketing__title">
+                  <span class="hero__title-row-wrapper">
+                    <span class="hero__title-row marketing__title-row"
+                      >Digital Marketing Capability <br
+                    /></span>
+                  </span>
+                  <span class="hero__title-row-wrapper">
+                    <span class="hero__title-row marketing__title-row"
+                      >Grant from Enterprise Ireland</span
+                    ></span
+                  >
                 </h1>
                 <p
                   class="hero__subtitle marketing__subtitle anim-from-bottom-marketing-hero"
@@ -122,19 +123,9 @@
                 >
                   <a
                     href="#"
-                    class="hero__btn btn anim-from-bottom-marketing-hero"
-                    >Get started now</a
+                    class="hero__btn btn btn_bg anim-from-bottom-marketing-hero"
+                    ><span>Get started now</span></a
                   >
-                  <!--Test button-->
-                  <!-- <a href="#" class="hero__btn marketing__btn  border-btn">
-                    <svg width="100%" height="100%" viewBox="0 0 157 55" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="100%" class="line" rx="27.5" stroke-linejoin="round" />
-                    </svg>
-
-                    <div class="inner">
-                      <p>Service suite</p>
-                    </div>
-                  </a> -->
                 </div>
                 <img
                   src="../assets/img/marketing/dashboard.png"
@@ -142,33 +133,6 @@
                   alt="dashboard"
                 />
               </div>
-
-              <!-- <div
-                class="hero__sidebar-left marketing__sidebar-left anim-from-bottom-marketing-hero"
-              >
-                <a href="#" class="hero__sidebar-link marketing__sidebar-link"
-                  >LinkedIn</a
-                >
-                <a href="#" class="hero__sidebar-link marketing__sidebar-link"
-                  >Google</a
-                >
-                <a href="#" class="hero__sidebar-link marketing__sidebar-link"
-                  >HubSpot</a
-                >
-                <a href="#" class="hero__sidebar-link marketing__sidebar-link"
-                  >Apollo</a
-                >
-              </div>
-              <a
-                href="#"
-                class="hero__scroll-right marketing__scroll-right anim-from-bottom-marketing-hero"
-              >
-                <p>Scroll down</p>
-                <img
-                  src="../assets/img/icons/arrow-down.svg"
-                  alt="arrow down"
-                />
-              </a> -->
             </div>
           </div>
           <img src="../assets/img/marketing/bg.png" id="bg" alt="Space" />
@@ -179,7 +143,7 @@
               <div class="digital__img-area helping__img-area">
                 <img
                   src="../assets/img/helping/berg.png"
-                  class="anim-from-bottom-home-accordion"
+                  class="anim-from-bottom-home-accordion mouse-follow"
                   alt="berg"
                 />
               </div>
@@ -224,7 +188,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <!-- <hr> -->
+                    <hr>
                   </div>
                   <div
                     class="accordion-digital__item accordion-helping__item active active-border"
@@ -252,7 +216,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <!-- <hr> -->
+                    <hr>
                   </div>
                   <div class="accordion-digital__item accordion-helping__item">
                     <div
@@ -278,7 +242,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <!-- <hr> -->
+                    <hr>
                   </div>
                 </div>
               </div>
@@ -418,8 +382,8 @@
                       class="accordion-trigger questions__accordion-trigger"
                     >
                       <img
-                        id="marketing-accordion-trigger-icon"
-                        src="../assets/img/icons/plus.svg"
+                        id="marketing-accordion-trigger-icon-questions"
+                        src="../assets/img/icons/plus-gradient.svg"
                         alt=""
                       />
                     </button>
@@ -448,8 +412,8 @@
                       class="accordion-trigger questions__accordion-trigger"
                     >
                       <img
-                        id="marketing-accordion-trigger-icon"
-                        src="../assets/img/icons/minus.svg"
+                        id="marketing-accordion-trigger-icon-questions"
+                        src="../assets/img/icons/minus-gradient.svg"
                         alt=""
                       />
                     </button>
@@ -478,8 +442,8 @@
                       class="accordion-trigger questions__accordion-trigger"
                     >
                       <img
-                        id="marketing-accordion-trigger-icon"
-                        src="../assets/img/icons/plus.svg"
+                        id="marketing-accordion-trigger-icon-questions"
+                        src="../assets/img/icons/plus-gradient.svg"
                         alt=""
                       />
                     </button>
@@ -508,8 +472,8 @@
                       class="accordion-trigger questions__accordion-trigger"
                     >
                       <img
-                        id="marketing-accordion-trigger-icon"
-                        src="../assets/img/icons/plus.svg"
+                        id="marketing-accordion-trigger-icon-questions"
+                        src="../assets/img/icons/plus-gradient.svg"
                         alt=""
                       />
                     </button>
@@ -538,8 +502,8 @@
                       class="accordion-trigger questions__accordion-trigger"
                     >
                       <img
-                        id="marketing-accordion-trigger-icon"
-                        src="../assets/img/icons/plus.svg"
+                        id="marketing-accordion-trigger-icon-questions"
+                        src="../assets/img/icons/plus-gradient.svg"
                         alt=""
                       />
                     </button>
@@ -817,8 +781,8 @@
               </p>
               <a
                 href="#"
-                class="footer-top__btn btn anim-from-bottom-home-footer-top"
-                >Get In Touch</a
+                class="footer-top__btn btn btn_bg anim-from-bottom-home-footer-top"
+                ><span>Get In Touch</span></a
               >
             </div>
             <video autoplay muted loop class="footer-top__bg" id="bg">

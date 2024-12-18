@@ -15,6 +15,7 @@
     <script src="
     https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
     "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -81,12 +82,7 @@
                   <a href="#" class="nav-header__link">HubSpot</a>
                   <a href="#" class="nav-header__link">Insights</a>
                 </nav>
-                <!-- <a href="#touch" class="header__btn btn btn_gradient">
-                  <span> Get in touch </span>
-                </a> -->
-                <a href="#touch" class="header__btn btn btn_gradient">
-                  <span> Get in touch </span>
-                </a>
+                <a href="#touch" class="header__btn btn"> Get in touch </a>
                 <a class="header__burger-menu-btn" href="#">
                   <img src="./assets/img/icons/burger-menu.svg" alt="" />
                 </a>
@@ -106,9 +102,7 @@
                     </span>
                   </span>
                   <span id="purple-pink" class="hero__title-row-wrapper">
-                    <span class="hero__title-row">
-                      Global Ambition
-                    </span>
+                    <span class="hero__title-row"> Global Ambition </span>
                   </span>
                 </h1>
                 <p class="hero__subtitle anim-from-bottom-home-hero">
@@ -118,32 +112,11 @@
                 </p>
                 <div class="hero__buttons anim-from-bottom-home-hero">
                   <a href="#" class="hero__btn btn">Get in touch</a>
-                  <a href="#" class="hero__btn btn btn_gradient">
+                  <a href="#" class="hero__btn btn btn_bg">
                     <span> Service suite </span>
                   </a>
-                  <!--Test button-->
-                  <!-- <a href="#" class="hero__btn  border-btn">
-                    <svg width="100%" height="100%" viewBox="0 0 157 55" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="100%" class="line" rx="27.5" stroke-linejoin="round" />
-                    </svg>
-
-                    <div class="inner">
-                      <p>Service suite</p>
-                    </div>
-                  </a> -->
                 </div>
               </div>
-
-              <!-- <div class="hero__sidebar-left anim-from-bottom-home-hero">
-                <a href="#" class="hero__sidebar-link">LinkedIn</a>
-                <a href="#" class="hero__sidebar-link">Google</a>
-                <a href="#" class="hero__sidebar-link">HubSpot</a>
-                <a href="#" class="hero__sidebar-link">Apollo</a>
-              </div>
-              <a href="#" class="hero__scroll-right anim-from-bottom-home-hero">
-                <p>Scroll down</p>
-                <img src="./assets/img/icons/arrow-down.svg" alt="arrow down" />
-              </a> -->
             </div>
           </div>
           <img src="./assets/img/hero/bg.jpg" id="bg" alt="Space" />
@@ -230,7 +203,7 @@
               <div class="digital__img-area">
                 <img
                   src="./assets/img/digital/chain.png"
-                  class="anim-from-bottom-home-accordion"
+                  class="anim-from-bottom-home-accordion mouse-follow"
                   alt="chain link"
                 />
               </div>
@@ -244,11 +217,9 @@
                   Everything we do for our clients is a commitment to processes
                   and a clear vision for achieving their goals.
                 </p>
-                <div
-                  class="digital__accordion accordion-digital anim-from-bottom-home-accordion"
-                >
+                <div class="digital__accordion accordion-digital">
                   <div
-                    class="accordion-digital__item accordion-digital__item_first"
+                    class="accordion-digital__item accordion-digital__item_first anim-from-bottom-home-accordion"
                   >
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
@@ -263,9 +234,11 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <!-- <hr> -->
+                    <hr />
                   </div>
-                  <div class="accordion-digital__item active active-border">
+                  <div
+                    class="accordion-digital__item active active-border anim-from-bottom-home-accordion"
+                  >
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
                         Value Proposition & Design
@@ -279,9 +252,11 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <!-- <hr> -->
+                    <hr />
                   </div>
-                  <div class="accordion-digital__item">
+                  <div
+                    class="accordion-digital__item anim-from-bottom-home-accordion"
+                  >
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
                         Digital Marketing & Support
@@ -295,7 +270,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <!-- <hr> -->
+                    <hr />
                   </div>
                 </div>
               </div>
@@ -415,7 +390,7 @@
                       alt="progress"
                     />
                     <div class="card-business__stats-text">
-                      <span>80%</span>
+                      <span class="card-business__stats-text-main">80%</span>
                       <p>Grant funding</p>
                     </div>
                   </div>
@@ -453,7 +428,7 @@
                       <div class="card-business__bar"></div>
                     </div> -->
                     <div class="card-business__stats-text">
-                      <span>50%</span>
+                      <span class="card-business__stats-text-main">50%</span>
                       <p>Grant funding</p>
                     </div>
                   </div>
@@ -727,7 +702,7 @@
                 </p>
                 <a
                   href="#"
-                  class="landscape__button btn btn_gradient anim-from-bottom-home-landscape"
+                  class="landscape__button btn anim-from-bottom-home-landscape"
                 >
                   <span> View services </span>
                 </a>
@@ -788,9 +763,10 @@
               </p>
               <a
                 href="#"
-                class="footer-top__btn btn anim-from-bottom-home-footer-top"
-                >Get In Touch</a
+                class="footer-top__btn btn btn_bg anim-from-bottom-home-footer-top"
               >
+                <span> Get In Touch </span>
+              </a>
             </div>
             <video autoplay muted loop class="footer-top__bg" id="bg">
               <source src="./assets/vid/landscape/bg.mp4" type="video/mp4" />

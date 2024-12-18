@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const accordionItems = document.querySelectorAll(".accordion-digital__item");
-  const triggers = document.querySelectorAll(".accordion-trigger");
+  const triggers = document.querySelectorAll(".accordion-digital__top-area");
 
   triggers.forEach((trigger) => {
     trigger.addEventListener("click", function () {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const content = parentItem.querySelector(".accordion-digital__content");
       const img = this.querySelector("img");
 
-      console.log(img)
+      console.log(img);
 
       // Close all other items
       accordionItems.forEach((item) => {
@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
             otherImg.src =
               img.getAttribute("id") === "marketing-accordion-trigger-icon"
                 ? "../assets/img/icons/plus.svg"
-                : "./assets/img/icons/plus.svg";;
+                : img.getAttribute("id") ===
+                  "marketing-accordion-trigger-icon-questions"
+                ? "../assets/img/icons/plus-gradient.svg"
+                : "./assets/img/icons/plus.svg";
           }
         }
       });
@@ -43,7 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         img.src =
           img.getAttribute("id") === "marketing-accordion-trigger-icon"
             ? "../assets/img/icons/plus.svg"
-            : "./assets/img/icons/plus.svg";;
+            : img.getAttribute("id") ===
+              "marketing-accordion-trigger-icon-questions"
+            ? "../assets/img/icons/plus-gradient.svg"
+            : "./assets/img/icons/plus.svg";
       } else {
         parentItem.classList.add("active");
         parentItem.classList.add("active-border");
@@ -55,7 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
         img.src =
           img.getAttribute("id") === "marketing-accordion-trigger-icon"
             ? "../assets/img/icons/minus.svg"
-            : "./assets/img/icons/minus.svg";;
+            : img.getAttribute("id") ===
+              "marketing-accordion-trigger-icon-questions"
+            ? "../assets/img/icons/minus-gradient.svg"
+            : "./assets/img/icons/minus.svg";
       }
     });
   });
@@ -102,77 +111,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 400); // Adjust the delay as needed
   });
 });
-
-
-// business progress bar
-
-// $(document).ready(function () {
-//   $(".card-business__progress-area").each(function () {
-//     var $bar = $(this).find(".card-business__bar");
-//     var $val = $(this).find("span");
-//     var perc = parseInt($val.text(), 10);
-
-//     $({ p: 0 }).animate(
-//       { p: perc },
-//       {
-//         duration: 3000,
-//         easing: "swing",
-//         step: function (p) {
-//           $bar.css({
-//             transform: "rotate(" + (45 + p * 1.8) + "deg)", // 100%=180° so: ° = % * 1.8
-//             // 45 is to add the needed rotation to have the green borders at the bottom
-//           });
-//           $val.text(p | 0);
-//         },
-//       }
-//     );
-//   });
-// });
-
-// burger menu
-
-const burgerMenuButton = document.querySelector(".header__burger-menu-btn");
-const burgerMenu = document.querySelector(".burger-menu");
-const burgerMenuLinks = document.querySelectorAll(".burger-menu__link");
-
-burgerMenuButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  gsap.to(burgerMenu, {
-    right: 0,
-    duration: 0.5,
-    ease: "power3.out",
-    onStart: function () {
-      document.body.style.overflow = "hidden";
-    },
-  });
-});
-
-// Close the menu when clicking outside of it
-document.addEventListener("click", function (e) {
-  if (!burgerMenu.contains(e.target) && !burgerMenuButton.contains(e.target)) {
-    gsap.to(burgerMenu, {
-      right: "-70vw",
-      duration: 0.5,
-      ease: "power3.out",
-      onComplete: function () {
-        document.body.style.overflow = "visible";
-      },
-    });
-  }
-});
-
-// Close the menu when any link inside the burger menu is clicked
-burgerMenuLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    gsap.to(burgerMenu, {
-      right: "-70vw",
-      duration: 0.5,
-      ease: "power3.out",
-      onComplete: function () {
-        document.body.style.overflow = "visible";
-      },
-    });
-  });
-});
-
-

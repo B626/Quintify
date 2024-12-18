@@ -19,6 +19,9 @@
   <body>
     <div class="wrapper">
       <div class="burger-menu">
+        <a href="#" class="close-btn">
+          <img src="../assets/img/icons/close.svg" alt="close">
+        </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
           <a href="#business" class="burger-menu__link">Funding</a>
@@ -36,6 +39,14 @@
         </div>
       </header>
       <main class="main">
+        <div class="sidebars">
+          <div class="sidebar sidebar_social anim-from-bottom-thankyou">
+            <a href="#" class="sidebar_social__link">Linkedin</a>
+            <a href="#" class="sidebar_social__link">Google</a>
+            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">Apollo</a>
+          </div>
+        </div>
         <section class="hero hubspot thankyou">
           <div
             class="hero__container hubspot__container thankyou__container _container"
@@ -71,7 +82,7 @@
                   <a href="#" class="nav-header__link">HubSpot</a>
                   <a href="#" class="nav-header__link">Insights</a>
                 </nav>
-                <a href="#touch" class="header__btn btn btn_gradient">
+                <a href="#touch" class="header__btn btn">
                   <span> Get in touch </span>
                 </a>
                 <a class="header__burger-menu-btn" href="#">
@@ -84,7 +95,9 @@
                 class="hero__main-content hubspot__main-content thankyou__main-content"
               >
                 <div class="hubspot__text-area thankyou__text-area">
-                  <h1 class="hero__title hubspot__title thankyou__title anim-from-bottom-thankyou">
+                  <h1
+                    class="hero__title hubspot__title thankyou__title anim-from-bottom-thankyou"
+                  >
                     <span>
                       <span class="hero__title-row-wrapper">
                         <span class="hero__title-row"
@@ -137,34 +150,27 @@
                     </a>
                   </div>
                 </div>
-                <div class="hubspot__img-area thankyou__img-area anim-from-bottom-thankyou">
+                <div
+                  class="hubspot__img-area thankyou__img-area anim-from-bottom-thankyou"
+                >
                   <img
                     src="../assets/img/thankyou/robot.png"
                     alt="Friendly robot"
                     class="robot"
+                    id="thankyou-robot"
                   />
-                  <img src="../assets/img/thankyou/robot-bg.png" alt="" class="robot-bg">
-                  <img src="../assets/img/thankyou/robot-blur.png" alt="" class="robot-blur">
-                  <!-- <img src="../assets/img/thankyou/bell.svg" alt="bell" class="bell">
-                  <img src="../assets/img/thankyou/chat.svg" alt="chat" class="chat"> -->
+                  <img
+                    src="../assets/img/thankyou/robot-bg.png"
+                    alt=""
+                    class="robot-bg"
+                  />
+                  <img
+                    src="../assets/img/thankyou/robot-blur.png"
+                    alt=""
+                    class="robot-blur"
+                  />
                 </div>
               </div>
-              <!-- <div
-                class="hero__sidebar-left hubspot__sidebar-left anim-from-bottom-service-growth"
-              >
-                <a href="#" class="hero__sidebar-link hubspot__sidebar-link"
-                  >LinkedIn</a
-                >
-                <a href="#" class="hero__sidebar-link hubspot__sidebar-link"
-                  >Google</a
-                >
-                <a href="#" class="hero__sidebar-link hubspot__sidebar-link"
-                  >HubSpot</a
-                >
-                <a href="#" class="hero__sidebar-link hubspot__sidebar-link"
-                  >Apollo</a
-                >
-              </div> -->
             </div>
           </div>
           <img src="../assets/img/thankyou/bg.png" id="bg" alt="Space" />
