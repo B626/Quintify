@@ -3,7 +3,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".anim-from-bottom-home-hero", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -16,7 +16,7 @@ gsap.from(".anim-from-bottom-home-hero", {
 });
 
 gsap.from(".anim-from-bottom-clients-hero", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -29,7 +29,7 @@ gsap.from(".anim-from-bottom-clients-hero", {
 });
 
 gsap.from(".anim-from-bottom-home-accordion", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -42,7 +42,7 @@ gsap.from(".anim-from-bottom-home-accordion", {
 });
 
 gsap.from(".anim-from-bottom-home-business", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -55,7 +55,7 @@ gsap.from(".anim-from-bottom-home-business", {
 });
 
 gsap.from(".anim-from-bottom-home-customers", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -68,7 +68,7 @@ gsap.from(".anim-from-bottom-home-customers", {
 });
 
 gsap.from(".anim-from-bottom-home-landscape", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -81,7 +81,7 @@ gsap.from(".anim-from-bottom-home-landscape", {
 });
 
 gsap.from(".anim-upscale-home-landscape-app", {
-  y: 50,
+  y: 80,
   opacity: 0,
   scale: 0.8,
   duration: 1,
@@ -95,7 +95,7 @@ gsap.from(".anim-upscale-home-landscape-app", {
 });
 
 gsap.from(".anim-from-bottom-home-footer-top", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -108,7 +108,7 @@ gsap.from(".anim-from-bottom-home-footer-top", {
 });
 
 gsap.from(".anim-from-bottom-service-growth", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -121,7 +121,7 @@ gsap.from(".anim-from-bottom-service-growth", {
 });
 
 gsap.from(".anim-upscale-service-growth-app", {
-  y: 50,
+  y: 80,
   opacity: 0,
   scale: 0.8,
   duration: 1,
@@ -135,7 +135,7 @@ gsap.from(".anim-upscale-service-growth-app", {
 });
 
 gsap.from(".anim-from-bottom-service-build", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -148,7 +148,7 @@ gsap.from(".anim-from-bottom-service-build", {
 });
 
 gsap.from(".anim-from-bottom-service-purpose", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -161,7 +161,7 @@ gsap.from(".anim-from-bottom-service-purpose", {
 });
 
 gsap.from(".anim-from-bottom-service-ai", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -174,7 +174,7 @@ gsap.from(".anim-from-bottom-service-ai", {
 });
 
 gsap.from(".anim-from-bottom-marketing-hero", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -187,7 +187,7 @@ gsap.from(".anim-from-bottom-marketing-hero", {
 });
 
 gsap.from(".anim-from-bottom-marketing-questions", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -200,7 +200,7 @@ gsap.from(".anim-from-bottom-marketing-questions", {
 });
 
 gsap.from(".anim-from-bottom-hubspot-power", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -213,7 +213,7 @@ gsap.from(".anim-from-bottom-hubspot-power", {
 });
 
 gsap.from(".anim-from-bottom-thankyou", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -226,7 +226,7 @@ gsap.from(".anim-from-bottom-thankyou", {
 });
 
 gsap.from(".anim-from-bottom-policy", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -239,7 +239,7 @@ gsap.from(".anim-from-bottom-policy", {
 });
 
 gsap.from(".anim-from-bottom-notfound", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
@@ -252,13 +252,30 @@ gsap.from(".anim-from-bottom-notfound", {
 });
 
 gsap.from(".anim-from-bottom-contact", {
-  y: 50,
+  y: 80,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
   ease: "power3.out",
   scrollTrigger: {
     trigger: ".contact",
+    start: "top 50%",
+    toggleActions: "play none none none",
+  },
+});
+
+// ai bg blur
+
+const aiBlurImage = document.querySelector(".ai-blur");
+
+gsap.to(".ai-blur", {
+  opacity: 1,
+  duration: 3,
+  yoyo: true,
+  repeat: -1,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: ".ai",
     start: "top 50%",
     toggleActions: "play none none none",
   },
@@ -454,4 +471,5 @@ btn.addEventListener("mouseenter", function () {
       ease: "power1.inOut",
     });
 });
+
 
