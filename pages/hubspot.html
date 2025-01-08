@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quintify</title>
+    <meta property="og:title" content="Quintify" />
+    <meta
+      property="og:description"
+      content="HubSpot Gold Solution Agency Partner in Ireland"
+    />
+    <meta property="og:image" content="../assets/img/hero/preview.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="
@@ -17,10 +23,13 @@
     "></script>
   </head>
   <body>
+    <div class="loader">
+      <h1>Loading...</h1>
+    </div>
     <div class="wrapper">
       <div class="burger-menu">
         <a href="#" class="close-btn">
-          <img src="../assets/img/icons/close.svg" alt="close">
+          <img src="../assets/img/icons/close.svg" alt="close" />
         </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
@@ -34,69 +43,68 @@
         <div class="header__top">
           <a class="header__top-btn" href="#">Google Doc</a>
           <p class="header__top-text">
-            To Learn more about quintify 📝 read our Online Presentation Today
+            To Learn more about quintify 📝read our Online Presentation Today
           </p>
+        </div>
+        <div class="header__main">
+          <div class="header__container _container">
+            <a href="#" class="header__logo-area">
+              <img src="../assets/img/logo.png" alt="logotype" />
+            </a>
+            <nav class="header__nav nav-header">
+              <a href="#services" class="nav-header__link">Services</a>
+              <div class="nav-header__dropdown">
+                <a
+                  href="#business"
+                  class="nav-header__link nav-header__link_dropdown"
+                >
+                  Funding
+                  <img
+                    src="../assets/img/icons/low-arrow-down.svg"
+                    alt="dropdown"
+                  />
+                </a>
+                <div class="nav-header__dropdown-content">
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Discovery</a
+                  >
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Marketing</a
+                  >
+                </div>
+              </div>
+              <a href="#" class="nav-header__link">HubSpot</a>
+              <a href="#" class="nav-header__link">Insights</a>
+            </nav>
+            <a href="#touch" class="header__btn btn btn_gradient">
+              <span> Get in touch </span>
+            </a>
+            <a class="header__burger-menu-btn" href="#">
+              <img src="../assets/img/icons/burger-menu.svg" alt="" />
+            </a>
+          </div>
         </div>
       </header>
       <main class="main">
-        <div class="sidebars">
-          <div class="sidebar sidebar_social anim-from-bottom-hubspot-power">
+        <div class="sidebars sidebars_hubspot anim-section">
+          <div class="sidebar sidebar_social anim-from-bottom">
             <a href="#" class="sidebar_social__link">Linkedin</a>
             <a href="#" class="sidebar_social__link">Google</a>
-            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">HubSpot</a>
             <a href="#" class="sidebar_social__link">Apollo</a>
           </div>
-          <div class="sidebar sidebar_scroll anim-from-bottom-hubspot-power">
+          <div class="sidebar sidebar_scroll anim-from-bottom">
             <p>Scroll down</p>
             <img src="../assets/img/icons/arrow-down.svg" alt="arrow down" />
           </div>
         </div>
-        <section class="hero hubspot">
+        <section class="hero hubspot anim-section">
           <div class="hero__container hubspot__container _container">
-            <div class="header__main">
-              <div class="header__container _container">
-                <div class="header__logo-area">
-                  <img src="../assets/img/logo.png" alt="logotype" />
-                  <span>Quintify</span>
-                </div>
-                <nav class="header__nav nav-header">
-                  <a href="#services" class="nav-header__link">Services</a>
-                  <div class="nav-header__dropdown">
-                    <a
-                      href="#business"
-                      class="nav-header__link nav-header__link_dropdown"
-                    >
-                      Funding
-                      <img
-                        src="../assets/img/icons/low-arrow-down.svg"
-                        alt="dropdown"
-                      />
-                    </a>
-                    <div class="nav-header__dropdown-content">
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Discovery</a
-                      >
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Marketing</a
-                      >
-                    </div>
-                  </div>
-                  <a href="#" class="nav-header__link">HubSpot</a>
-                  <a href="#" class="nav-header__link">Insights</a>
-                </nav>
-                <a href="#touch" class="header__btn btn btn_gradient">
-                  <span> Get in touch </span>
-                </a>
-                <a class="header__burger-menu-btn" href="#">
-                  <img src="../assets/img/icons/burger-menu.svg" alt="" />
-                </a>
-              </div>
-            </div>
             <div class="hero__body hubspot__body">
               <div class="hero__main-content hubspot__main-content">
                 <div class="hubspot__text-area">
                   <h1 class="hero__title hubspot__title">
-                    <span>
+                    <span class="silver-text">
                       <span class="hero__title-row-wrapper">
                         <span class="hero__title-row hubspot__title-row"
                           >HubSpot Gold <br
@@ -114,108 +122,489 @@
                       >
                     </span>
                   </h1>
-                  <p
-                    class="hero__subtitle hubspot__subtitle anim-from-bottom-service-growth"
-                  >
-                    Whether you’re looking for digital marketing management,
-                    HubSpot support, or specific services, we’re here to help
-                    your business succeed.
+                  <p class="hero__subtitle hubspot__subtitle anim-from-bottom">
+                    Empower your business with software that adapts, not
+                    overwhelms. Effortlessly unify your data, teams, and
+                    customers with an AI-driven platform designed to grow
+                    alongside your success.
                   </p>
-                  <div
-                    class="hero__buttons hubspot__buttons anim-from-bottom-service-growth"
-                  >
-                    <a href="#" class="hero__btn btn_bg hubspot__btn btn"
+                  <div class="hero__buttons hubspot__buttons anim-from-bottom">
+                    <a
+                      href="#"
+                      class="hero__btn btn_bg anim-from-bottom hubspot__btn btn"
                       ><span>Get started now</span></a
                     >
                   </div>
                 </div>
-                <div class="hubspot__img-area anim-from-bottom-hubspot-power">
+                <div class="hubspot__img-area anim-from-bottom mouse-follow">
                   <img src="../assets/img/hubspot/img.png" alt="Hubspot gold" />
+                  <div
+                    class="digital__img-list-anim hubspot__img-list-anim anim-from-bottom"
+                  >
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/double-check.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        Content uploaded
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/caution.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        125 Test Completed
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/time.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        Rewriting Content
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/automatic.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        Automatic Detected
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/double-check.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        Content uploaded
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/automatic.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        Automatic Detected
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/caution.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        125 Test Completed
+                      </p>
+                    </div>
+                    <div
+                      class="digital__img-list-anim-item hubspot__img-list-anim-item"
+                    >
+                      <div class="digital__img-list-anim-item-img-wrapper">
+                        <img
+                          class="digital__img-list-anim-item-img"
+                          src="../assets/img/icons/time.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p class="digital__img-list-anim-item-text">
+                        Rewriting Content
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <img src="../assets/img/hubspot/bg.png" id="bg" alt="Space" />
         </section>
-        <section class="build unites">
+        <section class="build unites anim-section">
           <div class="build__container unites__container _container">
             <div class="build__body unites__body">
               <h2
-                class="build__title unites__title h2-title silver-text anim-from-bottom-service-build"
+                class="build__title unites__title h2-title silver-text anim-from-bottom"
               >
-                Building a Strong Foundation for Success
+                HubSpot unites your marketing, sales, and service teams
               </h2>
               <div class="build__cards unites__cards">
                 <div
-                  class="build__card unites__card card-build anim-from-bottom-service-build"
+                  class="build__card unites__card card-build card-unites anim-from-bottom"
                 >
                   <div class="card-build__top card-unites__top">
                     <h3 class="card-build__title card-unites__title">
-                      Project Planning
+                      Marketing Hub
                     </h3>
-                    <img
-                      class="card-build__icon card-unites__icon"
-                      src="../assets/img/unites/1.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="27"
+                        height="33"
+                        class="card-build__icon"
+                        viewBox="0 0 27 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="1.70703"
+                          y="1.54468"
+                          width="23.5994"
+                          height="30.6426"
+                          rx="3"
+                          stroke="url(#paint0_linear_1996_2476)"
+                          stroke-width="1.6"
+                        />
+                        <path
+                          d="M5.98438 20.2073H20.9172"
+                          stroke="url(#paint1_linear_1996_2476)"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          class="build-icon-gradient-color"
+                        />
+                        <path
+                          d="M5.98438 13.8916H13.5039"
+                          stroke="url(#paint2_linear_1996_2476)"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          class="build-icon-gradient-color"
+                        />
+                        <path
+                          d="M5.98438 26.5229H20.9172"
+                          stroke="url(#paint3_linear_1996_2476)"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          class="build-icon-gradient-color"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1996_2476"
+                            x1="2.76794"
+                            y1="23.1884"
+                            x2="34.7123"
+                            y2="21.4296"
+                            gradientUnits="userSpaceOnUse"
+                            class="build-icon-gradient-color"
+                          >
+                            <stop
+                              stop-color="#6645EB"
+                              class="build-icon-gradient-color"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="#D445EB"
+                              class="build-icon-gradient-color"
+                            />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1996_2476"
+                            x1="6.65568"
+                            y1="20.9136"
+                            x2="16.1315"
+                            y2="10.7979"
+                            class="build-icon-gradient-color"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              stop-color="#6645EB"
+                              class="build-icon-gradient-color"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="#D445EB"
+                              class="build-icon-gradient-color"
+                            />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_1996_2476"
+                            x1="6.32241"
+                            y1="14.5979"
+                            x2="14.243"
+                            y2="10.3402"
+                            class="build-icon-gradient-color"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              stop-color="#6645EB"
+                              class="build-icon-gradient-color"
+                            />
+                            <stop
+                              offset="1"
+                              class="build-icon-gradient-color"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint3_linear_1996_2476"
+                            x1="6.65568"
+                            y1="27.2293"
+                            x2="16.1315"
+                            y2="17.1136"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
+                  <img
+                    src="../assets/img/unites/grid.png"
+                    class="card-unites__grid"
+                    alt=""
+                  />
                   <hr />
                   <p class="card-build__text-content card-unites__text-content">
-                    We help you outline key milestones, set achievable
-                    timelines, and ensure every aspect of your project is
-                    strategically managed.
+                    AI-driven marketing software designed to boost lead
+                    generation and streamline automation.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
                 <div
-                  class="build__card unites__card card-build anim-from-bottom-service-build"
+                  class="build__card unites__card card-build card-unites anim-from-bottom"
                 >
                   <div class="card-build__top card-unites__top">
                     <h3 class="card-build__title card-unites__title">
-                      Project Planning
+                      Sales Hub
                     </h3>
-                    <img
-                      class="card-build__icon card-unites__icon"
-                      src="../assets/img/unites/2.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="27"
+                        height="28"
+                        class="card-build__icon"
+                        viewBox="0 0 27 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.7446 26.5401C20.3463 28.1145 16.7284 25.9258 16.2363 22.4889C16.152 21.9003 16.1583 21.3023 16.3039 20.7179C16.381 20.4088 16.3209 20.2151 16.0002 20.0582C14.0379 19.0979 12.0846 18.1192 10.135 17.1333C9.86526 16.9969 9.72583 17.0395 9.52392 17.2665C8.06654 18.905 6.24665 19.5143 4.13573 18.9087C2.07678 18.318 0.823202 16.8819 0.393462 14.7863C-0.0588733 12.5805 1.11429 10.257 3.14356 9.21484C5.24843 8.1339 7.72738 8.53788 9.32813 10.2819C9.6959 10.6826 9.94789 10.7176 10.4164 10.4735C12.2299 9.52902 14.064 8.62334 15.9017 7.72658C16.2548 7.5543 16.3749 7.37852 16.3046 6.97264C15.7332 3.67187 17.9643 0.797057 21.3145 0.675709C24.2536 0.569253 26.3908 2.84673 26.665 5.3503C27.0281 8.66514 24.2631 11.3313 21.2076 11.1709C19.7597 11.0949 18.5369 10.512 17.584 9.41835C17.3138 9.10826 17.1008 9.07497 16.7405 9.25857C14.8254 10.2342 12.9005 11.1905 10.9708 12.1369C10.6969 12.2712 10.6307 12.4147 10.6964 12.7037C10.8728 13.4795 10.8742 14.2638 10.6983 15.0408C10.639 15.3026 10.6874 15.452 10.9444 15.5786C12.9033 16.5436 14.8596 17.5143 16.8052 18.5058C17.1443 18.6785 17.3195 18.5955 17.5566 18.3394C19.0149 16.764 20.8032 16.1809 22.8773 16.7784C24.8951 17.3597 26.1327 18.7402 26.5956 20.7917C27.1038 23.0447 25.9911 25.2947 23.7446 26.5401ZM23.6301 8.62508C24.8612 7.58602 25.2606 5.94761 24.6333 4.51021C24.0264 3.11969 22.5768 2.26908 21.014 2.48398C19.092 2.74826 17.9396 4.22387 17.9788 6.03002C18.0083 7.39204 18.6999 8.46298 19.9726 9.05657C21.2366 9.64612 22.4453 9.48483 23.6301 8.62508ZM7.4448 16.7792C9.1219 15.6153 9.53841 13.5551 8.43025 11.9048C7.40811 10.3826 5.25075 9.9439 3.68687 10.9403C2.10415 11.9487 1.61755 14.0914 2.60784 15.6919C3.61639 17.3218 5.69146 17.8119 7.4448 16.7792ZM23.1553 24.8363C24.5195 23.9684 25.1661 22.5613 24.8537 21.1401C24.5024 19.542 23.436 18.5468 21.7207 18.3722C19.7231 18.169 17.871 19.7122 17.9859 21.9498C18.1215 24.5917 20.71 26.018 23.1553 24.8363Z"
+                          fill="url(#paint0_linear_1996_2508)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1996_2508"
+                            x1="1.48459"
+                            y1="19.3106"
+                            x2="37.1728"
+                            y2="16.7562"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
+                  <img
+                    src="../assets/img/unites/grid.png"
+                    class="card-unites__grid"
+                    alt=""
+                  />
                   <hr />
                   <p class="card-build__text-content card-unites__text-content">
-                    We help you outline key milestones, set achievable
-                    timelines, and ensure every aspect of your project is
-                    strategically managed.
+                    Intuitive sales software powered by AI to build pipelines
+                    and accelerate deal closures.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
                 <div
-                  class="build__card unites__card card-build anim-from-bottom-service-build"
+                  class="build__card unites__card card-build card-unites anim-from-bottom"
                 >
                   <div class="card-build__top card-unites__top">
                     <h3 class="card-build__title card-unites__title">
-                      Project Planning
+                      Service Hub
                     </h3>
-                    <img
-                      class="card-build__icon card-unites__icon"
-                      src="../assets/img/unites/3.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="27"
+                        height="28"
+                        class="card-build__icon"
+                        viewBox="0 0 27 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.6046 26.125C14.4136 27.753 10.4139 27.44 6.57972 25.163C6.31583 25.0063 6.11286 25.0406 5.86085 25.1472C4.40208 25.7644 2.93899 26.3713 1.47655 26.9798C1.23856 27.0788 1.00004 27.1919 0.730018 27.1204C0.281375 27.0016 0.127224 26.5279 0.36019 25.9691C0.96975 24.5071 1.57481 23.0431 2.19927 21.5874C2.3406 21.258 2.33593 21.0036 2.14182 20.6813C-2.53197 12.9206 1.75466 2.90689 10.5938 0.915134C18.022 -0.758701 25.2784 4.09303 26.5851 11.6072C27.649 17.7253 24.4528 23.5611 18.6046 26.125ZM6.93106 3.94181C5.96494 4.58623 5.10602 5.34891 4.36262 6.24326C2.79816 8.12538 1.873 10.2886 1.65829 12.7173C1.41084 15.5163 2.03545 18.1223 3.64261 20.4599C3.87962 20.8046 3.90658 21.1431 3.73626 21.5286C3.38849 22.3159 3.06281 23.113 2.73321 23.9082C2.57932 24.2795 2.43749 24.6558 2.24321 25.1491C3.43286 24.6427 4.50327 24.2186 5.54429 23.7316C6.12703 23.459 6.59123 23.5168 7.1285 23.865C9.69502 25.5283 12.5171 26.1149 15.5216 25.6002C22.4688 24.41 26.8472 17.4982 25.0011 10.7043C22.8893 2.93285 13.8987 -0.464589 6.93106 3.94181Z"
+                          fill="url(#paint0_linear_1996_2531)"
+                        />
+                        <path
+                          d="M15.8246 10.1602C15.1324 9.11572 14.1745 8.70095 12.9986 8.90677C11.9173 9.09605 11.2446 9.8027 10.9237 10.8413C10.8688 11.019 10.8662 11.213 10.8416 11.3998C10.7802 11.8667 10.4587 12.1963 10.0886 12.1701C9.71124 12.1435 9.41669 11.7881 9.44568 11.3133C9.55613 9.50427 10.7716 7.81858 12.8981 7.49428C15.187 7.14521 17.1204 8.5306 17.5953 10.7783C18.0095 12.7385 16.7898 14.8143 14.8313 15.3795C14.324 15.5259 14.1796 15.7566 14.2104 16.2423C14.2419 16.7393 14.2171 16.7981 14.1933 17.2968C14.1722 17.7369 13.9302 18.041 13.4814 18.0139C13.0346 17.987 12.8466 17.6583 12.8483 17.2185C12.8518 16.3397 12.8418 15.9039 12.8522 15.0251C12.8585 14.4964 13.1032 14.2225 13.6431 14.2074C15.4673 14.1564 16.8681 12.1024 15.8246 10.1602Z"
+                          fill="url(#paint1_linear_1996_2531)"
+                        />
+                        <path
+                          d="M12.7974 19.9017C13.0396 19.4991 13.3638 19.3999 13.7496 19.5465C14.0818 19.6727 14.2074 19.9527 14.1839 20.2928C14.1595 20.6462 13.945 20.8578 13.6152 20.9466C13.0693 21.0936 12.7086 20.6555 12.7974 19.9017Z"
+                          fill="url(#paint2_linear_1996_2531)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1996_2531"
+                            x1="1.42061"
+                            y1="19.3466"
+                            x2="37.2996"
+                            y2="16.7819"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              stop-color="#6645EB"
+                              class="build-icon-gradient-color"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="#D445EB"
+                              class="build-icon-gradient-color"
+                            />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1996_2531"
+                            x1="1.42061"
+                            y1="19.3466"
+                            x2="37.2996"
+                            y2="16.7819"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              stop-color="#6645EB"
+                              class="build-icon-gradient-color"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="#D445EB"
+                              class="build-icon-gradient-color"
+                            />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_1996_2531"
+                            x1="1.42061"
+                            y1="19.3466"
+                            x2="37.2996"
+                            y2="16.7819"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
+                  <img
+                    src="../assets/img/unites/grid.png"
+                    class="card-unites__grid"
+                    alt=""
+                  />
                   <hr />
                   <p class="card-build__text-content card-unites__text-content">
-                    We help you outline key milestones, set achievable
-                    timelines, and ensure every aspect of your project is
-                    strategically managed.
+                    AI-enhanced customer service software that scales your
+                    support efforts and enhances retention.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="power-customers">
-          <div class="power">
+          <div class="power anim-section">
             <div class="power__container _container">
               <div class="power__body">
-                <div class="power__img-area anim-from-bottom-hubspot-power">
-                  <img class="power__img mouse-follow" src="../assets/img/power/img.png" alt="" />
+                <div class="power__img-area anim-from-bottom">
+                  <img
+                    class="power__img mouse-follow"
+                    src="../assets/img/power/img.png"
+                    alt=""
+                  />
                   <div class="power__img-top-layer">
                     <div class="power__img-top-layer-left">
                       <img
@@ -228,24 +617,28 @@
                       </p>
                     </div>
                     <a href="#" class="power__img-top-layer-btn">
-                      <img class="power__img-top-layer-btn-icon" src="../assets/img/icons/arrow-right.svg" alt="->" />
+                      <img
+                        class="power__img-top-layer-btn-icon"
+                        src="../assets/img/icons/arrow-right.svg"
+                        alt="->"
+                      />
                     </a>
                   </div>
                 </div>
                 <div class="power__text-area">
                   <h2
-                    class="power__title h2-title silver-text anim-from-bottom-hubspot-power"
+                    class="power__title h2-title silver-text anim-from-bottom"
                   >
                     Power your business growth with HubSpot and Quintify
                   </h2>
-                  <p class="power__subtitle anim-from-bottom-hubspot-power">
+                  <p class="power__subtitle anim-from-bottom">
                     At Quintify, we're dedicated to driving your business growth
                     by leveraging the full potential of HubSpot’s suite of
                     tools.
                   </p>
                   <ul class="power__list">
                     <li
-                      class="power__list-item item-list-power anim-from-bottom-hubspot-power"
+                      class="power__list-item item-list-power anim-from-bottom"
                     >
                       <div class="item-list-power__top-area">
                         <img
@@ -264,7 +657,7 @@
                       </p>
                     </li>
                     <li
-                      class="power__list-item item-list-power anim-from-bottom-hubspot-power"
+                      class="power__list-item item-list-power anim-from-bottom"
                     >
                       <div class="item-list-power__top-area">
                         <img
@@ -273,13 +666,13 @@
                           class="item-list-power__icon"
                         />
                         <h4 class="item-list-power__title">
-                          HubSpot CRM Onboarding
+                          HubSpot Managed Services
                         </h4>
                       </div>
                       <p class="item-list-power__main-text">
-                        Our onboarding team sets up your account, enabling you
-                        to start achieving your business goals faster. Get full
-                        support to make the most of HubSpot with ease.
+                        With our managed services, you’ll have expert guidance
+                        at every stage so your HubSpot account stays aligned
+                        with your goals and delivers maximum impact.
                       </p>
                     </li>
                   </ul>
@@ -287,19 +680,21 @@
               </div>
             </div>
           </div>
-          <img src="../assets/img/power/bg-blur.png" class="blur" alt="" />
-          <div class="customers">
+          <img
+            src="../assets/img/power/bg-blur.png"
+            class="blur power-blur"
+            alt=""
+          />
+          <div class="customers anim-section">
             <div class="customers__container _container">
               <div class="customers__body">
                 <div class="customers__top-area">
                   <h2
-                    class="customers__title h2-title silver-text anim-from-bottom-home-customers"
+                    class="customers__title h2-title silver-text anim-from-bottom"
                   >
                     See what our customers have to say about us
                   </h2>
-                  <div
-                    class="customers__buttons anim-from-bottom-home-customers"
-                  >
+                  <div class="customers__buttons anim-from-bottom">
                     <button
                       class="customers__btn customers__btn_prev swiper-button-prev"
                     >
@@ -315,7 +710,7 @@
                 <div class="customers__slider swiper">
                   <div class="customers__reviews-area swiper-wrapper">
                     <div
-                      class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                      class="customers__review review-customers swiper-slide anim-from-bottom"
                     >
                       <img
                         src="../assets/img/customers/blur-mid-bottom.png"
@@ -352,7 +747,7 @@
                       </div>
                     </div>
                     <div
-                      class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                      class="customers__review review-customers swiper-slide anim-from-bottom"
                     >
                       <img
                         src="../assets/img/customers/blur-mid-bottom.png"
@@ -541,25 +936,28 @@
               </div>
             </div>
           </div>
+          <img
+            src="../assets/img/power/bg.png"
+            alt=""
+            class="power-customers__bg"
+          />
         </section>
       </main>
       <footer id="touch" class="footer">
         <div class="footer__container _container">
-          <div class="footer-top">
+          <div class="footer-top anim-section">
             <div class="footer-top__body">
               <h2
-                class="footer-top__title h2-title silver-text anim-from-bottom-home-footer-top"
+                class="footer-top__title h2-title silver-text anim-from-bottom"
               >
                 Ready to start the <br />conversation?
               </h2>
-              <p class="footer-top__subtitle anim-from-bottom-home-footer-top">
+              <p class="footer-top__subtitle anim-from-bottom">
                 Whether you’re looking for a comprehensive digital overhaul,
                 HubSpot support or specific services, we’re here to support your
                 business.
               </p>
-              <a
-                href="#"
-                class="footer-top__btn btn_bg btn anim-from-bottom-home-footer-top"
+              <a href="#" class="footer-top__btn btn_bg btn anim-from-bottom"
                 ><span>Get In Touch</span></a
               >
             </div>
@@ -576,49 +974,94 @@
             <div class="footer-bottom__body">
               <div class="footer-bottom__links-area">
                 <div class="footer-bottom__column">
-                  <div class="footer-bottom__logo-area">
-                    <img src="../assets/img/logo.png" alt="Quintify" />
-                    <span>Quintify</span>
+                  <div class="footer-bottom__top-area">
+                    <div class="footer-bottom__logo-area">
+                      <img src="../assets/img/logo.png" alt="Quintify" />
+                    </div>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
                   </div>
-                  <p class="footer-bottom__text-content">
-                    We support Technology, SaaS, and Professional Services
-                    businesses at every stage of their journey, helping them
-                    grow, scale, and realise their global ambitions.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      We support Technology, SaaS, and Professional Services
+                      businesses at every stage of their journey, helping them
+                      grow, scale, and realise their global ambitions.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Quick Links</h4>
-                  <nav class="footer-bottom__nav">
-                    <a href="#" class="footer-bottom__link-default">Home</a>
-                    <a href="#" class="footer-bottom__link-default">Services</a>
-                    <a href="#" class="footer-bottom__link-default"
-                      >Funding Support</a
-                    >
-                    <a href="#" class="footer-bottom__link-default"
-                      >HubSpot Partner Ireland</a
-                    >
-                    <a href="#" class="footer-bottom__link-default">Careers</a>
-                    <a href="#" class="footer-bottom__link-default">Contact</a>
-                  </nav>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Quick Links</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <nav class="footer-bottom__nav">
+                      <a href="#" class="footer-bottom__link-default">Home</a>
+                      <a href="#" class="footer-bottom__link-default"
+                        >Services</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Funding Support</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >HubSpot Partner Ireland</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Careers</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Contact</a
+                      >
+                    </nav>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    Quintify have the backing of HubSpot in all sales and
-                    marketing capacities. Together we can support you the entire
-                    way through your business growth.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      Quintify have the backing of HubSpot in all sales and
+                      marketing capacities. Together we can support you the
+                      entire way through your business growth.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Google Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    The Google Partner badge signifies that Quintify has
-                    completed Google Ads certification exams and stays current
-                    with the latest product innovations and strategies.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Google Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      The Google Partner badge signifies that Quintify has
+                      completed Google Ads certification exams and stays current
+                      with the latest product innovations and strategies.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
               </div>
               <div class="footer-bottom__bottom">
@@ -654,6 +1097,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/anims.js"></script>
+    <script src="../js/popupAnims.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/swiper.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

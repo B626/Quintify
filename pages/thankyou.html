@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quintify</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <meta property="og:title" content="Quintify" />
+    <meta property="og:description" content="Thank you for reaching out!" />
+    <meta property="og:image" content="../assets/img/hero/preview.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="
@@ -17,10 +16,13 @@
     "></script>
   </head>
   <body>
+    <div class="loader">
+      <h1>Loading...</h1>
+    </div>
     <div class="wrapper">
       <div class="burger-menu">
         <a href="#" class="close-btn">
-          <img src="../assets/img/icons/close.svg" alt="close">
+          <img src="../assets/img/icons/close.svg" alt="close" />
         </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
@@ -34,71 +36,70 @@
         <div class="header__top">
           <a class="header__top-btn" href="#">Google Doc</a>
           <p class="header__top-text">
-            To Learn more about quintify 📝 read our Online Presentation Today
+            To Learn more about quintify 📝read our Online Presentation Today
           </p>
+        </div>
+        <div class="header__main">
+          <div class="header__container _container">
+            <a href="#" class="header__logo-area">
+              <img src="../assets/img/logo.png" alt="logotype" />
+            </a>
+            <nav class="header__nav nav-header">
+              <a href="#services" class="nav-header__link">Services</a>
+              <div class="nav-header__dropdown">
+                <a
+                  href="#business"
+                  class="nav-header__link nav-header__link_dropdown"
+                >
+                  Funding
+                  <img
+                    src="../assets/img/icons/low-arrow-down.svg"
+                    alt="dropdown"
+                  />
+                </a>
+                <div class="nav-header__dropdown-content">
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Discovery</a
+                  >
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Marketing</a
+                  >
+                </div>
+              </div>
+              <a href="#" class="nav-header__link">HubSpot</a>
+              <a href="#" class="nav-header__link">Insights</a>
+            </nav>
+            <a href="#touch" class="header__btn btn">
+              <span> Get in touch </span>
+            </a>
+            <a class="header__burger-menu-btn" href="#">
+              <img src="../assets/img/icons/burger-menu.svg" alt="" />
+            </a>
+          </div>
         </div>
       </header>
       <main class="main">
-        <div class="sidebars">
-          <div class="sidebar sidebar_social anim-from-bottom-thankyou">
+        <div class="sidebars sidebars_thankyou anim-section">
+          <div class="sidebar sidebar_social anim-from-bottom">
             <a href="#" class="sidebar_social__link">Linkedin</a>
             <a href="#" class="sidebar_social__link">Google</a>
-            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">HubSpot</a>
             <a href="#" class="sidebar_social__link">Apollo</a>
           </div>
         </div>
-        <section class="hero hubspot thankyou">
+        <section class="hero hubspot thankyou anim-section">
           <div
             class="hero__container hubspot__container thankyou__container _container"
           >
-            <div class="header__main">
-              <div class="header__container _container">
-                <div class="header__logo-area">
-                  <img src="../assets/img/logo.png" alt="logotype" />
-                  <span>Quintify</span>
-                </div>
-                <nav class="header__nav nav-header">
-                  <a href="#services" class="nav-header__link">Services</a>
-                  <div class="nav-header__dropdown">
-                    <a
-                      href="#business"
-                      class="nav-header__link nav-header__link_dropdown"
-                    >
-                      Funding
-                      <img
-                        src="../assets/img/icons/low-arrow-down.svg"
-                        alt="dropdown"
-                      />
-                    </a>
-                    <div class="nav-header__dropdown-content">
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Discovery</a
-                      >
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Marketing</a
-                      >
-                    </div>
-                  </div>
-                  <a href="#" class="nav-header__link">HubSpot</a>
-                  <a href="#" class="nav-header__link">Insights</a>
-                </nav>
-                <a href="#touch" class="header__btn btn">
-                  <span> Get in touch </span>
-                </a>
-                <a class="header__burger-menu-btn" href="#">
-                  <img src="../assets/img/icons/burger-menu.svg" alt="" />
-                </a>
-              </div>
-            </div>
             <div class="hero__body hubspot__body thankyou__body">
               <div
                 class="hero__main-content hubspot__main-content thankyou__main-content"
               >
                 <div class="hubspot__text-area thankyou__text-area">
                   <h1
-                    class="hero__title hubspot__title thankyou__title anim-from-bottom-thankyou"
+                    class="hero__title hubspot__title thankyou__title anim-from-bottom"
                   >
-                    <span>
+                    <span class="silver-text">
                       <span class="hero__title-row-wrapper">
                         <span class="hero__title-row"
                           >Thank You For <br
@@ -111,13 +112,13 @@
                   </h1>
                   <div class="thankyou__subtitle-area">
                     <p
-                      class="hero__subtitle hubspot__subtitle thankyou__subtitle anim-from-bottom-thankyou"
+                      class="hero__subtitle hubspot__subtitle thankyou__subtitle anim-from-bottom"
                     >
                       We've received your message, and a member of our team will
                       be in touch with you shortly.
                     </p>
                     <p
-                      class="hero__subtitle hubspot__subtitle thankyou__subtitle anim-from-bottom-thankyou"
+                      class="hero__subtitle hubspot__subtitle thankyou__subtitle anim-from-bottom"
                     >
                       In the meantime, feel free to connect with us on our
                       social media platforms for the latest updates and
@@ -125,7 +126,7 @@
                     </p>
                   </div>
                   <div
-                    class="footer-bottom__social-media thankyou__social-media anim-from-bottom-thankyou"
+                    class="footer-bottom__social-media thankyou__social-media anim-from-bottom"
                   >
                     <a href="#" class="footer-bottom__social-media-item">
                       <img
@@ -151,7 +152,7 @@
                   </div>
                 </div>
                 <div
-                  class="hubspot__img-area thankyou__img-area anim-from-bottom-thankyou"
+                  class="hubspot__img-area thankyou__img-area anim-from-bottom"
                 >
                   <img
                     src="../assets/img/thankyou/robot.png"
@@ -169,11 +170,21 @@
                     alt=""
                     class="robot-blur"
                   />
+                  <img
+                    src="../assets/img/thankyou/chat.svg"
+                    alt=""
+                    class="robot-dec-1"
+                  />
+                  <img
+                    src="../assets/img/thankyou/bell.svg"
+                    alt=""
+                    class="robot-dec-2"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <img src="../assets/img/thankyou/bg.png" id="bg" alt="Space" />
+          <img src="../assets/img/hubspot/bg.png" id="bg" alt="Space" />
         </section>
       </main>
       <footer id="touch" class="footer">
@@ -182,49 +193,94 @@
             <div class="footer-bottom__body">
               <div class="footer-bottom__links-area">
                 <div class="footer-bottom__column">
-                  <div class="footer-bottom__logo-area">
-                    <img src="../assets/img/logo.png" alt="Quintify" />
-                    <span>Quintify</span>
+                  <div class="footer-bottom__top-area">
+                    <div class="footer-bottom__logo-area">
+                      <img src="../assets/img/logo.png" alt="Quintify" />
+                    </div>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
                   </div>
-                  <p class="footer-bottom__text-content">
-                    We support Technology, SaaS, and Professional Services
-                    businesses at every stage of their journey, helping them
-                    grow, scale, and realise their global ambitions.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      We support Technology, SaaS, and Professional Services
+                      businesses at every stage of their journey, helping them
+                      grow, scale, and realise their global ambitions.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Quick Links</h4>
-                  <nav class="footer-bottom__nav">
-                    <a href="#" class="footer-bottom__link-default">Home</a>
-                    <a href="#" class="footer-bottom__link-default">Services</a>
-                    <a href="#" class="footer-bottom__link-default"
-                      >Funding Support</a
-                    >
-                    <a href="#" class="footer-bottom__link-default"
-                      >HubSpot Partner Ireland</a
-                    >
-                    <a href="#" class="footer-bottom__link-default">Careers</a>
-                    <a href="#" class="footer-bottom__link-default">Contact</a>
-                  </nav>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Quick Links</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <nav class="footer-bottom__nav">
+                      <a href="#" class="footer-bottom__link-default">Home</a>
+                      <a href="#" class="footer-bottom__link-default"
+                        >Services</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Funding Support</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >HubSpot Partner Ireland</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Careers</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Contact</a
+                      >
+                    </nav>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    Quintify have the backing of HubSpot in all sales and
-                    marketing capacities. Together we can support you the entire
-                    way through your business growth.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      Quintify have the backing of HubSpot in all sales and
+                      marketing capacities. Together we can support you the
+                      entire way through your business growth.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Google Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    The Google Partner badge signifies that Quintify has
-                    completed Google Ads certification exams and stays current
-                    with the latest product innovations and strategies.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Google Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      The Google Partner badge signifies that Quintify has
+                      completed Google Ads certification exams and stays current
+                      with the latest product innovations and strategies.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
               </div>
               <div class="footer-bottom__bottom">
@@ -258,8 +314,9 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/anims.js"></script>
+    <script src="../js/popupAnims.js"></script>
+    <script src="../js/burger.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

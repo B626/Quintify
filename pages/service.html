@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quintify</title>
+    <meta property="og:title" content="Quintify">
+    <meta property="og:description" content="Whether you’re looking for digital marketing management,
+                  HubSpot support, or specific services, we’re here to help your
+                  business succeed.">
+    <meta property="og:image" content="../assets/img/hero/preview.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="
@@ -17,10 +22,13 @@
     "></script>
   </head>
   <body>
+    <div class="loader">
+      <h1>Loading...</h1>
+    </div>
     <div class="wrapper">
       <div class="burger-menu">
         <a href="#" class="close-btn">
-          <img src="../assets/img/icons/close.svg" alt="close">
+          <img src="../assets/img/icons/close.svg" alt="close" />
         </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
@@ -34,69 +42,68 @@
         <div class="header__top">
           <a class="header__top-btn" href="#">Google Doc</a>
           <p class="header__top-text">
-            To Learn more about quintify 📝 read our Online Presentation Today
+            To Learn more about quintify 📝read our Online Presentation Today
           </p>
+        </div>
+        <div class="header__main">
+          <div class="header__container _container">
+            <a href="#" class="header__logo-area">
+              <img src="../assets/img/logo.png" alt="logotype" />
+            </a>
+            <nav class="header__nav nav-header">
+              <a href="#services" class="nav-header__link">Services</a>
+              <div class="nav-header__dropdown">
+                <a
+                  href="#business"
+                  class="nav-header__link nav-header__link_dropdown"
+                >
+                  Funding
+                  <img
+                    src="../assets/img/icons/low-arrow-down.svg"
+                    alt="dropdown"
+                  />
+                </a>
+                <div class="nav-header__dropdown-content">
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Discovery</a
+                  >
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Marketing</a
+                  >
+                </div>
+              </div>
+              <a href="#" class="nav-header__link">HubSpot</a>
+              <a href="#" class="nav-header__link">Insights</a>
+            </nav>
+            <a href="#touch" class="header__btn btn btn_gradient">
+              <span> Get in touch </span>
+            </a>
+            <a class="header__burger-menu-btn" href="#">
+              <img src="../assets/img/icons/burger-menu.svg" alt="" />
+            </a>
+          </div>
         </div>
       </header>
       <main class="main">
-        <div class="sidebars">
-          <div class="sidebar sidebar_social anim-from-bottom-service-growth">
+        <div class="sidebars anim-section">
+          <div class="sidebar sidebar_social anim-from-bottom">
             <a href="#" class="sidebar_social__link">Linkedin</a>
             <a href="#" class="sidebar_social__link">Google</a>
-            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">HubSpot</a>
             <a href="#" class="sidebar_social__link">Apollo</a>
           </div>
-          <div class="sidebar sidebar_scroll anim-from-bottom-service-growth">
+          <div class="sidebar sidebar_scroll anim-from-bottom">
             <p>Scroll down</p>
             <img src="../assets/img/icons/arrow-down.svg" alt="arrow down" />
           </div>
         </div>
-        <section class="hero growth">
+        <section class="hero growth anim-section">
           <div class="hero__container growth__container _container">
-            <div class="header__main">
-              <div class="header__container _container">
-                <div class="header__logo-area">
-                  <img src="../assets/img/logo.png" alt="logotype" />
-                  <span>Quintify</span>
-                </div>
-                <nav class="header__nav nav-header">
-                  <a href="#services" class="nav-header__link">Services</a>
-                  <div class="nav-header__dropdown">
-                    <a
-                      href="#business"
-                      class="nav-header__link nav-header__link_dropdown"
-                    >
-                      Funding
-                      <img
-                        src="../assets/img/icons/low-arrow-down.svg"
-                        alt="dropdown"
-                      />
-                    </a>
-                    <div class="nav-header__dropdown-content">
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Discovery</a
-                      >
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Marketing</a
-                      >
-                    </div>
-                  </div>
-                  <a href="#" class="nav-header__link">HubSpot</a>
-                  <a href="#" class="nav-header__link">Insights</a>
-                </nav>
-                <a href="#touch" class="header__btn btn btn_gradient">
-                  <span> Get in touch </span>
-                </a>
-                <a class="header__burger-menu-btn" href="#">
-                  <img src="../assets/img/icons/burger-menu.svg" alt="" />
-                </a>
-              </div>
-            </div>
             <div class="hero__body growth__body">
               <div class="hero__main-content growth__main-content">
-                <p class="growth__suptitle">Services</p>
+                <p class="growth__suptitle anim-from-bottom">Services</p>
                 <h1 class="hero__title growth__title">
-                  <span class="">
+                  <span class="silver-text">
                     <span class="hero__title-row-wrapper">
                       <span class="hero__title-row growth__title-row"
                         >Drive Growth with Our <br
@@ -109,75 +116,118 @@
                     >
                   </span>
                 </h1>
-                <p
-                  class="hero__subtitle growth__subtitle anim-from-bottom-service-growth"
-                >
+                <p class="hero__subtitle growth__subtitle anim-from-bottom">
                   Whether you’re looking for digital marketing management,
                   HubSpot support, or specific services, we’re here to help your
                   business succeed.
                 </p>
-                <div
-                  class="hero__buttons growth__buttons anim-from-bottom-service-growth"
-                >
-                  <a href="#" class="hero__btn btn btn_bg"
+                <div class="hero__buttons growth__buttons anim-from-bottom">
+                  <a href="#" class="hero__btn growth__btn btn btn_bg anim-from-bottom"
                     ><span>Get started now</span></a
                   >
                 </div>
               </div>
-
-              <img
-                src="../assets/img/landscape/apps/open-ai.png"
-                class="landscape__icon landscape__icon_ai growth__icon growth__icon_ai anim-upscale-service-growth-app"
-                alt="open ai"
-              />
-              <img
-                src="../assets/img/landscape/apps/adwords.png"
-                class="landscape__icon landscape__icon_adwords growth__icon growth__icon_adwords anim-upscale-service-growth-app"
-                alt="adwords"
-              />
-              <img
-                src="../assets/img/landscape/apps/figma.png"
-                class="landscape__icon landscape__icon_figma growth__icon growth__icon_figma anim-upscale-service-growth-app"
-                alt="figma"
-              />
-              <img
-                src="../assets/img/landscape/apps/monday.png"
-                class="landscape__icon landscape__icon_monday growth__icon growth__icon_monday anim-upscale-service-growth-app"
-                alt="monday"
-              />
-              <img
-                src="../assets/img/landscape/apps/youtube.png"
-                class="landscape__icon landscape__icon_yt growth__icon growth__icon_yt anim-upscale-service-growth-app"
-                alt="youtube"
-              />
-              <img
-                src="../assets/img/growth/hubspot.svg"
-                class="landscape__icon landscape__icon_hubspot growth__icon growth__icon_hubspot anim-upscale-service-growth-app"
-                alt="hubspot"
-              />
+              <div class="growth__social-media mouse-follow">
+                <div
+                  class="landscape__icon landscape__icon_ai growth__icon growth__icon_ai anim-from-bottom"
+                >
+                  <img
+                    src="../assets/img/landscape/apps/openai.svg"
+                    alt="open ai"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_adwords growth__icon growth__icon_adwords anim-from-bottom"
+                >
+                  <img
+                    src="../assets/img/landscape/apps/adwords.svg"
+                    alt="adwords"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_figma growth__icon growth__icon_figma anim-from-bottom"
+                >
+                  <img
+                    src="../assets/img/landscape/apps/figma.svg"
+                    alt="figma"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_monday growth__icon growth__icon_monday anim-from-bottom"
+                >
+                  <img
+                    src="../assets/img/landscape/apps/monday.svg"
+                    alt="monday"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_yt growth__icon growth__icon_yt anim-from-bottom"
+                >
+                  <img
+                    src="../assets/img/landscape/apps/youtube.svg"
+                    alt="youtube"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_hubspot growth__icon growth__icon_hubspot anim-from-bottom"
+                >
+                  <img src="../assets/img/growth/hubspot.svg" alt="hubspot" />
+                </div>
+              </div>
             </div>
           </div>
-          <img src="../assets/img/growth/bg.png" id="bg" alt="Space" />
+          <img src="../assets/img/growth/bg2.png" id="bg" alt="Space" />
         </section>
-        <section class="build">
+        <section class="build anim-section">
           <div class="build__container _container">
             <div class="build__body">
-              <h2
-                class="build__title h2-title silver-text anim-from-bottom-service-build"
-              >
+              <h2 class="build__title h2-title silver-text anim-from-bottom">
                 Building a Strong Foundation for Success
               </h2>
               <div class="build__cards">
-                <div
-                  class="build__card card-build anim-from-bottom-service-build"
-                >
+                <div class="build__card card-build anim-from-bottom">
                   <div class="card-build__top">
                     <h3 class="card-build__title">Project Planning</h3>
-                    <img
-                      class="card-build__icon"
-                      src="../assets/img/build/1.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="33"
+                        height="27"
+                        class="card-build__icon"
+                        viewBox="0 0 33 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.0625 4.03167H4.125V2.01584H2.0625V4.03167ZM0 1.51188C0 0.674046 0.689648 0 1.54688 0H4.64062C5.49785 0 6.1875 0.674046 6.1875 1.51188V4.53563C6.1875 5.37347 5.49785 6.04751 4.64062 6.04751H4.125V12.095H8.25V11.5911C8.25 10.7532 8.93965 10.0792 9.79688 10.0792H12.8906C13.7479 10.0792 14.4375 10.7532 14.4375 11.5911V14.6148C14.4375 15.4527 13.7479 16.1267 12.8906 16.1267H9.79688C8.93965 16.1267 8.25 15.4527 8.25 14.6148V14.1109H4.125V21.1663C4.125 21.7206 4.58906 22.1742 5.15625 22.1742H8.25V21.6702C8.25 20.8324 8.93965 20.1584 9.79688 20.1584H12.8906C13.7479 20.1584 14.4375 20.8324 14.4375 21.6702V24.694C14.4375 25.5318 13.7479 26.2059 12.8906 26.2059H9.79688C8.93965 26.2059 8.25 25.5318 8.25 24.694V24.19H5.15625C3.44824 24.19 2.0625 22.8357 2.0625 21.1663V13.1029V6.04751H1.54688C0.689648 6.04751 0 5.37347 0 4.53563V1.51188ZM10.3125 3.02376C10.3125 2.4694 10.7766 2.01584 11.3438 2.01584H31.9688C32.5359 2.01584 33 2.4694 33 3.02376C33 3.57811 32.5359 4.03167 31.9688 4.03167H11.3438C10.7766 4.03167 10.3125 3.57811 10.3125 3.02376ZM18.5625 13.1029C18.5625 12.5486 19.0266 12.095 19.5938 12.095H31.9688C32.5359 12.095 33 12.5486 33 13.1029C33 13.6573 32.5359 14.1109 31.9688 14.1109H19.5938C19.0266 14.1109 18.5625 13.6573 18.5625 13.1029ZM18.5625 23.1821C18.5625 22.6278 19.0266 22.1742 19.5938 22.1742H31.9688C32.5359 22.1742 33 22.6278 33 23.1821C33 23.7365 32.5359 24.19 31.9688 24.19H19.5938C19.0266 24.19 18.5625 23.7365 18.5625 23.1821ZM10.3125 24.19H12.375V22.1742H10.3125V24.19ZM10.3125 12.095V14.1109H12.375V12.095H10.3125Z"
+                          fill="url(#paint0_linear_2654_81)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_2654_81"
+                            x1="1.48351"
+                            y1="18.5099"
+                            x2="45.9279"
+                            y2="14.5089"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
                   <hr />
                   <p class="card-build__text-content">
@@ -185,17 +235,55 @@
                     timelines, and ensure every aspect of your project is
                     strategically managed.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
-                <div
-                  class="build__card card-build anim-from-bottom-service-build"
-                >
+                <div class="build__card card-build anim-from-bottom">
                   <div class="card-build__top">
                     <h3 class="card-build__title">Budget Planning</h3>
-                    <img
-                      class="card-build__icon"
-                      src="../assets/img/build/2.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="34"
+                        height="33"
+                        class="card-build__icon"
+                        viewBox="0 0 34 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.3733 5.18664C10.3733 5.34224 10.4576 5.62751 10.9114 6.0165C11.0022 6.0943 11.0994 6.1721 11.2096 6.2499C10.2112 6.2888 9.2387 6.37309 8.29862 6.50275V5.18664C8.29862 4.1947 8.85619 3.39077 9.55639 2.78782C10.2631 2.17839 11.2226 1.67917 12.3248 1.28369C14.5291 0.473281 17.5049 0 20.7466 0C23.9882 0 26.964 0.473281 29.1684 1.27721C30.264 1.67917 31.2301 2.17839 31.9367 2.78134C32.6369 3.39077 33.1945 4.1947 33.1945 5.18664V11.9293V19.3138C33.1945 20.3122 32.6629 21.142 31.9562 21.7774C31.2495 22.4128 30.29 22.9379 29.1878 23.3593C28.5136 23.6122 27.7745 23.8391 26.977 24.0271V21.8876C27.5086 21.745 28.0014 21.5894 28.4552 21.4208C29.4212 21.0513 30.1279 20.6428 30.5752 20.2409C31.0226 19.8389 31.1263 19.5212 31.1263 19.3202V15.0283C30.5623 15.3914 29.9075 15.709 29.1878 15.9813C28.5136 16.2342 27.7745 16.4611 26.977 16.6491V14.5096C27.5086 14.367 28.0014 14.2114 28.4552 14.0428C29.4212 13.6733 30.1279 13.2648 30.5752 12.8629C31.0226 12.4609 31.1263 12.1432 31.1263 11.9422V8.18841C30.5558 8.53851 29.8945 8.84322 29.1749 9.10255C28.0532 9.511 26.7371 9.83517 25.2849 10.0491C25.1617 9.92593 25.0385 9.80275 24.9153 9.69253C24.2605 9.10255 23.5084 8.62927 22.724 8.23379C24.9802 8.08468 26.964 7.68919 28.4617 7.1446C29.4277 6.7945 30.1344 6.39902 30.5882 6.0165C31.042 5.62751 31.1263 5.34224 31.1263 5.18664C31.1263 5.03104 31.042 4.74578 30.5882 4.35678C30.1409 3.97426 29.4342 3.57878 28.4617 3.22868C26.5361 2.52849 23.8067 2.07466 20.7466 2.07466C17.6864 2.07466 14.957 2.52849 13.0314 3.22868C12.0654 3.57878 11.3587 3.97426 10.9049 4.35678C10.4511 4.74578 10.3668 5.03104 10.3668 5.18664H10.3733ZM2.07466 13.4853C2.07466 13.6409 2.15894 13.9261 2.61277 14.3151C3.06012 14.6976 3.7668 15.0931 4.73929 15.4432C6.65835 16.1434 9.38782 16.5972 12.4479 16.5972C15.5081 16.5972 18.2375 16.1434 20.1631 15.4432C21.1291 15.0931 21.8358 14.6976 22.2896 14.3151C22.7434 13.9261 22.8277 13.6409 22.8277 13.4853C22.8277 13.3297 22.7434 13.0444 22.2896 12.6554C21.8422 12.2729 21.1356 11.8774 20.1631 11.5273C18.2375 10.8271 15.5081 10.3733 12.4479 10.3733C9.38782 10.3733 6.65835 10.8271 4.73281 11.5273C3.7668 11.8774 3.06012 12.2729 2.60629 12.6554C2.15246 13.0444 2.06817 13.3297 2.06817 13.4853H2.07466ZM0 13.4853C0 12.4933 0.557564 11.6894 1.25776 11.0864C1.96444 10.477 2.92397 9.9778 4.02613 9.58232C6.23045 8.77191 9.20629 8.29862 12.4479 8.29862C15.6896 8.29862 18.6654 8.77191 20.8697 9.57584C21.9654 9.9778 22.9314 10.477 23.6381 11.08C24.3448 11.6829 24.8959 12.4933 24.8959 13.4788V20.2214V27.6059C24.8959 28.6043 24.3642 29.4342 23.6576 30.0695C22.9509 30.7049 21.9914 31.2301 20.8892 31.6515C18.6784 32.5008 15.6896 33 12.4479 33C9.20629 33 6.21749 32.5008 4.01316 31.658C2.911 31.2365 1.95147 30.7114 1.24479 30.076C0.538114 29.4407 0 28.6108 0 27.6124V20.2279V13.4853ZM22.8212 16.4741C22.2507 16.8242 21.5894 17.1289 20.8697 17.3882C18.6654 18.1986 15.6896 18.6719 12.4479 18.6719C9.20629 18.6719 6.23045 18.1986 4.02613 17.3947C3.30648 17.1354 2.64519 16.8306 2.07466 16.4806V20.2279C2.07466 20.4289 2.17839 20.7466 2.62574 21.1485C3.07308 21.5505 3.77976 21.9654 4.74578 22.3285C6.67132 23.0611 9.38782 23.5344 12.4479 23.5344C15.5081 23.5344 18.2246 23.0611 20.1501 22.3285C21.1161 21.9589 21.8228 21.5505 22.2701 21.1485C22.7175 20.7466 22.8212 20.4289 22.8212 20.2279V16.4741ZM2.07466 27.6124C2.07466 27.8134 2.17839 28.131 2.62574 28.533C3.07308 28.935 3.77976 29.3499 4.74578 29.713C6.67132 30.4456 9.38782 30.9253 12.4479 30.9253C15.5081 30.9253 18.2246 30.4521 20.1501 29.7194C21.1161 29.3499 21.8228 28.9415 22.2701 28.5395C22.7175 28.1375 22.8212 27.8198 22.8212 27.6189V23.3269C22.2572 23.69 21.6024 24.0077 20.8827 24.28C18.6784 25.1163 15.6896 25.609 12.4479 25.609C9.20629 25.609 6.21749 25.1098 4.01316 24.267C3.3 23.9947 2.64519 23.677 2.07466 23.3139V27.6059V27.6124Z"
+                          fill="url(#paint0_linear_2656_96)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_2656_96"
+                            x1="1.49226"
+                            y1="23.3088"
+                            x2="46.3291"
+                            y2="20.0846"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
                   <hr />
                   <p class="card-build__text-content">
@@ -203,17 +291,55 @@
                     every euro spent on digital marketing contributes to
                     measurable growth and ROI.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
-                <div
-                  class="build__card card-build anim-from-bottom-service-build"
-                >
+                <div class="build__card card-build anim-from-bottom">
                   <div class="card-build__top">
                     <h3 class="card-build__title">Target Audience</h3>
-                    <img
-                      class="card-build__icon"
-                      src="../assets/img/build/3.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="33"
+                        height="27"
+                        class="card-build__icon"
+                        viewBox="0 0 33 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.95 4.125C4.95 3.46859 5.21076 2.83906 5.67491 2.37491C6.13906 1.91076 6.76859 1.65 7.425 1.65C8.08141 1.65 8.71094 1.91076 9.17509 2.37491C9.63924 2.83906 9.9 3.46859 9.9 4.125C9.9 4.78141 9.63924 5.41094 9.17509 5.87509C8.71094 6.33924 8.08141 6.6 7.425 6.6C6.76859 6.6 6.13906 6.33924 5.67491 5.87509C5.21076 5.41094 4.95 4.78141 4.95 4.125ZM11.55 4.125C11.55 3.03098 11.1154 1.98177 10.3418 1.20818C9.56823 0.434597 8.51902 0 7.425 0C6.33098 0 5.28177 0.434597 4.50818 1.20818C3.7346 1.98177 3.3 3.03098 3.3 4.125C3.3 5.21902 3.7346 6.26823 4.50818 7.04182C5.28177 7.8154 6.33098 8.25 7.425 8.25C8.51902 8.25 9.56823 7.8154 10.3418 7.04182C11.1154 6.26823 11.55 5.21902 11.55 4.125ZM16.5 8.25C17.3752 8.25 18.2146 8.59768 18.8335 9.21655C19.4523 9.83542 19.8 10.6748 19.8 11.55C19.8 12.4252 19.4523 13.2646 18.8335 13.8835C18.2146 14.5023 17.3752 14.85 16.5 14.85C15.6248 14.85 14.7854 14.5023 14.1665 13.8835C13.5477 13.2646 13.2 12.4252 13.2 11.55C13.2 10.6748 13.5477 9.83542 14.1665 9.21655C14.7854 8.59768 15.6248 8.25 16.5 8.25ZM16.5 16.5C17.15 16.5 17.7937 16.372 18.3943 16.1232C18.9948 15.8744 19.5405 15.5098 20.0002 15.0502C20.4598 14.5905 20.8244 14.0448 21.0732 13.4443C21.322 12.8437 21.45 12.2 21.45 11.55C21.45 10.9 21.322 10.2563 21.0732 9.65572C20.8244 9.05516 20.4598 8.50947 20.0002 8.04982C19.5405 7.59017 18.9948 7.22556 18.3943 6.9768C17.7937 6.72804 17.15 6.6 16.5 6.6C15.85 6.6 15.2063 6.72804 14.6057 6.9768C14.0052 7.22556 13.4595 7.59017 12.9998 8.04982C12.5402 8.50947 12.1756 9.05516 11.9268 9.65572C11.678 10.2563 11.55 10.9 11.55 11.55C11.55 12.2 11.678 12.8437 11.9268 13.4443C12.1756 14.0448 12.5402 14.5905 12.9998 15.0502C13.4595 15.5098 14.0052 15.8744 14.6057 16.1232C15.2063 16.372 15.85 16.5 16.5 16.5ZM13.4733 19.8H19.5216C22.3163 19.8 24.5953 21.9914 24.7397 24.75H8.25516C8.39953 21.9914 10.6786 19.8 13.4733 19.8ZM13.4733 18.15C9.67828 18.15 6.6 21.2283 6.6 25.0233C6.6 25.7812 7.21359 26.4 7.97672 26.4H25.0284C25.7864 26.4 26.4052 25.7864 26.4052 25.0233C26.4 21.2283 23.3217 18.15 19.5267 18.15H13.4784H13.4733ZM26.4 1.65C27.0564 1.65 27.6859 1.91076 28.1501 2.37491C28.6142 2.83906 28.875 3.46859 28.875 4.125C28.875 4.78141 28.6142 5.41094 28.1501 5.87509C27.6859 6.33924 27.0564 6.6 26.4 6.6C25.7436 6.6 25.1141 6.33924 24.6499 5.87509C24.1858 5.41094 23.925 4.78141 23.925 4.125C23.925 3.46859 24.1858 2.83906 24.6499 2.37491C25.1141 1.91076 25.7436 1.65 26.4 1.65ZM26.4 8.25C27.494 8.25 28.5432 7.8154 29.3168 7.04182C30.0904 6.26823 30.525 5.21902 30.525 4.125C30.525 3.03098 30.0904 1.98177 29.3168 1.20818C28.5432 0.434597 27.494 0 26.4 0C25.306 0 24.2568 0.434597 23.4832 1.20818C22.7096 1.98177 22.275 3.03098 22.275 4.125C22.275 5.21902 22.7096 6.26823 23.4832 7.04182C24.2568 7.8154 25.306 8.25 26.4 8.25ZM27.225 11.55C29.5041 11.55 31.35 13.3959 31.35 15.675C31.35 16.1287 31.7212 16.5 32.175 16.5C32.6287 16.5 33 16.1287 33 15.675C33 12.4833 30.4167 9.9 27.225 9.9H22.8937C23.0278 10.4259 23.1 10.9828 23.1 11.55H27.225ZM9.9 11.55C9.9 10.9828 9.97219 10.4259 10.1062 9.9H5.775C2.58328 9.9 0 12.4833 0 15.675C0 16.1287 0.37125 16.5 0.825 16.5C1.27875 16.5 1.65 16.1287 1.65 15.675C1.65 13.3959 3.49594 11.55 5.775 11.55H9.9Z"
+                          fill="url(#paint0_linear_5120_90)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_5120_90"
+                            x1="1.48351"
+                            y1="18.6471"
+                            x2="45.9332"
+                            y2="14.675"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
                   <hr />
                   <p class="card-build__text-content">
@@ -221,17 +347,55 @@
                     uncover their needs, and tailor strategies to drive
                     conversions.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
-                <div
-                  class="build__card card-build anim-from-bottom-service-build"
-                >
+                <div class="build__card card-build anim-from-bottom">
                   <div class="card-build__top">
                     <h3 class="card-build__title">Competitor Analysis</h3>
-                    <img
-                      class="card-build__icon"
-                      src="../assets/img/build/4.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="34"
+                        height="30"
+                        class="card-build__icon"
+                        viewBox="0 0 34 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M26.3858 1.88744L32.0519 11.7029L26.7871 14.7425L21.121 4.92709L26.3858 1.88744ZM20.3005 7.28799L24.1842 14.0165L21.9473 15.2265C21.1151 13.8926 19.6336 13.0014 17.9397 13.0014C15.3309 13.0014 13.2179 15.1144 13.2179 17.7231C13.2179 18.4314 13.3772 19.1102 13.6546 19.7122L7.92946 22.8109C7.92355 22.8109 7.92355 22.8109 7.92355 22.8109H7.91765C7.91765 22.8109 7.91175 22.8109 7.91175 22.805L7.90585 22.7991L4.68913 17.2274C4.68913 17.2215 4.68913 17.2215 4.68913 17.2215V17.2156C4.68913 17.2156 4.68913 17.2097 4.69503 17.2097L4.70093 17.2038L20.3005 7.28799ZM25.1227 15.6397L25.1522 15.6869C25.6716 16.5899 26.8284 16.8968 27.7315 16.3774L32.9963 13.3378C33.8993 12.8184 34.2062 11.6615 33.6868 10.7585L28.0207 0.943081C27.5013 0.0400389 26.3444 -0.266878 25.4414 0.252519L20.1766 3.29217C19.3444 3.77616 19.0139 4.79724 19.3798 5.65897L3.69165 15.622C2.83582 16.165 2.56432 17.2864 3.06601 18.1599L6.28273 23.7375C6.79623 24.6229 7.91765 24.9416 8.81479 24.4517L14.54 21.3589L11.4059 28.6836C11.1993 29.1617 11.4236 29.7165 11.9017 29.9231C12.3797 30.1297 12.9346 29.9054 13.1411 29.4273L16.2634 22.138C16.7828 22.3328 17.3494 22.4449 17.9397 22.4449C18.5299 22.4449 19.0965 22.3387 19.6159 22.138L22.7382 29.4273C22.9448 29.9054 23.4996 30.1297 23.9776 29.9231C24.4557 29.7165 24.68 29.1617 24.4734 28.6836L21.2272 21.111C22.1125 20.2552 22.6614 19.0512 22.6614 17.7231C22.6614 17.4753 22.6437 17.2333 22.6083 16.9972L25.1227 15.6338V15.6397ZM17.9397 14.8901C18.691 14.8901 19.4116 15.1886 19.9429 15.7199C20.4742 16.2512 20.7727 16.9718 20.7727 17.7231C20.7727 18.4745 20.4742 19.1951 19.9429 19.7264C19.4116 20.2577 18.691 20.5562 17.9397 20.5562C17.1883 20.5562 16.4677 20.2577 15.9364 19.7264C15.4051 19.1951 15.1066 18.4745 15.1066 17.7231C15.1066 16.9718 15.4051 16.2512 15.9364 15.7199C16.4677 15.1886 17.1883 14.8901 17.9397 14.8901ZM1.76162 20.5621C1.50192 20.1077 0.923497 19.9542 0.474927 20.208C0.026357 20.4618 -0.133004 21.0461 0.120793 21.4947L2.00951 24.7999C2.26921 25.2544 2.84763 25.4079 3.2962 25.1541C3.74477 24.9003 3.90413 24.3159 3.65033 23.8674L1.76162 20.5621Z"
+                          fill="url(#paint0_linear_2659_101)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_2659_101"
+                            x1="1.52574"
+                            y1="21.1898"
+                            x2="47.3062"
+                            y2="17.4873"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
                   <hr />
                   <p class="card-build__text-content">
@@ -239,17 +403,55 @@
                     opportunities, and develop strategies to give your business
                     a competitive edge.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
-                <div
-                  class="build__card card-build anim-from-bottom-service-build"
-                >
+                <div class="build__card card-build anim-from-bottom">
                   <div class="card-build__top">
                     <h3 class="card-build__title">HubSpot Onboarding</h3>
-                    <img
-                      class="card-build__icon"
-                      src="../assets/img/build/5.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="38"
+                        height="30"
+                        class="card-build__icon"
+                        viewBox="0 0 38 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M29.7275 0.272514C30.0908 0.635866 30.0908 1.23364 29.7275 1.59699L26.5276 4.79684C26.0002 5.32428 25.2852 5.62317 24.5409 5.62317H17.813C15.7443 5.62317 14.0623 7.30514 14.0623 9.3739V15C14.0623 16.0373 14.9004 16.8754 15.9377 16.8754C16.975 16.8754 17.813 16.0373 17.813 15V9.84274C17.813 9.32702 18.235 8.90506 18.7507 8.90506C19.2665 8.90506 19.6884 9.32702 19.6884 9.84274V11.2493H26.2522C28.321 11.2493 30.0029 12.9312 30.0029 15C30.0029 16.4358 29.2 17.6783 28.0162 18.3112C28.0865 18.6042 28.1276 18.909 28.1276 19.2196C28.1276 20.9719 26.9262 22.4429 25.2969 22.859C25.1211 24.7636 23.5153 26.2522 21.5638 26.2522H13.9041C13.6579 26.2522 13.4177 26.3518 13.2418 26.5276L10.042 29.7275C9.67865 30.0908 9.08087 30.0908 8.71752 29.7275C8.35417 29.3641 8.35417 28.7664 8.71752 28.403L11.9174 25.2032C12.4448 24.6757 13.1598 24.3768 13.9041 24.3768H21.5638C22.6011 24.3768 23.4391 23.5388 23.4391 22.5015C23.4391 22.396 23.4274 22.2905 23.4157 22.185C23.3688 21.9096 23.445 21.6282 23.6267 21.4173C23.8084 21.2063 24.0721 21.0891 24.3534 21.0891H24.3768C25.4141 21.0891 26.2522 20.251 26.2522 19.2137C26.2522 18.8562 26.1526 18.528 25.9826 18.2409C25.8244 17.9771 25.8009 17.6548 25.9299 17.3735C26.0588 17.0922 26.3108 16.8929 26.6097 16.8343C27.477 16.6702 28.1276 15.9084 28.1276 14.9941C28.1276 13.9568 27.2895 13.1188 26.2522 13.1188H19.6884V14.9941C19.6884 17.0629 18.0064 18.7449 15.9377 18.7449C13.8689 18.7449 12.1869 17.0629 12.1869 14.9941V9.36804C12.1869 6.26196 14.707 3.74194 17.813 3.74194H24.5351C24.7812 3.74194 25.0215 3.64231 25.1973 3.4665L28.403 0.272514C28.7664 -0.0908381 29.3641 -0.0908381 29.7275 0.272514ZM7.35788 11.1496C7.89705 9.71381 8.97539 8.60031 10.3116 7.99668V10.1709C9.77828 10.587 9.35632 11.1496 9.11018 11.806L7.58058 15.8849C7.43993 16.26 7.21723 16.5999 6.93592 16.8871L1.59699 22.226C1.23364 22.5894 0.635866 22.5894 0.272514 22.226C-0.0908381 21.8627 -0.0908381 21.2649 0.272514 20.9015L5.61145 15.5626C5.70522 15.4688 5.7814 15.3516 5.82829 15.2286L7.35788 11.1496ZM37.2348 7.77398C37.5982 8.13733 37.5982 8.7351 37.2348 9.09846L31.8549 14.4726C31.7845 13.74 31.5794 13.0426 31.2571 12.4214L35.9045 7.77398C36.2678 7.41063 36.8656 7.41063 37.229 7.77398H37.2348Z"
+                          fill="url(#paint0_linear_2687_959)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_2687_959"
+                            x1="1.68614"
+                            y1="21.1898"
+                            x2="52.2068"
+                            y2="16.6744"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
                   <hr />
                   <p class="card-build__text-content">
@@ -257,17 +459,55 @@
                     we ensure your team can fully utilise HubSpot’s marketing
                     and sales tools suite.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
-                <div
-                  class="build__card card-build anim-from-bottom-service-build"
-                >
+                <div class="build__card card-build anim-from-bottom">
                   <div class="card-build__top">
                     <h3 class="card-build__title">Digital Tools Setup</h3>
-                    <img
-                      class="card-build__icon"
-                      src="../assets/img/build/6.svg"
-                      alt=""
-                    />
+                    <div class="card-build__icon-wrapper">
+                      <svg
+                        width="33"
+                        height="27"
+                        class="card-build__icon"
+                        viewBox="0 0 33 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.53843 2.09857L7.18265 3.39279C7.11046 3.66091 6.90421 3.87748 6.63609 3.95998C5.88327 4.19716 5.19749 4.59935 4.62515 5.12013C4.4189 5.31091 4.13015 5.3831 3.85687 5.31091L2.56265 4.9706C2.44921 5.13044 2.34093 5.29544 2.23781 5.4656L2.11406 5.68216C2.02124 5.85232 1.93359 6.02248 1.85624 6.19779L2.79984 7.15169C2.99577 7.35279 3.07827 7.63638 3.0164 7.90966C2.92874 8.28607 2.88749 8.67279 2.88749 9.07498C2.88749 9.47716 2.92874 9.86388 3.01124 10.2351C3.07312 10.5084 2.99062 10.792 2.79468 10.9931L1.85109 11.9522C1.92843 12.1275 2.01609 12.2976 2.1089 12.4678L2.23781 12.6895C2.34093 12.8597 2.44921 13.0247 2.56265 13.1845L3.86202 12.839C4.1353 12.7669 4.42406 12.839 4.63031 13.0298C5.20265 13.5558 5.88327 13.9528 6.64124 14.19C6.90937 14.2725 7.11562 14.489 7.1878 14.7572L7.54359 16.0514C7.77562 16.0772 8.0128 16.0875 8.25515 16.0875C8.49749 16.0875 8.72952 16.0772 8.96671 16.0514L9.32249 14.7572C9.39468 14.489 9.60093 14.2725 9.86905 14.19C10.6219 13.9528 11.3076 13.5506 11.88 13.0298C12.0862 12.839 12.375 12.7669 12.6483 12.839L13.9476 13.1794C14.0611 13.0247 14.1642 12.8648 14.2622 12.6998L14.4066 12.4523C14.4942 12.2873 14.5819 12.1223 14.6541 11.9522L13.7105 10.9983C13.5145 10.7972 13.432 10.5136 13.4939 10.2403C13.5764 9.86904 13.6176 9.47716 13.6176 9.07498C13.6176 8.67279 13.5764 8.28607 13.4939 7.90966C13.432 7.63638 13.5145 7.35279 13.7105 7.15169L14.6541 6.19779C14.5767 6.02763 14.4942 5.86263 14.4066 5.69763L14.2622 5.45013C14.1642 5.28513 14.0559 5.12529 13.9476 4.9706L12.638 5.31091C12.3647 5.3831 12.0759 5.31091 11.8697 5.12013C11.2973 4.59419 10.6167 4.19716 9.85874 3.95998C9.59062 3.87748 9.38437 3.66091 9.31218 3.39279L8.9564 2.09857C8.72437 2.07279 8.48718 2.06248 8.24484 2.06248C8.00249 2.06248 7.77046 2.07279 7.53327 2.09857H7.53843ZM6.74437 0.541382C7.23421 0.458882 7.73952 0.412476 8.24999 0.412476C8.76046 0.412476 9.26577 0.458882 9.75046 0.541382C10.065 0.598101 10.3176 0.830132 10.4053 1.13435L10.792 2.53685C11.4675 2.79982 12.0862 3.16076 12.6431 3.60419L14.0508 3.2381C14.3601 3.1556 14.685 3.26388 14.8912 3.50623C15.18 3.85169 15.443 4.21779 15.675 4.60451L15.6853 4.61998L15.8348 4.88294L15.8451 4.89841C16.0566 5.28513 16.2422 5.69248 16.3969 6.11529C16.5051 6.41435 16.433 6.74951 16.2112 6.97638L15.1903 8.01279C15.2419 8.36341 15.2728 8.71919 15.2728 9.08013C15.2728 9.44107 15.247 9.79685 15.1903 10.1475L16.2112 11.1839C16.433 11.4108 16.5103 11.7459 16.3969 12.045C16.2422 12.4678 16.0566 12.87 15.8451 13.2619L15.8348 13.2773L15.6801 13.5403L15.6698 13.5558C15.4378 13.9425 15.1748 14.3086 14.8861 14.654C14.6798 14.8964 14.355 15.0047 14.0456 14.9222L12.638 14.5561C12.0862 14.9995 11.4623 15.3604 10.792 15.6234L10.4053 17.0156C10.3228 17.325 10.065 17.557 9.75046 17.6086C9.26062 17.6962 8.76046 17.7375 8.24999 17.7375C7.73952 17.7375 7.23421 17.6911 6.74437 17.6086C6.42984 17.5519 6.17718 17.3198 6.08952 17.0156L5.70281 15.6131C5.02734 15.3501 4.40859 14.9892 3.85687 14.5458L2.44921 14.9119C2.13984 14.9944 1.81499 14.8861 1.60874 14.6437C1.31484 14.2931 1.04671 13.9219 0.81468 13.53L0.809524 13.5197L0.675462 13.2876L0.670305 13.2773C0.453743 12.8854 0.262962 12.4729 0.108274 12.045C-6.98492e-06 11.7459 0.0721805 11.4108 0.293899 11.1839L1.31484 10.1475C1.26327 9.79169 1.23749 9.43591 1.23749 9.07498C1.23749 8.71404 1.26327 8.35826 1.31999 8.00763L0.293899 6.97123C0.0721805 6.74435 -0.00516324 6.40919 0.108274 6.11013C0.262962 5.68216 0.453743 5.26966 0.670305 4.87779L0.675462 4.86748L0.809524 4.63544L0.81468 4.62513C1.05187 4.2281 1.31999 3.85685 1.6139 3.50623C1.82015 3.26388 2.14499 3.1556 2.45437 3.2381L3.86202 3.60419C4.41374 3.16076 5.03765 2.79982 5.70796 2.53685L6.09468 1.13435C6.17718 0.824976 6.43499 0.592944 6.74952 0.541382H6.74437ZM5.36249 9.07498C5.36249 8.69578 5.43718 8.3203 5.58229 7.96998C5.7274 7.61965 5.94009 7.30133 6.20822 7.03321C6.47635 6.76508 6.79467 6.55238 7.14499 6.40727C7.49532 6.26216 7.8708 6.18748 8.24999 6.18748C8.62918 6.18748 9.00466 6.26216 9.35499 6.40727C9.70532 6.55238 10.0236 6.76508 10.2918 7.03321C10.5599 7.30133 10.7726 7.61965 10.9177 7.96998C11.0628 8.3203 11.1375 8.69578 11.1375 9.07498C11.1375 9.45417 11.0628 9.82965 10.9177 10.18C10.7726 10.5303 10.5599 10.8486 10.2918 11.1167C10.0236 11.3849 9.70532 11.5976 9.35499 11.7427C9.00466 11.8878 8.62918 11.9625 8.24999 11.9625C7.8708 11.9625 7.49532 11.8878 7.14499 11.7427C6.79467 11.5976 6.47635 11.3849 6.20822 11.1167C5.94009 10.8486 5.7274 10.5303 5.58229 10.18C5.43718 9.82965 5.36249 9.45417 5.36249 9.07498ZM8.24999 10.3125C8.4125 10.3125 8.57342 10.2805 8.72356 10.2183C8.8737 10.1561 9.01012 10.0649 9.12504 9.95002C9.23995 9.83511 9.3311 9.69869 9.39329 9.54855C9.45548 9.39841 9.48749 9.23749 9.48749 9.07498C9.48749 8.91247 9.45548 8.75154 9.39329 8.60141C9.3311 8.45126 9.23995 8.31484 9.12504 8.19993C9.01012 8.08502 8.8737 7.99386 8.72356 7.93167C8.57342 7.86948 8.4125 7.83748 8.24999 7.83748C8.08748 7.83748 7.92656 7.86948 7.77642 7.93167C7.62628 7.99386 7.48986 8.08502 7.37495 8.19993C7.26004 8.31484 7.16888 8.45126 7.10669 8.60141C7.0445 8.75154 7.01249 8.91247 7.01249 9.07498C7.01249 9.23749 7.0445 9.39841 7.10669 9.54855C7.16888 9.69869 7.26004 9.83511 7.37495 9.95002C7.48986 10.0649 7.62628 10.1561 7.77642 10.2183C7.92656 10.2805 8.08748 10.3125 8.24999 10.3125ZM16.9486 18.8615L18.2428 19.2173C18.5109 19.2895 18.7275 19.4958 18.81 19.7639C19.0472 20.5167 19.4494 21.2025 19.9701 21.7748C20.1609 21.9811 20.2331 22.2698 20.1609 22.5431L19.8206 23.8425C19.9805 23.9559 20.1455 24.0642 20.3156 24.1673L20.5322 24.2911C20.7023 24.3839 20.8725 24.4715 21.0478 24.5489L22.0017 23.6053C22.2028 23.4093 22.4864 23.3269 22.7597 23.3887C23.1309 23.4712 23.5228 23.5125 23.9198 23.5125C24.3169 23.5125 24.7087 23.4712 25.08 23.3887C25.3533 23.3269 25.6369 23.4093 25.838 23.6053L26.7919 24.5489C26.9672 24.4715 27.1373 24.3839 27.3075 24.2911L27.5292 24.1622C27.6994 24.059 27.8644 23.9508 28.0242 23.8373L27.6891 22.5379C27.6169 22.2647 27.6891 21.9759 27.8798 21.7697C28.4058 21.1973 28.8028 20.5167 29.04 19.7587C29.1225 19.4906 29.3391 19.2844 29.6072 19.2122L30.9014 18.8564C30.9272 18.6244 30.9375 18.3872 30.9375 18.1448C30.9375 17.9025 30.9272 17.6704 30.9014 17.4333L29.6072 17.0775C29.3391 17.0053 29.1225 16.799 29.04 16.5309C28.8028 15.7729 28.4006 15.0923 27.8798 14.52C27.6891 14.3137 27.6169 14.025 27.6891 13.7517L28.0294 12.4523C27.8747 12.3389 27.7148 12.2358 27.5498 12.1378L27.3023 11.9934C27.1373 11.9058 26.9723 11.8181 26.8022 11.7459L25.8483 12.6895C25.6472 12.8854 25.3636 12.9679 25.0903 12.9061C24.7191 12.8236 24.3272 12.7823 23.925 12.7823C23.5228 12.7823 23.1361 12.8236 22.7597 12.9061C22.4864 12.9679 22.2028 12.8854 22.0017 12.6895L21.0478 11.7459C20.8776 11.8233 20.7126 11.9058 20.5476 11.9934L20.3001 12.1378C20.1351 12.2358 19.9753 12.344 19.8206 12.4523L20.1609 13.7517C20.2331 14.025 20.1609 14.3137 19.9701 14.52C19.4442 15.0923 19.0472 15.7729 18.81 16.5309C18.7275 16.799 18.5109 17.0053 18.2428 17.0775L16.9486 17.4333C16.9228 17.6653 16.9125 17.9025 16.9125 18.1448C16.9125 18.3872 16.9228 18.6192 16.9486 18.8564V18.8615ZM15.3914 19.6556C15.3037 19.1658 15.2625 18.6656 15.2625 18.15C15.2625 17.6343 15.3089 17.1342 15.3914 16.6495C15.4481 16.335 15.6801 16.0823 15.9844 15.9947L17.3869 15.6079C17.6498 14.9325 18.0108 14.3137 18.4542 13.7568L18.0881 12.3492C18.0056 12.0398 18.1139 11.715 18.3562 11.5087C18.7017 11.22 19.0678 10.957 19.4545 10.725L19.47 10.7147L19.733 10.5651L19.7484 10.5548C20.1351 10.3434 20.5425 10.1578 20.9653 10.0031C21.2644 9.89482 21.5995 9.96701 21.8264 10.1887L22.8628 11.2097C23.2134 11.1581 23.5692 11.1272 23.9301 11.1272C24.2911 11.1272 24.6469 11.1529 24.9975 11.2097L26.0339 10.1887C26.2608 9.96701 26.5959 9.88966 26.895 10.0031C27.3178 10.1578 27.72 10.3434 28.1119 10.5548L28.1273 10.5651L28.3903 10.7198L28.4058 10.7301C28.7925 10.9622 29.1586 11.2251 29.5041 11.5139C29.7464 11.7201 29.8495 12.045 29.7722 12.3544L29.4061 13.762C29.8495 14.3137 30.2105 14.9376 30.4734 15.6079L31.8759 15.9947C32.1853 16.0772 32.4173 16.335 32.4689 16.6495C32.5566 17.1394 32.5978 17.6395 32.5978 18.15C32.5978 18.6604 32.5514 19.1658 32.4689 19.6556C32.4122 19.9701 32.1801 20.2228 31.8759 20.3104L30.4734 20.6972C30.2105 21.3726 29.8495 21.9914 29.4061 22.5431L29.7722 23.9508C29.8547 24.2601 29.7464 24.585 29.5041 24.7912C29.1534 25.0851 28.7822 25.3533 28.3903 25.5853L28.38 25.5904L28.148 25.7245L28.1376 25.7297C27.7458 25.9462 27.3333 26.137 26.9053 26.2917C26.6062 26.4 26.2711 26.3278 26.0442 26.1061L25.0078 25.0851C24.6572 25.1367 24.3014 25.1676 23.9405 25.1676C23.5795 25.1676 23.2237 25.1418 22.8731 25.0851L21.8367 26.1061C21.6098 26.3278 21.2747 26.4051 20.9756 26.2917C20.5476 26.137 20.1351 25.9462 19.7433 25.7297L19.733 25.7245L19.5009 25.5904L19.4906 25.5853C19.0987 25.3481 18.7223 25.08 18.3769 24.7912C18.1345 24.585 18.0262 24.2601 18.1087 23.9508L18.4748 22.5431C18.0314 21.9914 17.6705 21.3675 17.4075 20.6972L15.9844 20.3053C15.675 20.2228 15.443 19.965 15.3914 19.6504V19.6556ZM23.925 21.0375C23.1592 21.0375 22.4247 20.7333 21.8832 20.1917C21.3417 19.6502 21.0375 18.9158 21.0375 18.15C21.0375 17.3842 21.3417 16.6497 21.8832 16.1082C22.4247 15.5667 23.1592 15.2625 23.925 15.2625C24.6908 15.2625 25.4253 15.5667 25.9668 16.1082C26.5083 16.6497 26.8125 17.3842 26.8125 18.15C26.8125 18.9158 26.5083 19.6502 25.9668 20.1917C25.4253 20.7333 24.6908 21.0375 23.925 21.0375ZM25.1625 18.15C25.1625 17.8218 25.0321 17.507 24.8 17.2749C24.568 17.0429 24.2532 16.9125 23.925 16.9125C23.5968 16.9125 23.282 17.0429 23.0499 17.2749C22.8179 17.507 22.6875 17.8218 22.6875 18.15C22.6875 18.4782 22.8179 18.7929 23.0499 19.025C23.282 19.2571 23.5968 19.3875 23.925 19.3875C24.2532 19.3875 24.568 19.2571 24.8 19.025C25.0321 18.7929 25.1625 18.4782 25.1625 18.15Z"
+                          fill="url(#paint0_linear_2659_105)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_2659_105"
+                            x1="1.51929"
+                            y1="18.7283"
+                            x2="45.3485"
+                            y2="14.7963"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              class="build-icon-gradient-color"
+                              stop-color="#6645EB"
+                            />
+                            <stop
+                              class="build-icon-gradient-color"
+                              offset="1"
+                              stop-color="#D445EB"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <img
+                        src="../assets/img/build/icon-bg.png"
+                        alt=""
+                        class="card-build__icon-bg"
+                      />
+                    </div>
                   </div>
                   <hr />
                   <p class="card-build__text-content">
@@ -275,28 +515,40 @@
                     tools that are required throughout the customer journey
                     process.
                   </p>
+                  <img
+                    src="../assets/img/build/blur.png"
+                    alt=""
+                    class="card-build__blur"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="purpose">
+        <section class="purpose anim-section">
           <div class="purpose__container _container">
             <div class="purpose__body">
-              <h2
-                class="purpose__title h2-title silver-text anim-from-bottom-service-purpose"
-              >
+              <h2 class="purpose__title h2-title silver-text anim-from-bottom">
                 Designing with Purpose, Positioning for Success
               </h2>
               <div class="purpose__cards">
-                <div
-                  class="purpose__card card-purpose anim-from-bottom-service-purpose"
-                >
-                  <img
-                    class="card-purpose__icon"
-                    src="../assets/img/build/1.svg"
-                    alt=""
-                  />
+                <div class="purpose__card card-purpose anim-from-bottom">
+                  <div class="card-purpose__icon-wrapper">
+                    <svg width="33" height="29" class="card-purpose__icon" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.24993 0.0625C7.91477 0.0625 7.59895 0.223633 7.4056 0.500781L0.186845 10.8133C-0.0903037 11.2129 -0.0516318 11.7543 0.277079 12.1088L15.7458 28.6088C15.9392 28.815 16.2099 28.9375 16.4999 28.9375C16.79 28.9375 17.0542 28.8215 17.254 28.6088L32.7228 12.1088C33.0579 11.7543 33.0966 11.2129 32.813 10.8133L25.5943 0.500781C25.4009 0.223633 25.0851 0.0625 24.7499 0.0625H8.24993ZM8.30794 2.81465L14.3536 10.375H3.00989L8.30794 2.81465ZM3.4095 12.4375H16.4999H29.5904L16.4999 26.398L3.4095 12.4375ZM29.9835 10.375H18.6398L24.6919 2.81465L29.99 10.375H29.9835ZM22.6036 2.125L16.4999 9.75625L10.3962 2.125H22.6036Z" fill="url(#paint0_linear_5016_296)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_5016_296" x1="1.48572" y1="20.4577" x2="45.9935" y2="16.8213" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6645EB" class="purpose-icon-gradient-color"/>
+                      <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <img 
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png" 
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title">Value Proposition</h3>
                   <p class="card-purpose__subtitle">
                     By refining your value proposition, we ensure your brand
@@ -304,14 +556,23 @@
                     to your customers.
                   </p>
                 </div>
-                <div
-                  class="purpose__card card-purpose anim-from-bottom-service-purpose"
-                >
-                  <img
-                    class="card-purpose__icon"
-                    src="../assets/img/build/2.svg"
-                    alt=""
-                  />
+                <div class="purpose__card card-purpose anim-from-bottom">
+                  <div class="card-purpose__icon-wrapper">
+                    <svg width="30" height="30" class="card-purpose__icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.2428 2.45886L18.2802 6.41558L23.5835 11.7189L27.5402 7.76217C28.2817 7.02066 28.2817 5.81644 27.5402 5.07492L24.9242 2.45886C24.1826 1.71735 22.9784 1.71735 22.2369 2.45886H22.2428ZM16.4472 5.56729L20.9022 1.11227C22.3852 -0.370757 24.7877 -0.370757 26.2707 1.11227L28.8868 3.72833C30.3698 5.21136 30.3698 7.61387 28.8868 9.0969L24.4318 13.5519L22.2072 21.7204C21.7742 23.2984 20.564 24.5441 18.992 25.0187L2.66686 29.9127C1.93721 30.1322 1.1423 29.9305 0.608414 29.3907C0.0745238 28.8508 -0.1331 28.0619 0.0863881 27.3322L4.98631 11.007C5.45495 9.44096 6.7007 8.22488 8.28457 7.79183L16.4472 5.56729ZM16.6607 7.47743L8.78287 9.62486C7.83373 9.88587 7.08628 10.6096 6.80747 11.5528L2.38805 26.2704L8.92524 19.7332C8.59304 19.1696 8.39728 18.5112 8.39728 17.8052C8.39728 15.7112 10.0998 14.0087 12.1938 14.0087C14.2879 14.0087 15.9904 15.7112 15.9904 17.8052C15.9904 19.8993 14.2879 21.6018 12.1938 21.6018C11.4879 21.6018 10.8294 21.412 10.2659 21.0738L3.72871 27.611L18.4463 23.1975C19.3895 22.9128 20.1191 22.1653 20.3742 21.2221L22.5216 13.3443L16.6548 7.47743H16.6607ZM12.1938 15.907C11.6904 15.907 11.2075 16.107 10.8515 16.463C10.4956 16.819 10.2956 17.3018 10.2956 17.8052C10.2956 18.3087 10.4956 18.7915 10.8515 19.1475C11.2075 19.5035 11.6904 19.7035 12.1938 19.7035C12.6973 19.7035 13.1801 19.5035 13.5361 19.1475C13.8921 18.7915 14.0921 18.3087 14.0921 17.8052C14.0921 17.3018 13.8921 16.819 13.5361 16.463C13.1801 16.107 12.6973 15.907 12.1938 15.907Z" fill="url(#paint0_linear_5016_288)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_5016_288" x1="1.34861" y1="21.1898" x2="41.8717" y2="18.293" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6645EB" class="purpose-icon-gradient-color"/>
+                      <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <img 
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png" 
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title">Graphic Design</h3>
                   <p class="card-purpose__subtitle">
                     Graphic design is more than just aesthetics—it's about
@@ -319,14 +580,23 @@
                     drives action.
                   </p>
                 </div>
-                <div
-                  class="purpose__card card-purpose anim-from-bottom-service-purpose"
-                >
-                  <img
-                    class="card-purpose__icon"
-                    src="../assets/img/build/3.svg"
-                    alt=""
-                  />
+                <div class="purpose__card card-purpose anim-from-bottom">
+                  <div class="card-purpose__icon-wrapper">
+                    <svg width="33" height="30" class="card-purpose__icon" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.25 0C10.5875 0 12.6271 1.24896 13.75 3.11094C14.8729 1.24896 16.9125 0 19.25 0C22.7964 0 25.6667 2.87031 25.6667 6.41667C25.6667 9.96302 22.7964 12.8333 19.25 12.8333H8.25C4.70365 12.8333 1.83333 9.96302 1.83333 6.41667C1.83333 2.87031 4.70365 0 8.25 0ZM3.66667 6.41667C3.66667 8.94896 5.71771 11 8.25 11H19.25C21.7823 11 23.8333 8.94896 23.8333 6.41667C23.8333 3.88438 21.7823 1.83333 19.25 1.83333C16.9813 1.83333 15.0964 3.48333 14.7297 5.64896C14.6552 6.0901 14.2714 6.41667 13.8245 6.41667H13.6698C13.2229 6.41667 12.8391 6.09583 12.7646 5.64896C12.4036 3.48333 10.5188 1.83333 8.25 1.83333C5.71771 1.83333 3.66667 3.88438 3.66667 6.41667ZM8.25 5.04167C8.43057 5.04167 8.60937 5.07723 8.77619 5.14633C8.94301 5.21543 9.09459 5.31671 9.22227 5.44439C9.34995 5.57208 9.45123 5.72365 9.52033 5.89048C9.58943 6.0573 9.625 6.2361 9.625 6.41667C9.625 6.59723 9.58943 6.77603 9.52033 6.94286C9.45123 7.10968 9.34995 7.26126 9.22227 7.38894C9.09459 7.51662 8.94301 7.6179 8.77619 7.687C8.60937 7.7561 8.43057 7.79167 8.25 7.79167C8.06943 7.79167 7.89063 7.7561 7.72381 7.687C7.55699 7.6179 7.40541 7.51662 7.27773 7.38894C7.15005 7.26126 7.04877 7.10968 6.97967 6.94286C6.91057 6.77603 6.875 6.59723 6.875 6.41667C6.875 6.2361 6.91057 6.0573 6.97967 5.89048C7.04877 5.72365 7.15005 5.57208 7.27773 5.44439C7.40541 5.31671 7.55699 5.21543 7.72381 5.14633C7.89063 5.07723 8.06943 5.04167 8.25 5.04167ZM17.875 6.41667C17.875 6.05199 18.0199 5.70226 18.2777 5.44439C18.5356 5.18653 18.8853 5.04167 19.25 5.04167C19.6147 5.04167 19.9644 5.18653 20.2223 5.44439C20.4801 5.70226 20.625 6.05199 20.625 6.41667C20.625 6.78134 20.4801 7.13108 20.2223 7.38894C19.9644 7.6468 19.6147 7.79167 19.25 7.79167C18.8853 7.79167 18.5356 7.6468 18.2777 7.38894C18.0199 7.13108 17.875 6.78134 17.875 6.41667ZM7.79167 16.5H7.33333C6.31927 16.5 5.5 17.3193 5.5 18.3333V25.6667C5.5 26.6807 6.31927 27.5 7.33333 27.5H20.1667C21.1807 27.5 22 26.6807 22 25.6667V18.3333C22 17.3193 21.1807 16.5 20.1667 16.5H7.79167ZM7.79167 14.6667H20.1667C22.1891 14.6667 23.8333 16.3109 23.8333 18.3333V25.6667C23.8333 27.6891 22.1891 29.3333 20.1667 29.3333H7.33333C5.31094 29.3333 3.66667 27.6891 3.66667 25.6667V18.3333C3.66667 17.663 3.84427 17.0385 4.15938 16.5H0.916667C0.4125 16.5 0 16.0875 0 15.5833C0 15.0792 0.4125 14.6667 0.916667 14.6667H7.33333H7.79167ZM25.6667 25.2599L30.5594 27.4599C30.6167 27.4828 30.674 27.5 30.737 27.5C30.9776 27.5 31.1667 27.3052 31.1667 27.0703V16.7234C31.1667 16.5401 31.0005 16.4026 30.8229 16.4312C30.8 16.437 30.7714 16.4427 30.7484 16.4542L25.6667 18.7401V16.7292L29.9979 14.7813C30.1641 14.7068 30.3417 14.6552 30.5193 14.6208C31.8141 14.4031 33 15.4057 33 16.7177V27.0646C33 28.3135 31.9859 29.3276 30.737 29.3276C30.4161 29.3276 30.101 29.2589 29.8089 29.1271L25.6667 27.2708V25.2599Z" fill="url(#paint0_linear_5016_278)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_5016_278" x1="1.48351" y1="20.7189" x2="46.0002" y2="17.1387" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6645EB" class="purpose-icon-gradient-color"/>
+                      <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <img 
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png" 
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title">Video Creation</h3>
                   <p class="card-purpose__subtitle">
                     With the right video strategy, you can boost engagement,
@@ -334,14 +604,23 @@
                     your audience.
                   </p>
                 </div>
-                <div
-                  class="purpose__card card-purpose anim-from-bottom-service-purpose"
-                >
-                  <img
-                    class="card-purpose__icon"
-                    src="../assets/img/build/4.svg"
-                    alt=""
-                  />
+                <div class="purpose__card card-purpose anim-from-bottom">
+                  <div class="card-purpose__icon-wrapper">
+                    <svg width="36" height="25" class="card-purpose__icon" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.14286 1.78571H28.5714C29.5592 1.78571 30.3571 2.58371 30.3571 3.57143V17.8571H32.1429V3.57143C32.1429 1.60156 30.5413 0 28.5714 0H7.14286C5.17299 0 3.57143 1.60156 3.57143 3.57143V17.8571H5.35714V3.57143C5.35714 2.58371 6.15513 1.78571 7.14286 1.78571ZM1.89174 21.4286H33.8281C33.5212 22.4609 32.567 23.2143 31.4342 23.2143H4.28571C3.1529 23.2143 2.19866 22.4609 1.89174 21.4286ZM1.07143 19.6429C0.479911 19.6429 0 20.1228 0 20.7143C0 23.0804 1.91964 25 4.28571 25H31.4286C33.7946 25 35.7143 23.0804 35.7143 20.7143C35.7143 20.1228 35.2344 19.6429 34.6429 19.6429H1.07143ZM15.8092 7.77344C16.1551 7.42746 16.1551 6.85826 15.8092 6.51228C15.4632 6.16629 14.894 6.16629 14.548 6.51228L10.9766 10.0837C10.6306 10.4297 10.6306 10.9989 10.9766 11.3449L14.548 14.9163C14.894 15.2623 15.4632 15.2623 15.8092 14.9163C16.1551 14.5703 16.1551 14.0011 15.8092 13.6551L12.8683 10.7143L15.8092 7.77344ZM21.1663 6.51228C20.8203 6.16629 20.2511 6.16629 19.9051 6.51228C19.5592 6.85826 19.5592 7.42746 19.9051 7.77344L22.846 10.7143L19.9051 13.6551C19.5592 14.0011 19.5592 14.5703 19.9051 14.9163C20.2511 15.2623 20.8203 15.2623 21.1663 14.9163L24.7377 11.3449C25.0837 10.9989 25.0837 10.4297 24.7377 10.0837L21.1663 6.51228Z" fill="url(#paint0_linear_5016_268)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_5016_268" x1="1.60553" y1="17.6582" x2="49.5948" y2="12.7572" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6645EB" class="purpose-icon-gradient-color"/>
+                      <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <img 
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png" 
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title">Website Design</h3>
                   <p class="card-purpose__subtitle">
                     Our design approach is simple - we like to create websites
@@ -369,25 +648,39 @@
                   src="../assets/img/purpose/y-line.svg"
                   alt=""
                 />
+                <div class="purpose__center-area">
+                  <img
+                    class="purpose__center"
+                    src="../assets/img/purpose/center.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/img/purpose/center-icon.png"
+                    alt=""
+                    class="purpose__center-icon"
+                  />
+                  <img
+                    src="../assets/img/purpose/center-light.png"
+                    alt=""
+                    class="purpose__center-light"
+                  />
+                </div>
                 <img
-                  class="purpose__center"
-                  src="../assets/img/purpose/center.png"
-                  alt=""
+                  src="../assets/img/purpose/blur-bg.png"
+                  class="purpose__blur-bg"
                 />
               </div>
             </div>
           </div>
         </section>
-        <section class="ai">
+        <section class="ai anim-section">
           <div class="ai__container _container">
             <div class="ai__body">
-              <h2
-                class="ai__title h2-title silver-text anim-from-bottom-service-ai"
-              >
+              <h2 class="ai__title h2-title silver-text anim-from-bottom">
                 Revolutionizing Industries with Advanced AI Technology
               </h2>
               <div class="ai__cards">
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -403,7 +696,7 @@
                     boost customer loyalty.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -419,7 +712,7 @@
                     managed and yield measurable results.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -435,7 +728,7 @@
                     channels to inform, inspire, and drive meaningful action.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -451,7 +744,7 @@
                     right time, driving qualified leads and long-term growth.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -467,7 +760,7 @@
                     specific high-value accounts.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -483,7 +776,7 @@
                     advanced targeting options to reach the right audience.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -499,7 +792,7 @@
                     searching for products and services like yours.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -515,7 +808,7 @@
                     tools to achieve your marketing goals.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -531,7 +824,7 @@
                     outbound email is essential for B2B marketing.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -547,7 +840,7 @@
                     effective promotion is key to their success.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -563,7 +856,7 @@
                     positioning your brand as a go-to resource in your industry.
                   </p>
                 </div>
-                <div class="ai__card card-ai anim-from-bottom-service-ai">
+                <div class="ai__card card-ai anim-from-bottom">
                   <div class="card-ai__top">
                     <img
                       class="card-ai__icon"
@@ -584,16 +877,16 @@
           </div>
           <img class="blur ai-blur" src="../assets/img/ai/bg-blur.png" alt="" />
         </section>
-        <section class="customers">
+        <section class="customers anim-section">
           <div class="customers__container _container">
             <div class="customers__body">
               <div class="customers__top-area">
                 <h2
-                  class="customers__title h2-title silver-text anim-from-bottom-home-customers"
+                  class="customers__title h2-title silver-text anim-from-bottom"
                 >
                   See what our customers have to say about us
                 </h2>
-                <div class="customers__buttons anim-from-bottom-home-customers">
+                <div class="customers__buttons anim-from-bottom">
                   <button
                     class="customers__btn customers__btn_prev swiper-button-prev"
                   >
@@ -609,7 +902,7 @@
               <div class="customers__slider swiper">
                 <div class="customers__reviews-area swiper-wrapper">
                   <div
-                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                    class="customers__review review-customers swiper-slide anim-from-bottom"
                   >
                     <img
                       src="../assets/img/customers/blur-mid-bottom.png"
@@ -646,7 +939,7 @@
                     </div>
                   </div>
                   <div
-                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                    class="customers__review review-customers swiper-slide anim-from-bottom"
                   >
                     <img
                       src="../assets/img/customers/blur-mid-bottom.png"
@@ -828,23 +1121,21 @@
           </div>
         </section>
       </main>
-      <footer id="touch" class="footer">
+      <footer id="touch" class="footer footer-service">
         <div class="footer__container _container">
-          <div class="footer-top">
+          <div class="footer-top anim-section">
             <div class="footer-top__body">
               <h2
-                class="footer-top__title h2-title silver-text anim-from-bottom-home-footer-top"
+                class="footer-top__title h2-title silver-text anim-from-bottom"
               >
                 Ready to start the <br />conversation?
               </h2>
-              <p class="footer-top__subtitle anim-from-bottom-home-footer-top">
+              <p class="footer-top__subtitle anim-from-bottom">
                 Whether you’re looking for a comprehensive digital overhaul,
                 HubSpot support or specific services, we’re here to support your
                 business.
               </p>
-              <a
-                href="#"
-                class="footer-top__btn btn btn_bg anim-from-bottom-home-footer-top"
+              <a href="#" class="footer-top__btn btn btn_bg anim-from-bottom"
                 ><span>Get In Touch</span></a
               >
             </div>
@@ -861,49 +1152,82 @@
             <div class="footer-bottom__body">
               <div class="footer-bottom__links-area">
                 <div class="footer-bottom__column">
-                  <div class="footer-bottom__logo-area">
-                    <img src="../assets/img/logo.png" alt="Quintify" />
-                    <span>Quintify</span>
+                  <div class="footer-bottom__top-area">
+                    <div class="footer-bottom__logo-area">
+                      <img src="../assets/img/logo.png" alt="Quintify" />
+                    </div>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="../assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
                   </div>
-                  <p class="footer-bottom__text-content">
-                    We support Technology, SaaS, and Professional Services
-                    businesses at every stage of their journey, helping them
-                    grow, scale, and realise their global ambitions.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      We support Technology, SaaS, and Professional Services
+                      businesses at every stage of their journey, helping them
+                      grow, scale, and realise their global ambitions.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Quick Links</h4>
-                  <nav class="footer-bottom__nav">
-                    <a href="#" class="footer-bottom__link-default">Home</a>
-                    <a href="#" class="footer-bottom__link-default">Services</a>
-                    <a href="#" class="footer-bottom__link-default"
-                      >Funding Support</a
-                    >
-                    <a href="#" class="footer-bottom__link-default"
-                      >HubSpot Partner Ireland</a
-                    >
-                    <a href="#" class="footer-bottom__link-default">Careers</a>
-                    <a href="#" class="footer-bottom__link-default">Contact</a>
-                  </nav>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Quick Links</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="../assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <nav class="footer-bottom__nav">
+                      <a href="#" class="footer-bottom__link-default">Home</a>
+                      <a href="#" class="footer-bottom__link-default"
+                        >Services</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Funding Support</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >HubSpot Partner Ireland</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Careers</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Contact</a
+                      >
+                    </nav>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    Quintify have the backing of HubSpot in all sales and
-                    marketing capacities. Together we can support you the entire
-                    way through your business growth.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="../assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      Quintify have the backing of HubSpot in all sales and
+                      marketing capacities. Together we can support you the
+                      entire way through your business growth.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Google Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    The Google Partner badge signifies that Quintify has
-                    completed Google Ads certification exams and stays current
-                    with the latest product innovations and strategies.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Google Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="../assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      The Google Partner badge signifies that Quintify has
+                      completed Google Ads certification exams and stays current
+                      with the latest product innovations and strategies.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
               </div>
               <div class="footer-bottom__bottom">
@@ -913,16 +1237,10 @@
                 </p>
                 <div class="footer-bottom__social-media">
                   <a href="#" class="footer-bottom__social-media-item">
-                    <img
-                      src="../assets/img/icons/facebook.svg"
-                      alt="facebook"
-                    />
+                    <img src="../assets/img/icons/facebook.svg" alt="facebook" />
                   </a>
                   <a href="#" class="footer-bottom__social-media-item">
-                    <img
-                      src="../assets/img/icons/linkedin.svg"
-                      alt="linkedin"
-                    />
+                    <img src="../assets/img/icons/linkedin.svg" alt="linkedin" />
                   </a>
                   <a href="#" class="footer-bottom__social-media-item">
                     <img src="../assets/img/icons/youtube.svg" alt="youtube" />
@@ -939,6 +1257,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/anims.js"></script>
+    <script src="../js/popupAnims.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/swiper.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

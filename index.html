@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quintify</title>
+    <meta property="og:title" content="Quintify">
+    <meta property="og:description" content="We support B2B companies to 
+    grow, scale and realise their global ambition">
+    <meta property="og:image" content="./assets/img/hero/preview.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="
@@ -18,8 +22,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
   </head>
   <body>
+    <div class="loader">
+      <h1>Loading...</h1>
+    </div>
     <div class="wrapper">
       <div class="burger-menu">
+        <a href="#" class="close-btn">
+          <img src="../assets/img/icons/close.svg" alt="close" />
+        </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
           <a href="#business" class="burger-menu__link">Funding</a>
@@ -32,88 +42,91 @@
         <div class="header__top">
           <a class="header__top-btn" href="#">Google Doc</a>
           <p class="header__top-text">
-            To Learn more about quintify 📝 read our Online Presentation Today
+            To Learn more about quintify 📝read our Online Presentation Today
           </p>
+        </div>
+        <div class="header__main">
+          <div class="header__container _container">
+            <a href="#" class="header__logo-area">
+              <img src="./assets/img/logo.png" alt="logotype" />
+            </a>
+            <nav class="header__nav nav-header">
+              <a href="#services" class="nav-header__link">Services</a>
+              <div class="nav-header__dropdown">
+                <a
+                  href="#business"
+                  class="nav-header__link nav-header__link_dropdown"
+                >
+                  Funding
+                  <img
+                    src="./assets/img/icons/low-arrow-down.svg"
+                    alt="dropdown"
+                  />
+                </a>
+                <div class="nav-header__dropdown-content">
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Discovery</a
+                  >
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Marketing</a
+                  >
+                </div>
+              </div>
+              <a href="#" class="nav-header__link">HubSpot</a>
+              <a href="#" class="nav-header__link">Insights</a>
+            </nav>
+            <a href="#touch" class="header__btn btn"> Get in touch </a>
+            <a class="header__burger-menu-btn" href="#">
+              <img src="./assets/img/icons/burger-menu.svg" alt="" />
+            </a>
+          </div>
         </div>
       </header>
       <main class="main">
-        <div class="sidebars">
-          <div class="sidebar sidebar_social anim-from-bottom-home-hero">
+        <div class="sidebars anim-section">
+          <div class="sidebar sidebar_social anim-from-bottom">
             <a href="#" class="sidebar_social__link">Linkedin</a>
             <a href="#" class="sidebar_social__link">Google</a>
-            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">HubSpot</a>
             <a href="#" class="sidebar_social__link">Apollo</a>
           </div>
-          <div class="sidebar sidebar_scroll anim-from-bottom-home-hero">
+          <div class="sidebar sidebar_scroll anim-from-bottom">
             <p>Scroll down</p>
             <img src="./assets/img/icons/arrow-down.svg" alt="arrow down" />
           </div>
         </div>
-        <section class="hero">
+        <section class="hero anim-section">
           <div class="hero__container _container">
-            <div class="header__main">
-              <div class="header__container _container">
-                <div class="header__logo-area">
-                  <img src="./assets/img/logo.png" alt="logotype" />
-                  <span>Quintify</span>
-                </div>
-                <nav class="header__nav nav-header">
-                  <a href="#services" class="nav-header__link">Services</a>
-                  <div class="nav-header__dropdown">
-                    <a
-                      href="#business"
-                      class="nav-header__link nav-header__link_dropdown"
-                    >
-                      Funding
-                      <img
-                        src="./assets/img/icons/low-arrow-down.svg"
-                        alt="dropdown"
-                      />
-                    </a>
-                    <div class="nav-header__dropdown-content">
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Discovery</a
-                      >
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Marketing</a
-                      >
-                    </div>
-                  </div>
-                  <a href="#" class="nav-header__link">HubSpot</a>
-                  <a href="#" class="nav-header__link">Insights</a>
-                </nav>
-                <a href="#touch" class="header__btn btn"> Get in touch </a>
-                <a class="header__burger-menu-btn" href="#">
-                  <img src="./assets/img/icons/burger-menu.svg" alt="" />
-                </a>
-              </div>
-            </div>
             <div class="hero__body">
               <div class="hero__main-content">
-                <h1 class="hero__title">
-                  <span class="hero__title-row-wrapper">
-                    <span class="hero__title-row">
-                      We support B2B companies to
-                    </span>
-                  </span>
-                  <span class="hero__title-row-wrapper">
-                    <span class="hero__title-row">
-                      grow, scale and realise their
-                    </span>
-                  </span>
-                  <span id="purple-pink" class="hero__title-row-wrapper">
-                    <span class="hero__title-row"> Global Ambition </span>
-                  </span>
-                </h1>
-                <p class="hero__subtitle anim-from-bottom-home-hero">
+                <div class="hero__title">
+                  <div class="silver-text">
+                    <div class="hero__title-row-wrapper">
+                      <p class="hero__title-row">We support B2B companies to</p>
+                    </div>
+                    <div class="hero__title-row-wrapper">
+                      <p class="hero__title-row">
+                        grow, scale and realise their
+                      </p>
+                    </div>
+                  </div>
+                  <div id="purple-pink" class="hero__title-row-wrapper">
+                    <p class="hero__title-row">Global Ambition</p>
+                  </div>
+                </div>
+                <p
+                  class="hero__subtitle anim-from-bottom-home-hero anim-from-bottom"
+                >
                   Working with Technology, SaaS, and Professional Services
                   businesses, we support our clients growth at every stage of
                   their journey.
                 </p>
-                <div class="hero__buttons anim-from-bottom-home-hero">
-                  <a href="#" class="hero__btn btn">Get in touch</a>
+                <div class="hero__buttons anim-from-bottom">
                   <a href="#" class="hero__btn btn btn_bg">
-                    <span> Service suite </span>
+                    <span>Get in touch</span>
+                  </a>
+                  <a href="#" class="hero__btn btn">
+                    Service suite
                   </a>
                 </div>
               </div>
@@ -121,14 +134,14 @@
           </div>
           <img src="./assets/img/hero/bg.jpg" id="bg" alt="Space" />
         </section>
-        <section class="clients">
+        <section class="clients anim-section">
           <div class="clients__container _container">
             <div class="clients__body">
-              <h5 class="clients__title anim-from-bottom-clients-hero">
+              <h5 class="clients__title anim-from-bottom">
                 Redefine your go-to-market Strategy with Quintify
               </h5>
-              <div class="clients__list-wrapper">
-                <ul class="clients__list anim-from-bottom-clients-hero">
+              <div class="clients__list-wrapper anim-from-bottom">
+                <ul class="clients__list">
                   <li class="clients__item">
                     <img src="./assets/img/clients/google.svg" alt="google" />
                   </li>
@@ -197,29 +210,133 @@
             </div>
           </div>
         </section>
-        <section id="services" class="digital">
+        <section id="services" class="digital anim-section">
           <div class="digital__container _container">
             <div class="digital__body">
               <div class="digital__img-area">
+                <div class="digital__img-list-anim anim-from-bottom">
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/double-check.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Content uploaded
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/caution.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      125 Test Completed
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/time.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Rewriting Content
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/automatic.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Automatic Detected
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/double-check.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Content uploaded
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/caution.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      125 Test Completed
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/time.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Rewriting Content
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="./assets/img/icons/automatic.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Automatic Detected
+                    </p>
+                  </div>
+                </div>
+                <div class="digital__expertise-area anim-from-bottom">
+                  <h4 class="digital__expertise-title">20+ Years</h4>
+                  <p class="digital__expertise-subtitle">
+                    Digital Marketing Expertise
+                  </p>
+                </div>
                 <img
-                  src="./assets/img/digital/chain.png"
-                  class="anim-from-bottom-home-accordion mouse-follow"
+                  src="./assets/img/digital/chain2.svg"
+                  class="anim-from-bottom mouse-follow digital__chain"
                   alt="chain link"
                 />
               </div>
               <div class="digital__text-area">
                 <h2
-                  class="digital__title h2-title silver-text anim-from-bottom-home-accordion"
+                  class="digital__title h2-title silver-text anim-from-bottom"
                 >
                   Digital marketing, design & web development solutions
                 </h2>
-                <p class="digital__subtitle anim-from-bottom-home-accordion">
+                <p class="digital__subtitle anim-from-bottom">
                   Everything we do for our clients is a commitment to processes
                   and a clear vision for achieving their goals.
                 </p>
                 <div class="digital__accordion accordion-digital">
                   <div
-                    class="accordion-digital__item accordion-digital__item_first anim-from-bottom-home-accordion"
+                    class="accordion-digital__item accordion-digital__item_first anim-from-bottom"
                   >
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
@@ -237,7 +354,7 @@
                     <hr />
                   </div>
                   <div
-                    class="accordion-digital__item active active-border anim-from-bottom-home-accordion"
+                    class="accordion-digital__item active active-border anim-from-bottom"
                   >
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
@@ -254,9 +371,7 @@
                     </p>
                     <hr />
                   </div>
-                  <div
-                    class="accordion-digital__item anim-from-bottom-home-accordion"
-                  >
+                  <div class="accordion-digital__item anim-from-bottom">
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
                         Digital Marketing & Support
@@ -277,18 +392,14 @@
             </div>
           </div>
         </section>
-        <section id="business" class="business">
+        <section id="business" class="business anim-section">
           <div class="business__container _container">
             <div class="business__body">
-              <h2
-                class="business__title h2-title silver-text anim-from-bottom-home-business"
-              >
+              <h2 class="business__title h2-title silver-text anim-from-bottom">
                 Business Funding and Support to Fuel Your Growth
               </h2>
               <div class="business__cards">
-                <div
-                  class="business__card card-business anim-from-bottom-home-business"
-                >
+                <div class="business__card card-business anim-from-bottom">
                   <img
                     src="./assets/img/business/blur-right-top.png"
                     id="blur-top-right"
@@ -361,9 +472,7 @@
                     </a>
                   </div>
                 </div>
-                <div
-                  class="business__card card-business anim-from-bottom-home-business"
-                >
+                <div class="business__card card-business anim-from-bottom">
                   <img
                     src="./assets/img/business/grid-top-right.png"
                     id="grid-top-right"
@@ -385,19 +494,43 @@
                     <a class="card-business__link link" href="#">View more</a>
                   </div>
                   <div class="card-business__progress-area">
-                    <img
-                      src="./assets/img/business/progress-80.svg"
-                      alt="progress"
-                    />
+                    <div class="card-business__progress-bar-wrapper">
+                      <svg viewBox="0 0 100 50" class="progress-bar">
+                        <defs>
+                          <linearGradient
+                            id="gradient"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="0%"
+                          >
+                            <stop
+                              offset="0%"
+                              style="stop-color: #6645eb; stop-opacity: 1"
+                            />
+                            <stop
+                              offset="100%"
+                              style="stop-color: #d445eb; stop-opacity: 1"
+                            />
+                          </linearGradient>
+                        </defs>
+                        <path
+                          class="progress-bar-bg"
+                          d="M 10,50 A 40,40 0 0 1 90,50"
+                        />
+                        <path
+                          class="progress-bar-fg"
+                          d="M 10,50 A 40,40 0 0 1 90,50"
+                        />
+                      </svg>
+                    </div>
                     <div class="card-business__stats-text">
                       <span class="card-business__stats-text-main">80%</span>
                       <p>Grant funding</p>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="business__card card-business anim-from-bottom-home-business"
-                >
+                <div class="business__card card-business anim-from-bottom">
                   <img
                     src="./assets/img/business/grid-top-right.png"
                     id="grid-top-right"
@@ -420,13 +553,36 @@
                     <a class="card-business__link link" href="#">View more</a>
                   </div>
                   <div class="card-business__progress-area">
-                    <img
-                      src="./assets/img/business/progress-50.svg"
-                      alt="progress"
-                    />
-                    <!-- <div class="card-business__bar-overflow">
-                      <div class="card-business__bar"></div>
-                    </div> -->
+                    <div class="card-business__progress-bar-wrapper">
+                      <svg viewBox="0 0 100 50" class="progress-bar">
+                        <defs>
+                          <linearGradient
+                            id="gradient"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="0%"
+                          >
+                            <stop
+                              offset="0%"
+                              style="stop-color: #6645eb; stop-opacity: 1"
+                            />
+                            <stop
+                              offset="100%"
+                              style="stop-color: #d445eb; stop-opacity: 1"
+                            />
+                          </linearGradient>
+                        </defs>
+                        <path
+                          class="progress-bar-bg"
+                          d="M 10,50 A 40,40 0 0 1 90,50"
+                        />
+                        <path
+                          class="progress-bar-fg"
+                          d="M 10,50 A 40,40 0 0 1 90,50"
+                        />
+                      </svg>
+                    </div>
                     <div class="card-business__stats-text">
                       <span class="card-business__stats-text-main">50%</span>
                       <p>Grant funding</p>
@@ -442,16 +598,16 @@
             alt="background"
           />
         </section>
-        <section class="customers">
+        <section class="customers anim-section">
           <div class="customers__container _container">
             <div class="customers__body">
               <div class="customers__top-area">
                 <h2
-                  class="customers__title h2-title silver-text anim-from-bottom-home-customers"
+                  class="customers__title h2-title silver-text anim-from-bottom"
                 >
                   See what our customers have to say about us
                 </h2>
-                <div class="customers__buttons anim-from-bottom-home-customers">
+                <div class="customers__buttons anim-from-bottom">
                   <button
                     class="customers__btn customers__btn_prev swiper-button-prev"
                   >
@@ -464,11 +620,9 @@
                   </button>
                 </div>
               </div>
-              <div class="customers__slider swiper">
+              <div class="customers__slider swiper anim-from-bottom">
                 <div class="customers__reviews-area swiper-wrapper">
-                  <div
-                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
-                  >
+                  <div class="customers__review review-customers swiper-slide">
                     <img
                       src="./assets/img/customers/blur-mid-bottom.png"
                       id="blur-mid-bottom"
@@ -503,9 +657,7 @@
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
-                  >
+                  <div class="customers__review review-customers swiper-slide">
                     <img
                       src="./assets/img/customers/blur-mid-bottom.png"
                       id="blur-mid-bottom"
@@ -685,63 +837,83 @@
             </div>
           </div>
         </section>
-        <section class="landscape">
+        <section class="landscape anim-section">
           <div class="landscape__container _container">
             <div class="landscape__body">
               <div class="landscape__text">
                 <h2
-                  class="landscape__title h2-title silver-text anim-from-bottom-home-landscape"
+                  class="landscape__title h2-title silver-text anim-from-bottom"
                 >
                   The Commercial landscape is <br />
                   evolving rapidly.
                 </h2>
-                <p class="landscape__subtitle anim-from-bottom-home-landscape">
+                <p class="landscape__subtitle anim-from-bottom">
                   Gone are the days when traditional methods were enough to stay
                   competitive. Today, embracing digital solutions isn't just an
                   option—it's a necessity.
                 </p>
-                <a
-                  href="#"
-                  class="landscape__button btn anim-from-bottom-home-landscape"
-                >
+                <a href="#" class="landscape__button btn anim-from-bottom">
                   <span> View services </span>
                 </a>
               </div>
-              <img
-                src="./assets/img/landscape/apps/quintify.png"
-                class="landscape__icon landscape__icon_quintify anim-upscale-home-landscape-app"
-                alt="quintify"
-              />
-              <img
-                src="./assets/img/landscape/apps/open-ai.png"
-                class="landscape__icon landscape__icon_ai anim-upscale-home-landscape-app"
-                alt="open ai"
-              />
-              <img
-                src="./assets/img/landscape/apps/adwords.png"
-                class="landscape__icon landscape__icon_adwords anim-upscale-home-landscape-app"
-                alt="adwords"
-              />
-              <img
-                src="./assets/img/landscape/apps/figma.png"
-                class="landscape__icon landscape__icon_figma anim-upscale-home-landscape-app"
-                alt="figma"
-              />
-              <img
-                src="./assets/img/landscape/apps/monday.png"
-                class="landscape__icon landscape__icon_monday anim-upscale-home-landscape-app"
-                alt="monday"
-              />
-              <img
-                src="./assets/img/landscape/apps/youtube.png"
-                class="landscape__icon landscape__icon_yt anim-upscale-home-landscape-app"
-                alt="youtube"
-              />
-              <img
-                src="./assets/img/landscape/apps/google-drive.png"
-                class="landscape__icon landscape__icon_gd anim-upscale-home-landscape-app"
-                alt="google drive"
-              />
+              <div class="landscape__social-media mouse-follow">
+                <div
+                  class="landscape__icon landscape__icon_quintify anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/quintify.png"
+                    alt="quintify"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_ai anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/openai.svg"
+                    alt="open ai"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_adwords anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/adwords.svg"
+                    alt="adwords"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_figma anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/figma.svg"
+                    alt="figma"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_monday anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/monday.svg"
+                    alt="monday"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_yt anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/youtube.svg"
+                    alt="youtube"
+                  />
+                </div>
+                <div
+                  class="landscape__icon landscape__icon_gd anim-from-bottom"
+                >
+                  <img
+                    src="./assets/img/landscape/apps/google-drive.svg"
+                    alt="google drive"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <img src="./assets/img/landscape/bg.png" id="bg" alt="" />
@@ -749,22 +921,19 @@
       </main>
       <footer id="touch" class="footer">
         <div class="footer__container _container">
-          <div class="footer-top">
+          <div class="footer-top anim-section">
             <div class="footer-top__body">
               <h2
-                class="footer-top__title h2-title silver-text anim-from-bottom-home-footer-top"
+                class="footer-top__title h2-title silver-text anim-from-bottom"
               >
                 Ready to start the <br />conversation?
               </h2>
-              <p class="footer-top__subtitle anim-from-bottom-home-footer-top">
+              <p class="footer-top__subtitle anim-from-bottom">
                 Whether you’re looking for a comprehensive digital overhaul,
                 HubSpot support or specific services, we’re here to support your
                 business.
               </p>
-              <a
-                href="#"
-                class="footer-top__btn btn btn_bg anim-from-bottom-home-footer-top"
-              >
+              <a href="#" class="footer-top__btn btn btn_bg anim-from-bottom">
                 <span> Get In Touch </span>
               </a>
             </div>
@@ -781,49 +950,82 @@
             <div class="footer-bottom__body">
               <div class="footer-bottom__links-area">
                 <div class="footer-bottom__column">
-                  <div class="footer-bottom__logo-area">
-                    <img src="./assets/img/logo.png" alt="Quintify" />
-                    <span>Quintify</span>
+                  <div class="footer-bottom__top-area">
+                    <div class="footer-bottom__logo-area">
+                      <img src="./assets/img/logo.png" alt="Quintify" />
+                    </div>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="./assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
                   </div>
-                  <p class="footer-bottom__text-content">
-                    We support Technology, SaaS, and Professional Services
-                    businesses at every stage of their journey, helping them
-                    grow, scale, and realise their global ambitions.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      We support Technology, SaaS, and Professional Services
+                      businesses at every stage of their journey, helping them
+                      grow, scale, and realise their global ambitions.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Quick Links</h4>
-                  <nav class="footer-bottom__nav">
-                    <a href="#" class="footer-bottom__link-default">Home</a>
-                    <a href="#" class="footer-bottom__link-default">Services</a>
-                    <a href="#" class="footer-bottom__link-default"
-                      >Funding Support</a
-                    >
-                    <a href="#" class="footer-bottom__link-default"
-                      >HubSpot Partner Ireland</a
-                    >
-                    <a href="#" class="footer-bottom__link-default">Careers</a>
-                    <a href="#" class="footer-bottom__link-default">Contact</a>
-                  </nav>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Quick Links</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="./assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <nav class="footer-bottom__nav">
+                      <a href="#" class="footer-bottom__link-default">Home</a>
+                      <a href="#" class="footer-bottom__link-default"
+                        >Services</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Funding Support</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >HubSpot Partner Ireland</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Careers</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Contact</a
+                      >
+                    </nav>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    Quintify have the backing of HubSpot in all sales and
-                    marketing capacities. Together we can support you the entire
-                    way through your business growth.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="./assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      Quintify have the backing of HubSpot in all sales and
+                      marketing capacities. Together we can support you the
+                      entire way through your business growth.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Google Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    The Google Partner badge signifies that Quintify has
-                    completed Google Ads certification exams and stays current
-                    with the latest product innovations and strategies.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Google Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img src="./assets/img/icons/low-arrow-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      The Google Partner badge signifies that Quintify has
+                      completed Google Ads certification exams and stays current
+                      with the latest product innovations and strategies.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
               </div>
               <div class="footer-bottom__bottom">
@@ -853,6 +1055,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/anims.js"></script>
+    <script src="./js/popupAnims.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

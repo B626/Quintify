@@ -1,37 +1,22 @@
-<svg width="66" height="67" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.689453" y="0.536133" width="64.9855" height="65.7817" rx="15" fill="white" fill-opacity="0.05"/>
-<rect x="1.18945" y="1.03613" width="63.9855" height="64.7817" rx="14.5" stroke="white" stroke-opacity="0.1"/>
-<mask id="mask0_2088_1649" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="66" height="67">
-<rect x="0.689453" y="0.536133" width="64.9855" height="65.7817" rx="15" fill="white"/>
-</mask>
-<g mask="url(#mask0_2088_1649)">
-<g filter="url(#filter0_f_2088_1649)">
-<circle cx="33.455" cy="65.5186" r="11.0409" fill="#6645EB"/>
-</g>
-<rect x="21.3828" y="18.1057" width="23.5994" height="30.6426" rx="3" stroke="url(#paint0_linear_2088_1649)" stroke-width="1.6"/>
-<path d="M25.6602 36.7683H40.593" stroke="url(#paint1_linear_2088_1649)" stroke-width="1.6" stroke-linecap="round"/>
-<path d="M25.6602 30.4526H33.1797" stroke="url(#paint2_linear_2088_1649)" stroke-width="1.6" stroke-linecap="round"/>
-<path d="M25.6602 43.084H40.593" stroke="url(#paint3_linear_2088_1649)" stroke-width="1.6" stroke-linecap="round"/>
-</g>
+<svg width="26" height="33" viewBox="0 0 26 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.38281" y="1.10571" width="23.5994" height="30.6426" rx="3" stroke="url(#paint0_linear_2088_1653)" stroke-width="1.6"/>
+<path d="M5.66016 19.7683H20.593" stroke="url(#paint1_linear_2088_1653)" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M5.66016 13.4526H13.1797" stroke="url(#paint2_linear_2088_1653)" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M5.66016 26.084H20.593" stroke="url(#paint3_linear_2088_1653)" stroke-width="1.6" stroke-linecap="round"/>
 <defs>
-<filter id="filter0_f_2088_1649" x="-6.08594" y="25.9777" width="79.082" height="79.0818" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="14.25" result="effect1_foregroundBlur_2088_1649"/>
-</filter>
-<linearGradient id="paint0_linear_2088_1649" x1="22.4437" y1="39.7494" x2="54.3881" y2="37.9907" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_2088_1653" x1="2.44372" y1="22.7494" x2="34.3881" y2="20.9907" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6645EB"/>
 <stop offset="1" stop-color="#D445EB"/>
 </linearGradient>
-<linearGradient id="paint1_linear_2088_1649" x1="26.3315" y1="37.4746" x2="35.8073" y2="27.359" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_2088_1653" x1="6.33146" y1="20.4746" x2="15.8073" y2="10.359" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6645EB"/>
 <stop offset="1" stop-color="#D445EB"/>
 </linearGradient>
-<linearGradient id="paint2_linear_2088_1649" x1="25.9982" y1="31.159" x2="33.9188" y2="26.9012" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear_2088_1653" x1="5.9982" y1="14.159" x2="13.9188" y2="9.9012" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6645EB"/>
 <stop offset="1" stop-color="#D445EB"/>
 </linearGradient>
-<linearGradient id="paint3_linear_2088_1649" x1="26.3315" y1="43.7903" x2="35.8073" y2="33.6746" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint3_linear_2088_1653" x1="6.33146" y1="26.7903" x2="15.8073" y2="16.6746" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6645EB"/>
 <stop offset="1" stop-color="#D445EB"/>
 </linearGradient>

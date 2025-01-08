@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quintify</title>
+    <meta property="og:title" content="Quintify" />
+    <meta
+      property="og:description"
+      content="Digital marketing capability grant from Enterprise Ireland"
+    />
+    <meta property="og:image" content="../assets/img/hero/preview.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="
@@ -17,10 +23,13 @@
     "></script>
   </head>
   <body>
+    <div class="loader">
+      <h1>Loading...</h1>
+    </div>
     <div class="wrapper">
       <div class="burger-menu">
         <a href="#" class="close-btn">
-          <img src="../assets/img/icons/close.svg" alt="close">
+          <img src="../assets/img/icons/close.svg" alt="close" />
         </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
@@ -34,102 +43,104 @@
         <div class="header__top">
           <a class="header__top-btn" href="#">Google Doc</a>
           <p class="header__top-text">
-            To Learn more about quintify 📝 read our Online Presentation Today
+            To Learn more about quintify 📝read our Online Presentation Today
           </p>
+        </div>
+        <div class="header__main">
+          <div class="header__container _container">
+            <a href="#" class="header__logo-area">
+              <img src="../assets/img/logo.png" alt="logotype" />
+            </a>
+            <nav class="header__nav nav-header">
+              <a href="#services" class="nav-header__link">Services</a>
+              <div class="nav-header__dropdown">
+                <a
+                  href="#business"
+                  class="nav-header__link nav-header__link_dropdown"
+                >
+                  Funding
+                  <img
+                    src="../assets/img/icons/low-arrow-down.svg"
+                    alt="dropdown"
+                  />
+                </a>
+                <div class="nav-header__dropdown-content">
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Discovery</a
+                  >
+                  <a href="#" class="nav-header__dropdown-content-item"
+                    >Digital Marketing</a
+                  >
+                </div>
+              </div>
+              <a href="#" class="nav-header__link">HubSpot</a>
+              <a href="#" class="nav-header__link">Insights</a>
+            </nav>
+            <a href="#touch" class="header__btn btn btn_gradient">
+              <span> Get in touch </span>
+            </a>
+            <a class="header__burger-menu-btn" href="#">
+              <img src="../assets/img/icons/burger-menu.svg" alt="" />
+            </a>
+          </div>
         </div>
       </header>
       <main class="main">
-        <div class="sidebars">
-          <div class="sidebar sidebar_social anim-from-bottom-marketing-hero">
+        <img
+          src="../assets/img/top-page-blur.png"
+          alt=""
+          class="top-page-blur"
+        />
+        <div class="sidebars anim-section">
+          <div class="sidebar sidebar_social anim-from-bottom">
             <a href="#" class="sidebar_social__link">Linkedin</a>
             <a href="#" class="sidebar_social__link">Google</a>
-            <a href="#" class="sidebar_social__link">Hubspot</a>
+            <a href="#" class="sidebar_social__link">HubSpot</a>
             <a href="#" class="sidebar_social__link">Apollo</a>
           </div>
-          <div class="sidebar sidebar_scroll anim-from-bottom-marketing-hero">
+          <div class="sidebar sidebar_scroll anim-from-bottom">
             <p>Scroll down</p>
             <img src="../assets/img/icons/arrow-down.svg" alt="arrow down" />
           </div>
         </div>
-        <section class="hero marketing">
+        <section class="hero marketing anim-section">
           <div class="hero__container marketing__container _container">
-            <div class="header__main">
-              <div class="header__container _container">
-                <div class="header__logo-area">
-                  <img src="../assets/img/logo.png" alt="logotype" />
-                  <span>Quintify</span>
-                </div>
-                <nav class="header__nav nav-header">
-                  <a href="#services" class="nav-header__link">Services</a>
-                  <div class="nav-header__dropdown">
-                    <a
-                      href="#business"
-                      class="nav-header__link nav-header__link_dropdown"
-                    >
-                      Funding
-                      <img
-                        src="../assets/img/icons/low-arrow-down.svg"
-                        alt="dropdown"
-                      />
-                    </a>
-                    <div class="nav-header__dropdown-content">
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Discovery</a
-                      >
-                      <a href="#" class="nav-header__dropdown-content-item"
-                        >Digital Marketing</a
-                      >
-                    </div>
-                  </div>
-                  <a href="#" class="nav-header__link">HubSpot</a>
-                  <a href="#" class="nav-header__link">Insights</a>
-                </nav>
-                <a href="#touch" class="header__btn btn btn_gradient">
-                  <span> Get in touch </span>
-                </a>
-                <a class="header__burger-menu-btn" href="#">
-                  <img src="../assets/img/icons/burger-menu.svg" alt="" />
-                </a>
-              </div>
-            </div>
             <div class="hero__body marketing__body">
               <div class="hero__main-content marketing__main-content">
                 <img
-                  class="marketing__logo anim-from-bottom-marketing-hero"
+                  class="marketing__logo anim-from-bottom"
                   src="../assets/img/marketing/ei-logo.svg"
                   alt="Enterprise Ireland"
                 />
                 <h1 class="hero__title marketing__title">
-                  <span class="hero__title-row-wrapper">
-                    <span class="hero__title-row marketing__title-row"
-                      >Digital Marketing Capability <br
-                    /></span>
+                  <span class="silver-text">
+                    <span class="hero__title-row-wrapper">
+                      <span class="hero__title-row marketing__title-row"
+                        >Digital Marketing Capability <br
+                      /></span>
+                    </span>
+                    <span class="hero__title-row-wrapper">
+                      <span class="hero__title-row marketing__title-row"
+                        >Grant from Enterprise Ireland</span
+                      ></span
+                    >
                   </span>
-                  <span class="hero__title-row-wrapper">
-                    <span class="hero__title-row marketing__title-row"
-                      >Grant from Enterprise Ireland</span
-                    ></span
-                  >
                 </h1>
-                <p
-                  class="hero__subtitle marketing__subtitle anim-from-bottom-marketing-hero"
-                >
+                <p class="hero__subtitle marketing__subtitle anim-from-bottom">
                   Digital Marketing Improvement assignments are designed to
                   develop and enhance your company’s capability to use the web
                   as an effective channel.
                 </p>
-                <div
-                  class="hero__buttons marketing__buttons anim-from-bottom-marketing-hero"
-                >
+                <div class="hero__buttons marketing__buttons anim-from-bottom">
                   <a
                     href="#"
-                    class="hero__btn btn btn_bg anim-from-bottom-marketing-hero"
+                    class="hero__btn marketing__btn btn btn_bg anim-from-bottom"
                     ><span>Get started now</span></a
                   >
                 </div>
                 <img
                   src="../assets/img/marketing/dashboard.png"
-                  class="marketing__dashboard anim-from-bottom-marketing-hero"
+                  class="marketing__dashboard anim-from-bottom"
                   alt="dashboard"
                 />
               </div>
@@ -137,30 +148,132 @@
           </div>
           <img src="../assets/img/marketing/bg.png" id="bg" alt="Space" />
         </section>
-        <section id="services" class="digital helping">
+        <section id="services" class="digital helping anim-section">
           <div class="digital__container helping__container _container">
             <div class="digital__body helping__body">
               <div class="digital__img-area helping__img-area">
+                <div class="digital__img-list-anim anim-from-bottom">
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/double-check.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Content uploaded
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/caution.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      125 Test Completed
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/time.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Rewriting Content
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/automatic.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Automatic Detected
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/double-check.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Content uploaded
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/automatic.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Automatic Detected
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/caution.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      125 Test Completed
+                    </p>
+                  </div>
+                  <div class="digital__img-list-anim-item">
+                    <div class="digital__img-list-anim-item-img-wrapper">
+                      <img
+                        class="digital__img-list-anim-item-img"
+                        src="../assets/img/icons/time.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="digital__img-list-anim-item-text">
+                      Rewriting Content
+                    </p>
+                  </div>
+                </div>
+                <div class="digital__expertise-area anim-from-bottom">
+                  <h4 class="digital__expertise-title">20+ Years</h4>
+                  <p class="digital__expertise-subtitle">
+                    Digital Marketing Expertise
+                  </p>
+                </div>
                 <img
                   src="../assets/img/helping/berg.png"
-                  class="anim-from-bottom-home-accordion mouse-follow"
+                  class="anim-from-bottom mouse-follow"
                   alt="berg"
                 />
               </div>
               <div class="digital__text-area helping__text-area">
                 <h2
-                  class="digital__title helping__title h2-title silver-text anim-from-bottom-home-accordion"
+                  class="digital__title helping__title h2-title silver-text anim-from-bottom"
                 >
                   Helping Enterprise Ireland Clients for Global Success
                 </h2>
-                <p
-                  class="digital__subtitle helping__subtitle anim-from-bottom-home-accordion"
-                >
+                <p class="digital__subtitle helping__subtitle anim-from-bottom">
                   We work closely with Enterprise Ireland clients, helping them
                   to develop their international business growth.
                 </p>
                 <div
-                  class="digital__accordion helping__accordion accordion-digital anim-from-bottom-home-accordion"
+                  class="digital__accordion helping__accordion accordion-digital anim-from-bottom"
                 >
                   <div
                     class="accordion-digital__item accordion-helping__item accordion-digital__item_first accordion-helping__item_first"
@@ -188,7 +301,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <hr>
+                    <hr />
                   </div>
                   <div
                     class="accordion-digital__item accordion-helping__item active active-border"
@@ -216,7 +329,7 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <hr>
+                    <hr />
                   </div>
                   <div class="accordion-digital__item accordion-helping__item">
                     <div
@@ -242,31 +355,143 @@
                       in egestas Sit metus volutpat velit scelerisque aliquam.
                       Pellentesque est.
                     </p>
-                    <hr>
+                    <hr />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <img src="../assets/img/helping/bg.png" id="bg" alt="" />
+          <img src="../assets/img/growth/bg3.png" id="bg" alt="" />
         </section>
-        <section class="purpose approach">
+        <section class="purpose approach anim-section">
           <div class="purpose__container approach__container _container">
             <div class="purpose__body approach__body">
               <h2
-                class="purpose__title approach__title h2-title silver-text anim-from-bottom-service-purpose"
+                class="purpose__title approach__title h2-title silver-text anim-from-bottom"
               >
                 Our Digital Marketing Capability Approach
               </h2>
               <div class="purpose__cards approach__title">
                 <div
-                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom-service-purpose"
+                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom"
                 >
-                  <img
-                    class="card-purpose__icon card-approach__icon"
-                    src="../assets/img/approach/1.svg"
-                    alt=""
-                  />
+                  <div class="card-purpose__icon-wrapper">
+                    <svg
+                      width="26"
+                      height="33"
+                      class="card-approach__icon card-purpose__icon"
+                      viewBox="0 0 26 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.38281"
+                        y="1.10571"
+                        width="23.5994"
+                        height="30.6426"
+                        rx="3"
+                        stroke="url(#paint0_linear_2088_1653)"
+                        stroke-width="1.6"
+                      />
+                      <path
+                        d="M5.66016 19.7683H20.593"
+                        stroke="url(#paint1_linear_2088_1653)"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M5.66016 13.4526H13.1797"
+                        stroke="url(#paint2_linear_2088_1653)"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M5.66016 26.084H20.593"
+                        stroke="url(#paint3_linear_2088_1653)"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2088_1653"
+                          x1="2.44372"
+                          y1="22.7494"
+                          x2="34.3881"
+                          y2="20.9907"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_2088_1653"
+                          x1="6.33146"
+                          y1="20.4746"
+                          x2="15.8073"
+                          y2="10.359"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint2_linear_2088_1653"
+                          x1="5.9982"
+                          y1="14.159"
+                          x2="13.9188"
+                          y2="9.9012"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint3_linear_2088_1653"
+                          x1="6.33146"
+                          y1="26.7903"
+                          x2="15.8073"
+                          y2="16.6746"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <img
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png"
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title card-approach__title">
                     Research
                   </h3>
@@ -277,13 +502,48 @@
                   </p>
                 </div>
                 <div
-                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom-service-purpose"
+                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom"
                 >
-                  <img
-                    class="card-purpose__icon card-approach__icon"
-                    src="../assets/img/approach/2.svg"
-                    alt=""
-                  />
+                  <div class="card-purpose__icon-wrapper">
+                    <svg
+                      width="28"
+                      height="27"
+                      class="card-purpose__icon card-approach__icon"
+                      viewBox="0 0 28 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.0571 26.1012C20.6588 27.6755 17.0409 25.4868 16.5488 22.05C16.4645 21.4614 16.4708 20.8634 16.6164 20.2789C16.6935 19.9698 16.6334 19.7761 16.3127 19.6192C14.3504 18.6589 12.3971 17.6802 10.4475 16.6943C10.1778 16.5579 10.0383 16.6006 9.83642 16.8276C8.37904 18.466 6.55915 19.0754 4.44823 18.4697C2.38928 17.879 1.1357 16.4429 0.705962 14.3473C0.253627 12.1415 1.42679 9.81799 3.45606 8.77588C5.56093 7.69493 8.03988 8.09891 9.64063 9.84294C10.0084 10.2436 10.2604 10.2786 10.7289 10.0346C12.5424 9.09005 14.3765 8.18437 16.2142 7.28761C16.5673 7.11533 16.6874 6.93956 16.6171 6.53368C16.0457 3.2329 18.2768 0.358092 21.627 0.236744C24.5661 0.130289 26.7033 2.40776 26.9775 4.91133C27.3406 8.22617 24.5756 10.8923 21.5201 10.732C20.0722 10.656 18.8494 10.073 17.8965 8.97939C17.6263 8.6693 17.4133 8.63601 17.053 8.81961C15.1379 9.79521 13.213 10.7516 11.2833 11.6979C11.0094 11.8322 10.9432 11.9758 11.0089 12.2647C11.1853 13.0405 11.1867 13.8249 11.0108 14.6018C10.9515 14.8637 10.9999 15.013 11.2569 15.1396C13.2158 16.1047 15.1721 17.0754 17.1177 18.0668C17.4568 18.2396 17.632 18.1565 17.8691 17.9005C19.3274 16.3251 21.1157 15.742 23.1898 16.3394C25.2076 16.9207 26.4452 18.3012 26.9081 20.3528C27.4163 22.6057 26.3036 24.8557 24.0571 26.1012ZM23.9426 8.18611C25.1737 7.14706 25.5731 5.50865 24.9458 4.07125C24.3389 2.68073 22.8893 1.83011 21.3265 2.04501C19.4045 2.3093 18.2521 3.78491 18.2913 5.59105C18.3208 6.95307 19.0124 8.02402 20.2851 8.6176C21.5491 9.20715 22.7578 9.04587 23.9426 8.18611ZM7.7573 16.3403C9.4344 15.1763 9.85091 13.1161 8.74275 11.4658C7.72061 9.9436 5.56325 9.50493 3.99937 10.5013C2.41665 11.5097 1.93005 13.6525 2.92034 15.2529C3.92889 16.8828 6.00396 17.3729 7.7573 16.3403ZM23.4678 24.3973C24.832 23.5294 25.4786 22.1223 25.1662 20.7012C24.8149 19.103 23.7485 18.1078 22.0332 17.9333C20.0356 17.73 18.1835 19.2733 18.2984 21.5108C18.434 24.1528 21.0225 25.579 23.4678 24.3973Z"
+                        fill="url(#paint0_linear_2088_1675)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2088_1675"
+                          x1="1.79709"
+                          y1="18.8716"
+                          x2="37.4853"
+                          y2="16.3172"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <img
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png"
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title card-approach__title">
                     Strategy
                   </h3>
@@ -294,13 +554,71 @@
                   </p>
                 </div>
                 <div
-                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom-service-purpose"
+                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom"
                 >
-                  <img
-                    class="card-purpose__icon card-approach__icon"
-                    src="../assets/img/approach/3.svg"
-                    alt=""
-                  />
+                  <div class="card-purpose__icon-wrapper">
+                    <svg
+                      width="31"
+                      height="27"
+                      class="card-purpose__icon card-approach__icon"
+                      viewBox="0 0 31 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M27.8522 24.3662C27.2679 25.8063 26.152 26.2598 24.7458 26.2583C17.7175 26.2512 10.6892 26.2535 3.66084 26.2484C3.3784 26.2482 3.09475 26.2167 2.81378 26.1825C1.48464 26.0206 0.558598 25.083 0.404113 23.7404C0.369283 23.4376 0.344272 23.1318 0.344048 22.8274C0.341125 18.833 0.3394 14.8386 0.34964 10.8443C0.350921 10.3447 0.362126 9.83138 0.473352 9.34853C0.743811 8.1744 1.84275 7.34756 3.06937 7.34621C7.06373 7.3418 11.0581 7.33443 15.0524 7.35491C15.6059 7.35775 15.8201 7.21646 15.9422 6.63508C16.6917 3.06942 19.6345 0.582131 23.1709 0.595513C27.8662 0.613281 30.8 4.49061 30.6677 8.19647C30.5945 10.2459 29.8661 11.971 28.4289 13.4034C28.1233 13.7081 28.0056 14.0211 28.0074 14.4435C28.0199 17.3246 28.0112 20.2058 28.0161 23.087C28.0168 23.5046 27.9908 23.9146 27.8522 24.3662ZM23.1982 14.0268C27.0452 14.0111 29.7516 10.4874 29.1246 7.00348C28.6117 4.15354 25.8023 1.85936 22.9212 2.07036C19.8614 2.29444 17.3477 4.83092 17.2738 7.76906C17.1885 11.1538 19.6724 13.8302 23.1982 14.0268ZM17.8192 24.7689C20.2738 24.7689 22.7284 24.7689 25.2264 24.7689C25.1668 24.6353 25.16 24.5864 25.1319 24.5619C22.6293 22.3842 20.1234 20.2104 17.6238 18.0293C17.3529 17.7929 17.1474 17.8191 16.8924 18.0545C16.4276 18.4834 15.9558 18.9083 15.4555 19.2941C14.6255 19.9342 13.6866 19.9152 12.8677 19.2593C12.4081 18.8911 11.956 18.5101 11.532 18.1021C11.2084 17.7907 10.978 17.8286 10.6505 18.1163C8.73269 19.8011 6.79569 21.464 4.86586 23.135C4.30133 23.6239 3.73906 24.1153 3.17575 24.6056C3.19857 24.66 3.22139 24.7144 3.24421 24.7688C8.05888 24.7688 12.8736 24.7688 17.8192 24.7689ZM7.59913 12.7604C9.5776 14.4726 11.5641 16.1755 13.5287 17.9035C14.0019 18.3197 14.3853 18.3017 14.8412 17.9022C16.1038 16.7958 17.3835 15.7089 18.6531 14.6105C18.7797 14.5009 18.9421 14.4073 18.9562 14.1542C17.3412 12.9523 16.2589 11.3605 15.9127 9.33269C15.8274 8.83296 15.592 8.73587 15.1662 8.7533C14.4259 8.78362 13.6847 8.81028 12.944 8.80776C9.91378 8.79745 6.88359 8.77425 3.85336 8.76056C3.63166 8.75955 3.39219 8.72129 3.13438 8.9043C4.62903 10.1957 6.07855 11.4482 7.59913 12.7604ZM3.53912 22.3228C5.64381 20.4973 7.7485 18.6717 9.94233 16.7689C7.24999 14.4367 4.63244 12.1693 1.88291 9.7876C1.88291 14.5412 1.88291 19.071 1.88291 23.7374C2.48229 23.2259 2.97565 22.8048 3.53912 22.3228ZM21.4981 15.2869C21.1206 15.245 20.7394 14.8763 20.3796 15.1393C19.7184 15.6227 19.1119 16.1811 18.4189 16.7616C21.1238 19.1019 23.748 21.3723 26.4558 23.715C26.4558 20.6765 26.4558 17.7897 26.4558 14.8095C24.8384 15.4231 23.2526 15.7241 21.4981 15.2869Z"
+                        fill="url(#paint0_linear_2088_1666)"
+                      />
+                      <path
+                        d="M24.5343 8.537C23.8412 9.23425 23.1884 9.9066 22.5177 10.5606C22.005 11.0606 21.6982 11.0592 21.1743 10.5661C20.7621 10.1781 20.3628 9.7755 19.9726 9.36522C19.6451 9.02086 19.5562 8.63369 19.9386 8.27508C20.2866 7.94867 20.6439 8.03367 20.9915 8.31987C21.9056 9.07245 21.9083 9.06854 22.7628 8.21352C23.6405 7.33518 24.5207 6.45926 25.3962 5.57867C25.7532 5.21961 26.1516 4.987 26.5851 5.4032C27.0248 5.82532 26.797 6.22587 26.4397 6.58797C25.8125 7.22374 25.191 7.86517 24.5343 8.537Z"
+                        fill="url(#paint1_linear_2088_1666)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2088_1666"
+                          x1="1.70529"
+                          y1="18.7219"
+                          x2="42.5931"
+                          y2="15.2673"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_2088_1666"
+                          x1="1.70529"
+                          y1="18.7219"
+                          x2="42.5931"
+                          y2="15.2673"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            stop-color="#6645EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#D445EB"
+                            class="purpose-icon-gradient-color approach-icon-gradient-color"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    <img
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png"
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title card-approach__title">
                     Implementation
                   </h3>
@@ -311,13 +629,70 @@
                   </p>
                 </div>
                 <div
-                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom-service-purpose"
+                  class="purpose__card approach__card card-purpose card-approach anim-from-bottom"
                 >
-                  <img
-                    class="card-purpose__icon card-approach__icon"
-                    src="../assets/img/approach/4.svg"
-                    alt=""
-                  />
+                  <div class="card-purpose__icon-wrapper">
+                    <svg width="29" height="34" class="card-purpose__icon card-approach__icon" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.16212 17.8226C3.55968 12.0427 7.37455 6.30226 13.2931 5.51925C18.6282 4.81344 23.6299 8.69321 24.1492 14.0156C24.455 17.1501 23.5411 19.9049 21.2269 22.1186C20.6762 22.6453 20.204 23.2155 19.9411 23.9371C19.8629 24.1519 19.731 24.369 19.8552 24.6112C20.797 24.937 20.8214 24.9704 20.8219 25.9852C20.8228 27.5499 20.8269 29.1146 20.8202 30.6793C20.817 31.4472 20.5965 31.7051 19.8315 31.692C19.289 31.6827 19.011 31.8513 18.7605 32.3611C18.2621 33.3754 17.3937 33.9269 16.2302 33.9312C15.0728 33.9353 13.9151 33.945 12.7579 33.9282C11.5805 33.9112 10.6913 33.3732 10.2012 32.3027C9.99996 31.8631 9.76777 31.6967 9.29056 31.6986C8.35127 31.7023 8.15961 31.4854 8.157 30.5609C8.15276 29.0605 8.15253 27.5601 8.15447 26.0597C8.15588 24.9747 8.16344 24.9675 9.16867 24.5835C9.08757 23.6962 8.64539 22.9886 8.00884 22.3915C6.66651 21.1322 5.69879 19.643 5.16212 17.8226ZM6.30822 13.0449C6.19419 13.6761 6.03621 14.3028 6.03365 14.9481C6.0237 17.4587 6.92786 19.5899 8.74321 21.3204C9.5555 22.0948 10.1657 22.9763 10.4093 24.0827C10.5013 24.5005 10.6417 24.7829 11.1677 24.7215C11.7149 24.6578 11.6 24.2772 11.6008 23.958C11.6079 21.3422 11.6065 18.7262 11.6037 16.1103C11.6033 15.7848 11.6208 15.4753 11.8138 15.1892C12.4972 14.1767 13.1546 13.1465 13.8515 12.1435C14.28 11.5268 14.7421 11.5471 15.169 12.174C15.7845 13.0776 16.3709 14.0012 16.9947 14.8989C17.2653 15.2882 17.3768 15.6894 17.3664 16.1604C17.3088 18.7961 17.4774 21.4319 17.3698 24.0682C17.3584 24.348 17.2916 24.6936 17.7705 24.7187C18.1874 24.7406 18.4671 24.6607 18.5503 24.1834C18.7457 23.0626 19.3472 22.1689 20.1611 21.3955C22.4099 19.2587 23.3251 16.653 22.7946 13.5905C22.1198 9.69468 18.7158 6.63321 14.3911 6.68489C10.5521 6.73077 7.45803 9.22852 6.30822 13.0449ZM10.9444 26.0266C10.6236 26.0277 10.3028 26.0294 9.98193 26.0297C9.36337 26.0302 9.48914 26.4912 9.47698 26.8571C9.46533 27.2072 9.44202 27.5533 9.9728 27.5518C13.0101 27.5433 16.0474 27.5488 19.0847 27.5487C19.2839 27.5487 19.4637 27.5222 19.5532 27.2975C19.8408 26.5757 19.4842 26.0289 18.7079 26.028C16.1625 26.0251 13.6172 26.027 10.9444 26.0266ZM10.4416 28.8673C10.3772 28.8669 10.312 28.8733 10.2487 28.8651C9.67069 28.7908 9.4501 29.0218 9.45613 29.6216C9.46185 30.1904 9.61277 30.4262 10.2237 30.4041C11.4231 30.3607 12.6251 30.3873 13.8261 30.3873C15.5202 30.3874 17.2144 30.3927 18.9086 30.3882C19.1744 30.3874 19.478 30.452 19.5704 30.0539C19.7576 29.2468 19.484 28.8695 18.6722 28.8688C15.9701 28.8668 13.268 28.8684 10.4416 28.8673ZM16.1156 17.7651C16.0837 17.4782 16.1998 17.1724 16.0037 16.8743C15.4386 16.9956 15.1244 17.2331 15.1377 17.9022C15.1786 19.9532 15.1528 22.0055 15.1546 24.0572C15.1549 24.3776 15.1038 24.7085 15.6091 24.7206C16.1433 24.7333 16.1156 24.3976 16.1153 24.0417C16.1135 21.9899 16.1149 19.9381 16.1156 17.7651ZM13.8369 20.4408C13.8377 19.6067 13.8088 18.7711 13.8487 17.9389C13.8809 17.2654 13.5701 16.9677 12.9606 16.8905C12.8013 17.0526 12.8547 17.2333 12.8544 17.3966C12.8496 19.6209 12.8509 21.8453 12.8488 24.0696C12.8485 24.4006 12.8166 24.7176 13.3165 24.7192C13.8355 24.7209 13.8347 24.3965 13.8343 24.0343C13.8329 22.8794 13.8358 21.7244 13.8369 20.4408ZM16.6811 32.5895C17.0591 32.4388 17.4135 32.2624 17.5789 31.7544C15.4851 31.7544 13.4501 31.7544 11.408 31.7544C11.6434 32.3025 12.0215 32.6498 12.6055 32.6636C13.9306 32.695 15.2584 32.7569 16.6811 32.5895ZM14.2025 13.8931C13.8902 14.416 13.4621 14.8722 13.2492 15.4495C14.4427 16.2187 14.5802 16.2174 15.764 15.4348C15.4987 14.8296 15.0585 14.3285 14.7155 13.7686C14.5278 13.462 14.3812 13.616 14.2025 13.8931Z" fill="url(#paint0_linear_2088_1684)"/>
+                    <path d="M14.5874 4.38835C14.0558 4.36736 13.8651 4.05326 13.8518 3.6265C13.8312 2.96432 13.8288 2.3003 13.8544 1.63843C13.8694 1.24871 14.0215 0.910208 14.497 0.915923C14.968 0.921586 15.1201 1.26394 15.1362 1.64939C15.1637 2.31116 15.1524 2.97509 15.1394 3.63777C15.1326 3.98137 14.997 4.26232 14.5874 4.38835Z" fill="url(#paint1_linear_2088_1684)"/>
+                    <path d="M20.645 5.69595C20.322 5.95587 20.018 5.99229 19.751 5.71943C19.5104 5.47354 19.5412 5.17039 19.6994 4.88852C20.0441 4.2747 20.3883 3.66012 20.7551 3.05954C20.941 2.75514 21.2315 2.61282 21.5748 2.80311C21.9264 2.99803 22.0353 3.31231 21.8352 3.67131C21.4615 4.34165 21.0649 4.99919 20.645 5.69595Z" fill="url(#paint2_linear_2088_1684)"/>
+                    <path d="M8.48846 3.4622C8.77566 3.96739 9.05585 4.42243 9.29931 4.89635C9.47901 5.24616 9.51787 5.62842 9.09883 5.83519C8.71062 6.02675 8.39893 5.85359 8.19003 5.488C7.91485 5.00644 7.6361 4.52692 7.36253 4.04445C7.12685 3.62881 6.83118 3.15211 7.39989 2.82598C7.98001 2.49331 8.22016 3.01806 8.48846 3.4622Z" fill="url(#paint3_linear_2088_1684)"/>
+                    <path d="M26.3866 9.00069C25.8101 9.33441 25.274 9.64515 24.7353 9.95145C24.3596 10.1651 24.0241 10.1246 23.8083 9.72942C23.5822 9.31532 23.8081 9.03976 24.1557 8.83487C24.6896 8.5202 25.2257 8.20946 25.7643 7.90298C26.1223 7.69925 26.521 7.56888 26.7875 7.9842C27.0636 8.41457 26.8473 8.7537 26.3866 9.00069Z" fill="url(#paint4_linear_2088_1684)"/>
+                    <path d="M26.3137 22.5767C25.462 22.2703 24.7446 21.8042 24.0243 21.349C23.7233 21.1588 23.6081 20.8519 23.8168 20.5154C24.0197 20.1882 24.3276 20.1275 24.6519 20.3039C25.3088 20.6613 25.9726 21.0123 26.5964 21.4223C27.1067 21.7577 26.9865 22.2618 26.3137 22.5767Z" fill="url(#paint5_linear_2088_1684)"/>
+                    <path d="M4.60314 10.0804C3.88075 9.70447 3.20559 9.34013 2.53786 8.96266C2.16246 8.75043 1.93379 8.44484 2.18917 8.01663C2.42809 7.61603 2.79232 7.67516 3.14099 7.86986C3.69974 8.18185 4.24877 8.51118 4.80642 8.82518C5.08699 8.98316 5.28403 9.17994 5.24876 9.53251C5.21255 9.89458 4.98378 10.0436 4.60314 10.0804Z" fill="url(#paint6_linear_2088_1684)"/>
+                    <path d="M4.5927 20.2201C4.98984 20.2386 5.19945 20.4115 5.24465 20.7615C5.28645 21.0852 5.10439 21.2844 4.85076 21.4329C4.26176 21.778 3.66964 22.1176 3.07874 22.4594C2.72833 22.6621 2.40287 22.6243 2.18735 22.2796C1.97115 21.9338 2.07827 21.5928 2.41617 21.3974C3.11625 20.9926 3.78464 20.5278 4.5927 20.2201Z" fill="url(#paint7_linear_2088_1684)"/>
+                    <path d="M27.8211 15.781C27.1844 15.78 26.6072 15.7862 26.0304 15.7745C25.5994 15.7657 25.251 15.6068 25.2694 15.1098C25.2868 14.6385 25.6356 14.5375 26.0392 14.5401C26.6376 14.544 27.2362 14.5496 27.8343 14.538C28.2762 14.5295 28.7017 14.585 28.7187 15.1271C28.7353 15.6591 28.3287 15.7765 27.8211 15.781Z" fill="url(#paint8_linear_2088_1684)"/>
+                    <path d="M0.29742 14.987C0.42234 14.6248 0.664501 14.5388 0.967289 14.5409C1.64871 14.5456 2.33018 14.5425 3.01162 14.544C3.39747 14.5449 3.69087 14.6759 3.7061 15.1138C3.72221 15.5769 3.4284 15.7625 3.01697 15.7717C2.33591 15.7869 1.65385 15.7887 0.972949 15.7697C0.523483 15.7571 0.254622 15.5305 0.29742 14.987Z" fill="url(#paint9_linear_2088_1684)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint5_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint6_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint7_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint8_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    <linearGradient id="paint9_linear_2088_1684" x1="1.57087" y1="24.2401" x2="40.0199" y2="21.874" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6645EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    <stop offset="1" stop-color="#D445EB" class="purpose-icon-gradient-color approach-icon-gradient-color"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+
+                    <img
+                      class="card-purpose__icon-bg"
+                      src="../assets/img/build/icon-bg.png"
+                      alt=""
+                    />
+                  </div>
                   <h3 class="card-purpose__title card-approach__title">
                     Training
                   </h3>
@@ -347,28 +722,44 @@
                   src="../assets/img/purpose/y-line.svg"
                   alt=""
                 />
+                <div class="purpose__center-area">
+                  <img
+                    class="purpose__center"
+                    src="../assets/img/purpose/center.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/img/purpose/center-icon.png"
+                    alt=""
+                    class="purpose__center-icon"
+                  />
+                  <img
+                    src="../assets/img/purpose/center-light.png"
+                    alt=""
+                    class="purpose__center-light"
+                  />
+                </div>
                 <img
-                  class="purpose__center approach__center"
-                  src="../assets/img/purpose/center.png"
-                  alt=""
+                  src="../assets/img/purpose/blur-bg.png"
+                  class="purpose__blur-bg"
                 />
               </div>
             </div>
           </div>
         </section>
-        <section class="questions">
+        <section class="questions anim-section">
           <div class="questions__container _container">
             <div class="questions__body">
               <h2
-                class="questions__title h2-title silver-text anim-from-bottom-marketing-questions"
+                class="questions__title h2-title silver-text anim-from-bottom"
               >
                 Frequently Asked Questions
               </h2>
               <div
-                class="digital__accordion questions__accordion accordion-digital accordion-questions anim-from-bottom-home-accordion"
+                class="digital__accordion questions__accordion accordion-digital accordion-questions anim-from-bottom"
               >
                 <div
-                  class="accordion-digital__item accordion-questions__item accordion-digital__item_first accordion-questions__item_first anim-from-bottom-marketing-questions"
+                  class="accordion-digital__item accordion-questions__item accordion-digital__item_first accordion-questions__item_first active active-border"
                 >
                   <div
                     class="accordion-digital__top-area accordion-questions__top-area"
@@ -398,7 +789,7 @@
                   <!-- <hr> -->
                 </div>
                 <div
-                  class="accordion-digital__item accordion-questions__item active active-border anim-from-bottom-marketing-questions"
+                  class="accordion-digital__item accordion-questions__item"
                 >
                   <div
                     class="accordion-digital__top-area accordion-questions__top-area"
@@ -427,9 +818,7 @@
                   </p>
                   <!-- <hr> -->
                 </div>
-                <div
-                  class="accordion-digital__item accordion-questions__item anim-from-bottom-marketing-questions"
-                >
+                <div class="accordion-digital__item accordion-questions__item">
                   <div
                     class="accordion-digital__top-area accordion-questions__top-area"
                   >
@@ -457,9 +846,7 @@
                   </p>
                   <!-- <hr> -->
                 </div>
-                <div
-                  class="accordion-digital__item accordion-questions__item anim-from-bottom-marketing-questions"
-                >
+                <div class="accordion-digital__item accordion-questions__item">
                   <div
                     class="accordion-digital__top-area accordion-questions__top-area"
                   >
@@ -487,9 +874,7 @@
                   </p>
                   <!-- <hr> -->
                 </div>
-                <div
-                  class="accordion-digital__item accordion-questions__item anim-from-bottom-marketing-questions"
-                >
+                <div class="accordion-digital__item accordion-questions__item">
                   <div
                     class="accordion-digital__top-area accordion-questions__top-area"
                   >
@@ -521,16 +906,16 @@
             </div>
           </div>
         </section>
-        <section class="customers">
+        <section class="customers anim-section">
           <div class="customers__container _container">
             <div class="customers__body">
               <div class="customers__top-area">
                 <h2
-                  class="customers__title h2-title silver-text anim-from-bottom-home-customers"
+                  class="customers__title h2-title silver-text anim-from-bottom"
                 >
                   See what our customers have to say about us
                 </h2>
-                <div class="customers__buttons anim-from-bottom-home-customers">
+                <div class="customers__buttons anim-from-bottom">
                   <button
                     class="customers__btn customers__btn_prev swiper-button-prev"
                   >
@@ -546,7 +931,7 @@
               <div class="customers__slider swiper">
                 <div class="customers__reviews-area swiper-wrapper">
                   <div
-                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                    class="customers__review review-customers swiper-slide anim-from-bottom"
                   >
                     <img
                       src="../assets/img/customers/blur-mid-bottom.png"
@@ -583,7 +968,7 @@
                     </div>
                   </div>
                   <div
-                    class="customers__review review-customers swiper-slide anim-from-bottom-home-customers"
+                    class="customers__review review-customers swiper-slide anim-from-bottom"
                   >
                     <img
                       src="../assets/img/customers/blur-mid-bottom.png"
@@ -767,21 +1152,19 @@
       </main>
       <footer id="touch" class="footer">
         <div class="footer__container _container">
-          <div class="footer-top">
+          <div class="footer-top anim-section">
             <div class="footer-top__body">
               <h2
-                class="footer-top__title h2-title silver-text anim-from-bottom-home-footer-top"
+                class="footer-top__title h2-title silver-text anim-from-bottom"
               >
                 Ready to start the <br />conversation?
               </h2>
-              <p class="footer-top__subtitle anim-from-bottom-home-footer-top">
+              <p class="footer-top__subtitle anim-from-bottom">
                 Whether you’re looking for a comprehensive digital overhaul,
                 HubSpot support or specific services, we’re here to support your
                 business.
               </p>
-              <a
-                href="#"
-                class="footer-top__btn btn btn_bg anim-from-bottom-home-footer-top"
+              <a href="#" class="footer-top__btn btn btn_bg anim-from-bottom"
                 ><span>Get In Touch</span></a
               >
             </div>
@@ -798,49 +1181,94 @@
             <div class="footer-bottom__body">
               <div class="footer-bottom__links-area">
                 <div class="footer-bottom__column">
-                  <div class="footer-bottom__logo-area">
-                    <img src="../assets/img/logo.png" alt="Quintify" />
-                    <span>Quintify</span>
+                  <div class="footer-bottom__top-area">
+                    <div class="footer-bottom__logo-area">
+                      <img src="../assets/img/logo.png" alt="Quintify" />
+                    </div>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
                   </div>
-                  <p class="footer-bottom__text-content">
-                    We support Technology, SaaS, and Professional Services
-                    businesses at every stage of their journey, helping them
-                    grow, scale, and realise their global ambitions.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      We support Technology, SaaS, and Professional Services
+                      businesses at every stage of their journey, helping them
+                      grow, scale, and realise their global ambitions.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Quick Links</h4>
-                  <nav class="footer-bottom__nav">
-                    <a href="#" class="footer-bottom__link-default">Home</a>
-                    <a href="#" class="footer-bottom__link-default">Services</a>
-                    <a href="#" class="footer-bottom__link-default"
-                      >Funding Support</a
-                    >
-                    <a href="#" class="footer-bottom__link-default"
-                      >HubSpot Partner Ireland</a
-                    >
-                    <a href="#" class="footer-bottom__link-default">Careers</a>
-                    <a href="#" class="footer-bottom__link-default">Contact</a>
-                  </nav>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Quick Links</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <nav class="footer-bottom__nav">
+                      <a href="#" class="footer-bottom__link-default">Home</a>
+                      <a href="#" class="footer-bottom__link-default"
+                        >Services</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Funding Support</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >HubSpot Partner Ireland</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Careers</a
+                      >
+                      <a href="#" class="footer-bottom__link-default"
+                        >Contact</a
+                      >
+                    </nav>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    Quintify have the backing of HubSpot in all sales and
-                    marketing capacities. Together we can support you the entire
-                    way through your business growth.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">HubSpot Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      Quintify have the backing of HubSpot in all sales and
+                      marketing capacities. Together we can support you the
+                      entire way through your business growth.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
                 <div class="footer-bottom__column">
-                  <h4 class="footer-bottom__column-title">Google Partner</h4>
-                  <p class="footer-bottom__text-content">
-                    The Google Partner badge signifies that Quintify has
-                    completed Google Ads certification exams and stays current
-                    with the latest product innovations and strategies.
-                  </p>
-                  <a href="#" class="footer-bottom__link link">View more</a>
+                  <div class="footer-bottom__top-area">
+                    <h4 class="footer-bottom__column-title">Google Partner</h4>
+                    <button class="footer-bottom__accordion-btn">
+                      <img
+                        src="../assets/img/icons/low-arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="footer-bottom__content">
+                    <p class="footer-bottom__text-content">
+                      The Google Partner badge signifies that Quintify has
+                      completed Google Ads certification exams and stays current
+                      with the latest product innovations and strategies.
+                    </p>
+                    <a href="#" class="footer-bottom__link link">View more</a>
+                  </div>
                 </div>
               </div>
               <div class="footer-bottom__bottom">
@@ -876,6 +1304,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/anims.js"></script>
+    <script src="../js/popupAnims.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/swiper.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
