@@ -51,7 +51,10 @@ triggers.forEach((trigger) => {
       content.style.paddingTop = window.innerWidth > 992 ? "2rem" : "0.5rem";
       const totalHeight =
         content.scrollHeight + parseInt(getComputedStyle(content).paddingTop);
-      content.style.height = `${totalHeight + 40}px`;
+      content.style.height =
+        window.innerWidth < 480
+          ? `${totalHeight + 20}px`
+          : `${totalHeight + 40}px`;
       content.style.opacity = "1";
       img.src =
         img.getAttribute("id") === "marketing-accordion-trigger-icon"
@@ -66,7 +69,9 @@ triggers.forEach((trigger) => {
 
 // footer accordion
 
-const footerAccordionItems = document.querySelectorAll(".footer-bottom__column");
+const footerAccordionItems = document.querySelectorAll(
+  ".footer-bottom__column"
+);
 const footerTriggers = document.querySelectorAll(".footer-bottom__top-area");
 
 footerTriggers.forEach((trigger) => {
@@ -142,103 +147,57 @@ window.addEventListener("scroll", function () {
 
 // list items move up animation
 
-// const wrapper = document.querySelector(".digital__img-list-anim");
-// let items = Array.from(
-//   wrapper.querySelectorAll(".digital__img-list-anim-item")
-// );
-// let offset = 0;
-// let isAnimating = false; // Prevent overlapping cycles
+const container = document.querySelector(".digital__img-list-anim");
+const offset = 80; // Distance to move items up
+const duration = 0.3; // Animation duration
+const oddOffset = 20; // Distance to move odd items to the right
 
-// function moveItemsUp() {
-//   if (isAnimating) return; // Prevent overlapping calls
-//   isAnimating = true;
-
-//   offset -= window.innerWidth > 992 ? 80 : 39.94; // Move items up by 70px
-//   items.forEach((item, index) => {
-//     item.style.transform = `translateY(${offset}px)`;
-//   });
-
-//   // Remove the first item after animation
-//   setTimeout(() => {
-  
-//     // Wait for the fade-out animation to complete before removing the item
-//     setTimeout(() => {
-//       const firstItem = items[0];
-//       firstItem.classList.add("removing");
-//       items.shift(); // Remove the first item from the array
-//       // alert(firstItem.innerHTML);
-//       // firstItem.remove();
-//       // items.forEach((item, index) => {
-//       //   item.style.transform = `translateY(${offset}px)`;
-//       //   addNewItem();
-//       // });
-
-//       // Add a new item to maintain the list length
-//       addNewItem();
-
-//       // Reset the `isAnimating` flag to allow the next cycle
-//       isAnimating = false;
-//     }, 500); // Match this timeout to the CSS transition duration
-//   }, 500); // Match this timeout to the upward movement duration
-// }
-
-// function addNewItem() {
-//   // Create a new item and append it to the end
-//   const newItem = items[0].cloneNode(true); // Clone the first item as an example
-//   newItem.classList.remove("removing");
-//   newItem.style.transform = `translateY(${offset + 80 * items.length}px)`; // Position it correctly
-//   wrapper.appendChild(newItem);
-
-//   items.push(newItem); // Add the new item to the items array
-// }
-
-// // Set the interval for cycling items
-// setInterval(moveItemsUp, 1000);
-
-const wrapper = document.querySelector(".digital__img-list-anim");
-let items = Array.from(
-  wrapper.querySelectorAll(".digital__img-list-anim-item")
-);
-let offset = 0;
-let isAnimating = false; // Prevent overlapping cycles
-
-function moveItemsUp() {
-  if (isAnimating) return; // Prevent overlapping calls
-  isAnimating = true;
-
-  offset -= window.innerWidth > 992 ? 80 : 39.94; // Move items up by 70px
-  items.forEach((item, index) => {
-    item.style.transform = `translateY(${offset}px)`;
+// Initial setup: Position each item vertically and calculate oddness
+function initializeItems() {
+  document.querySelectorAll(".digital__img-list-anim-item").forEach((item, index) => {
+    const xOffset = index % 2 !== 0 ? oddOffset : 0; // Calculate horizontal offset for odd items
+    gsap.set(item, { y: index * offset, x: xOffset }); // Set initial vertical and horizontal positions
   });
+}
+initializeItems();
 
-  // Remove the first item after animation
-  setTimeout(() => {
-    const firstItem = items[0];
-    firstItem.classList.add("removing");
+function moveItems() {
+  const items = document.querySelectorAll(".digital__img-list-anim-item");
+  const firstItem = items[0]; // Always get the first item in the DOM
+  const bottomPosition = (items.length - 1) * offset; // Position for the bottom item
 
-    // Wait for the fade-out animation to complete before removing the item
-    setTimeout(() => {
-      // firstItem.remove();
-      items.shift(); // Remove the first item from the array
+  // Clone the first item before it moves out of view
+  const clonedItem = firstItem.cloneNode(true);
+  console.log(clonedItem)
 
-      // Add a new item to maintain the list length
-      addNewItem();
+  // Calculate oddness for the cloned item
+  const clonedXOffset = items.length % 2 !== 0 ? oddOffset : 0;
 
-      // Reset the `isAnimating` flag to allow the next cycle
-      isAnimating = false;
-    }, 1000); // Match this timeout to the CSS transition duration
-  }, 1000); // Match this timeout to the upward movement duration
+  gsap.set(clonedItem, { y: bottomPosition + offset, x: clonedXOffset, opacity: 0 }); // Place the clone below the list
+  container.appendChild(clonedItem); // Add the clone to the DOM
+
+  // Animate all items together
+  gsap.to(items, {
+    y: `-=${offset}`, // Move all items up by 80px
+    duration: duration,
+    ease: "power1.inOut",
+    onStart: () => {
+      // Fade in the cloned item at the start of the animation
+      gsap.to(clonedItem, {
+        opacity: 1,
+        duration: 0.3, // Smooth fade-in
+        ease: "power1.out",
+      });
+    },
+    onComplete: () => {
+      // Remove the original first item after it moves out of view
+      firstItem.remove();
+
+      // Reset positions and reapply offsets for all items
+      initializeItems(); // Reinitialize positions and offsets for next cycle
+    },
+  });
 }
 
-function addNewItem() {
-  // Create a new item and append it to the end
-  const newItem = items[0].cloneNode(true); // Clone the first item as an example
-  newItem.classList.remove("removing");
-  newItem.style.transform = `translateY(${offset + 80 * items.length}px)`; // Position it correctly
-  wrapper.appendChild(newItem);
-
-  items.push(newItem); // Add the new item to the items array
-}
-
-// Set the interval for cycling items
-setInterval(moveItemsUp, 2000);
+// Loop the animation every 3 seconds
+setInterval(moveItems, 5000); // Interval time reduced

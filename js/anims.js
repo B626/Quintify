@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // bg blur
-    
+
     gsap.to(".ai-blur", {
       opacity: 1,
       duration: 3,
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // split-text animation
 
-    if(window.innerWidth > 480) {
+    if (window.innerWidth > 480) {
       const heroTitleSplit = new SplitType(".hero__title-row", {
         types: "lines",
       });
@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 0.7,
       });
     }
-    
 
     // progress bars animation
 
@@ -191,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const moveX = (mouseX / windowWidth - 0.5) * 20; // Adjust the multiplier for more or less movement
           const moveY = (mouseY / windowHeight - 0.5) * 20; // Adjust the multiplier for more or less movement
 
-          item.style.transform =`translate(${moveX}px, ${moveY}px)`
+          item.style.transform = `translate(${moveX}px, ${moveY}px)`;
         });
       });
     }
@@ -250,35 +249,57 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
   });
+  // endless purpose circle light spin animation
+
+  gsap.to(".purpose__center-light", {
+    rotation: 360,
+    duration: 5,
+    repeat: -1,
+    ease: "linear",
+  });
+
+  // perspective dashboard
+
+  gsap.fromTo(
+    ".marketing__dashboard",
+    { transform: "perspective(1000px) rotateX(10deg)" }, // Default state
+    {
+      transform: "perspective(1000px) rotateX(0deg)", // Animated state
+      scrollTrigger: {
+        trigger: ".marketing__dashboard",
+        start: "center 80%",
+        end: "bottom 10%",
+        toggleActions: "play reverse play reverse",
+      },
+      duration: 0.3,
+    }
+  );
+
+  // btn
+
+  const btn = document.querySelectorAll(".btn");
+
+  btn.forEach(b => {
+    const hoverline = b.querySelector(".hoverline.chnage-gredient");
+
+    b.addEventListener("mouseenter", () => {
+      if(hoverline) {
+        hoverline.style.transition = "left 0.9s ease"; // Ensure smooth transition on hover
+        hoverline.style.left = "100%";
+      }
+    });
+
+    b.addEventListener("mouseleave", () => {
+      if(hoverline) {
+        hoverline.style.transition = "none";
+        hoverline.style.left = "-200%";
+
+        hoverline.offsetHeight;
+
+        hoverline.style.transition = "left 0.9s ease";
+      }
+    });
+  })
   
 });
 
-
-// endless purpose circle light spin animation
-
-
-gsap.to(".purpose__center-light", {
-  rotation: 360,
-  duration: 5,
-  repeat: -1,
-  ease: "linear",
-});
-
-
-// perspective dashboard 
-
-
-gsap.fromTo(
-  ".marketing__dashboard",
-  { transform: "perspective(1000px) rotateX(10deg)" }, // Default state
-  {
-    transform: "perspective(1000px) rotateX(0deg)", // Animated state
-    scrollTrigger: {
-      trigger: ".marketing__dashboard",
-      start: "center 80%",
-      end: "bottom 10%",
-      toggleActions: "play reverse play reverse",
-    },
-    duration: 0.3,
-  }
-);

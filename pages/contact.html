@@ -69,8 +69,47 @@
               <a href="#" class="nav-header__link">HubSpot</a>
               <a href="#" class="nav-header__link">Insights</a>
             </nav>
-            <a href="#touch" class="header__btn btn btn_gradient">
-              <span> Get in touch </span>
+            <a href="#" class="hero__btn btn header__btn">
+              <div class="overflowhidden">
+                <div>
+                  <div class="peddingstroke">
+                    <div class="insidebutton _2 chnage-color-gredient">
+                      <div class="button-font change-position">
+                        Get In Touch
+                      </div>
+                      <div class="hoverline chnage-gredient"></div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      opacity: 0.4;
+                      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                      will-change: transform;
+                    "
+                    class="glowwrapper stroke"
+                  >
+                    <div class="glowitem left"></div>
+                    <div class="glowitem"></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="glowwrapper bg chnage-width"
+                style="
+                  opacity: 0;
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
+                    skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                  will-change: transform;
+                "
+              >
+                <div class="glowitem left bg"></div>
+                <div class="glowitem bg"></div>
+              </div>
             </a>
             <a class="header__burger-menu-btn" href="#">
               <img src="../assets/img/icons/burger-menu.svg" alt="" />
@@ -79,12 +118,12 @@
         </div>
       </header>
       <main class="main">
-        <div class="sidebars anim-section">
+        <div class="sidebars sidebars_contact anim-section">
           <div class="sidebar sidebar_social anim-from-bottom">
-            <a href="#" class="sidebar_social__link">Linkedin</a>
-            <a href="#" class="sidebar_social__link">Google</a>
-            <a href="#" class="sidebar_social__link">HubSpot</a>
-            <a href="#" class="sidebar_social__link">Apollo</a>
+            <p class="sidebar_social__text">Linkedin</p>
+            <p class="sidebar_social__text">Google</p>
+            <p class="sidebar_social__text">HubSpot</p>
+            <p class="sidebar_social__text">Apollo</p>
           </div>
         </div>
         <img
@@ -95,7 +134,7 @@
         <section class="contact anim-section">
           <div class="contact__container _container">
             <div class="contact__body">
-              <div class="contact__info">
+              <div class="contact__main-text-area">
                 <h2
                   class="contact__title h2-title silver-text anim-from-bottom"
                 >
@@ -104,27 +143,27 @@
                 <p class="contact__subtitle anim-from-bottom">
                   Complete the form and we will get right back to you.
                 </p>
-                <ul class="contact__list list-contact anim-from-bottom">
-                  <li class="list-contact__item">
-                    <h5 class="list-contact__title">Can’t wait?</h5>
-                    <p class="list-contact__main-text">
-                      Contact Glen Quinn on 087 060 9783
-                    </p>
-                  </li>
-                  <li class="list-contact__item">
-                    <h5 class="list-contact__title">Location</h5>
-                    <p class="list-contact__main-text">
-                      208 Oldbridge Station, <br />
-                      Sallins, Co. Kildare <br />
-                      W91 AX66
-                    </p>
-                  </li>
-                  <li class="list-contact__item">
-                    <h5 class="list-contact__title">Phone</h5>
-                    <p class="list-contact__main-text">0454526749</p>
-                  </li>
-                </ul>
               </div>
+              <ul class="contact__list list-contact anim-from-bottom">
+                <li class="list-contact__item">
+                  <h5 class="list-contact__title">Can’t wait?</h5>
+                  <p class="list-contact__main-text">
+                    Contact Glen Quinn on 087 060 9783
+                  </p>
+                </li>
+                <li class="list-contact__item">
+                  <h5 class="list-contact__title">Location</h5>
+                  <p class="list-contact__main-text">
+                    208 Oldbridge Station, <br />
+                    Sallins, Co. Kildare <br />
+                    W91 AX66
+                  </p>
+                </li>
+                <li class="list-contact__item">
+                  <h5 class="list-contact__title">Phone</h5>
+                  <p class="list-contact__main-text">0454526749</p>
+                </li>
+              </ul>
               <div class="contact__form form-contact anim-from-bottom">
                 <div class="form-contact__input-area">
                   <fieldset class="form-contact__textfield">
@@ -162,11 +201,11 @@
                       class="form-contact__input"
                       required
                     />
-                    <label 
-                      for="business-email" 
+                    <label
+                      for="business-email"
                       class="form-contact__label form-contact__label--required"
                     >
-                    Business Email
+                      Business Email
                     </label>
                   </fieldset>
                   <fieldset class="form-contact__textfield">
@@ -176,11 +215,11 @@
                       class="form-contact__input"
                       required
                     />
-                    <label 
-                      for="phone" 
+                    <label
+                      for="phone"
                       class="form-contact__label form-contact__label--required"
                     >
-                    Phone
+                      Phone
                     </label>
                   </fieldset>
                   <fieldset class="form-contact__textfield">
@@ -190,11 +229,11 @@
                       class="form-contact__textarea"
                       required
                     ></textarea>
-                    <label 
-                      for="message" 
+                    <label
+                      for="message"
                       class="form-contact__label form-contact__label--required"
                     >
-                    Message
+                      Message
                     </label>
                   </fieldset>
                 </div>
@@ -204,11 +243,47 @@
                   unsubscribe, as well as our privacy practices, review
                   our <span>Privacy Policy</span>.
                 </p>
-                <a
-                  href="#"
-                  class="form-contact__btn btn btn_bg anim-from-bottom"
-                >
-                  <span>Submit Now</span>
+                <a href="#" class="hero__btn btn btn_bg anim-from-bottom">
+                  <div class="overflowhidden">
+                    <div>
+                      <div class="peddingstroke">
+                        <div class="insidebutton _2 chnage-color-gredient">
+                          <div class="button-font change-position">
+                            Submit Now
+                          </div>
+                          <div class="hoverline chnage-gredient"></div>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          opacity: 0.4;
+                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                            rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
+                            skew(0deg, 0deg);
+                          transform-style: preserve-3d;
+                          will-change: transform;
+                        "
+                        class="glowwrapper stroke"
+                      >
+                        <div class="glowitem left"></div>
+                        <div class="glowitem"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="glowwrapper bg chnage-width"
+                    style="
+                      opacity: 0;
+                      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                      will-change: transform;
+                    "
+                  >
+                    <div class="glowitem left bg"></div>
+                    <div class="glowitem bg"></div>
+                  </div>
                 </a>
               </div>
             </div>
