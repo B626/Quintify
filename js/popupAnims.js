@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
           stagger: 0.2,
           scrollTrigger: {
             trigger: section,
-            start: "top 95%",
+            start: "top 80%",
             toggleActions: "play none none none",
           },
         });

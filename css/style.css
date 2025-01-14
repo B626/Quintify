@@ -208,6 +208,7 @@ main {
   z-index: 120;
   position: absolute;
   left: -200%;
+  pointer-events: none;
 }
 
 .hoverline {
@@ -217,6 +218,7 @@ main {
   width: 200%;
   position: absolute;
   inset: 0%;
+  pointer-events: none;
 }
 
 .glowwrapper.stroke {
@@ -268,6 +270,7 @@ main {
   filter: blur(4px);
   max-width: 50%;
   inset: 0% auto;
+  pointer-events: none;
 }
 
 @property --border-angle {
@@ -904,7 +907,7 @@ main {
 }
 .digital__text-area {
   position: relative;
-  height: 34.5rem;
+  height: 36rem;
   flex: 0 1 37.5rem;
 }
 .digital__title {
@@ -968,8 +971,6 @@ main {
 }
 .accordion-digital {
   transition: height 0.3s ease, opacity 0.3s ease;
-  position: absolute;
-  bottom: 0;
   z-index: 5;
 }
 .accordion-digital__item {
@@ -2769,12 +2770,10 @@ main {
   z-index: 3;
 }
 .helping__subtitle {
-  margin-bottom: 1rem;
   max-width: 34rem;
 }
 .helping__accordion {
   position: absolute !important;
-  bottom: 0;
 }
 .helping #bg {
   position: absolute;
@@ -4226,44 +4225,57 @@ main {
     top: -15rem;
   }
 }
-.ads {
+.google {
   height: 75rem;
 }
-.ads__container {
+.google__container {
   max-width: 1290px;
 }
-.ads__btn {
+.google__btn {
   margin-bottom: 2rem;
-  padding: 0.813rem 0.063rem;
   width: 6rem;
 }
-.ads__cards {
+.google__cards {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 4.5rem;
 }
-.ads__title {
+.google__title {
   max-width: 63rem;
   font-size: 3.75rem;
 }
-.ads__main-content {
+.google__main-content {
   max-width: none;
 }
-.ads__warning {
+.google__warning {
   color: #afaec6;
   font-size: 1.125rem;
 }
 
-.ads .insidebutton._2.chnage-color-gredient {
-  width: 6rem;
+.google .insidebutton._2.chnage-color-gredient {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ads .insidebutton {
+.google .insidebutton {
   padding: 0.5rem 0rem;
 }
 
-.card-ads {
+.google__price-btn {
+  width: 6rem;
+}
+.google__price-btn .overflowhidden {
+  width: 6rem;
+}
+.google__price-btn .insidebutton.chnage-color-gredient {
+  height: 100% !important;
+}
+
+.card-google {
   flex: 0 1 33%;
   background-color: #090922;
   border-radius: 15px;
@@ -4272,37 +4284,37 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.card-ads_main {
+.card-google_main {
   background: linear-gradient(0deg, #090922 0%, #151037 70%, #3b1d61 100%);
 }
-.card-ads_main .card-ads__btn {
+.card-google_main .card-google__btn {
   color: #fff;
   background: linear-gradient(90deg, #6645eb 0%, #d445eb 100%);
 }
-.card-ads_main .card-ads__btn:hover {
+.card-google_main .card-google__btn:hover {
   background: linear-gradient(90deg, #7452ff 0%, #e355f9 100%);
   border: 1px solid transparent;
 }
-.card-ads__top {
+.card-google__top {
   padding: 2.5rem 1.875rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1254901961);
 }
-.card-ads__plan {
+.card-google__plan {
   margin-bottom: 1rem;
 }
-.card-ads__price {
+.card-google__price {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-.card-ads__price span {
+.card-google__price span {
   font-size: 2.5rem;
 }
-.card-ads__price-details {
+.card-google__price-details {
   color: #afaec6;
 }
-.card-ads__btn {
+.card-google__btn {
   width: 100%;
   text-align: center;
   padding: 1.2rem;
@@ -4311,18 +4323,29 @@ main {
   font-size: 1rem;
   margin-bottom: 2.5rem;
 }
-.card-ads__main {
+.card-google__main {
   padding: 2.5rem 1.875rem;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   height: 100%;
 }
-.card-ads__bottom {
+.card-google__main .btn {
+  width: 100%;
+  height: 3.5rem;
+}
+.card-google__main .overflowhidden {
+  position: absolute;
+  right: 1.5rem;
+  left: 1.5rem;
+}
+.card-google__bottom {
   display: flex;
   align-items: start;
   gap: 1.5rem;
+  margin-top: 2rem;
 }
-.card-ads__plan-details {
+.card-google__plan-details {
   line-height: 140%;
   font-size: 1.125rem;
 }
@@ -4333,76 +4356,80 @@ main {
   }
 }
 @media (max-width: 1200px) {
-  .ads__cards {
+  .google__cards {
     gap: 1rem;
   }
-  .card-ads__top {
+  .card-google__top {
     padding: 2rem 1.5rem;
   }
-  .card-ads__main {
+  .card-google__main {
     padding: 2rem 1.5rem;
   }
-  .card-ads__bottom {
+  .card-google__bottom {
     gap: 0.75rem;
   }
 }
 @media (max-width: 992px) {
-  .ads {
+  .google {
     height: 80rem;
   }
-  .card-ads__top {
+  .card-google__top {
     padding: 1rem;
   }
-  .card-ads__main {
+  .card-google__main {
     padding: 1rem;
   }
-  .card-ads__btn {
+  .card-google__main .overflowhidden {
+    left: 1rem;
+    right: 1rem;
+  }
+  .card-google__btn {
     margin-bottom: 1.5rem;
   }
-  .card-ads__bottom {
+  .card-google__bottom {
     gap: 0.5rem;
   }
-  .card-ads__plan-details {
+  .card-google__plan-details {
     padding: 0;
     font-size: 1rem;
   }
-  .card-ads__btn {
+  .card-google__btn {
     padding: 0.75rem;
   }
-  .ads__title {
+  .google__title {
     font-size: 2.2rem;
   }
 }
 @media (max-width: 768px) {
-  .ads__cards {
+  .google__cards {
     flex-direction: column;
     margin-bottom: 2rem;
   }
-  .card-ads {
+  .card-google {
     width: 33rem;
     margin: 0 auto;
   }
-  .ads__body {
+  .google__body {
     padding-top: 8rem;
   }
-  .ads {
+  .google {
     height: 100rem;
   }
-  .ads__title {
+  .google__title {
     font-size: 2rem !important;
   }
 }
 @media (max-width: 576px) {
-  .card-ads {
+  .card-google {
     width: 28rem;
     margin: 0 auto;
   }
 }
 @media (max-width: 480px) {
-  .ads {
+  .google {
     height: 105rem;
   }
-  .card-ads {
+  .card-google {
     width: 100%;
     margin: 0 auto;
   }
@@ -4412,7 +4439,7 @@ main {
   }
 }
 @media (max-width: 395px) {
-  .ads {
+  .google {
     height: 130rem;
   }
 }

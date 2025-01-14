@@ -282,6 +282,8 @@ document.addEventListener("DOMContentLoaded", function () {
   btn.forEach(b => {
     const hoverline = b.querySelector(".hoverline.chnage-gredient");
 
+    console.log(b)
+
     b.addEventListener("mouseenter", () => {
       if(hoverline) {
         hoverline.style.transition = "left 0.9s ease"; // Ensure smooth transition on hover
