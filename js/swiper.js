@@ -4,4 +4,8 @@ var swiper = new Swiper(".customers__slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 4000, // Time between slides in milliseconds
+    disableOnInteraction: false, // Continue autoplay after user interactions
+  },
 });
