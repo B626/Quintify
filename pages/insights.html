@@ -33,7 +33,22 @@
         </a>
         <nav class="burger-menu__nav">
           <a href="#services" class="burger-menu__link">Services</a>
-          <a href="#business" class="burger-menu__link">Funding</a>
+          <div class="burger-menu__dropdown-link-wrapper footer-bottom__column">
+            <div class="burger-menu__dropdown-link-row footer-bottom__top-area">
+              <a href="#business" class="burger-menu__link">Funding</a>
+              <button class="footer-bottom__accordion-btn">
+                <img src="./assets/img/icons/low-arrow-down.svg" alt=">" />
+              </button>
+            </div>
+            <div class="burger-menu__dropdown-content footer-bottom__content">
+              <a href="#" class="burger-menu__dropdown-content-item burger-menu__link"
+                >Digital Discovery</a
+              >
+              <a href="#" class="burger-menu__dropdown-content-item burger-menu__link"
+                >Digital Marketing</a
+              >
+            </div>
+          </div>
           <a href="#" class="burger-menu__link">HubSpot</a>
           <a href="#" class="burger-menu__link">Insights</a>
           <a href="#touch" class="burger-menu__link">Get in touch</a>
@@ -173,51 +188,90 @@
                     elemeum innam faucibus Turpis tellus justo nibh.
                   </p>
                   <div class="hero__buttons hubspot__buttons anim-from-bottom">
-                  <a href="#" class="hero__btn btn btn_bg">
-                    <div class="overflowhidden">
-                      <div>
-                        <div class="peddingstroke">
-                          <div class="insidebutton _2 chnage-color-gredient">
-                            <div class="button-font change-position">
-                              Get Started Now
+                    <a href="#" class="hero__btn btn btn_bg">
+                      <div class="overflowhidden">
+                        <div>
+                          <div class="peddingstroke">
+                            <div class="insidebutton _2 chnage-color-gredient">
+                              <div class="button-font change-position">
+                                Get Started Now
+                              </div>
+                              <div class="hoverline chnage-gredient"></div>
                             </div>
-                            <div class="hoverline chnage-gredient"></div>
+                          </div>
+                          <div
+                            style="
+                              opacity: 0.4;
+                              transform: translate3d(0px, 0px, 0px)
+                                scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                                rotateZ(217.41deg) skew(0deg, 0deg);
+                              transform-style: preserve-3d;
+                              will-change: transform;
+                            "
+                            class="glowwrapper stroke"
+                          >
+                            <div class="glowitem left"></div>
+                            <div class="glowitem"></div>
                           </div>
                         </div>
-                        <div
-                          style="
-                            opacity: 0.4;
-                            transform: translate3d(0px, 0px, 0px)
-                              scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                              rotateZ(217.41deg) skew(0deg, 0deg);
-                            transform-style: preserve-3d;
-                            will-change: transform;
-                          "
-                          class="glowwrapper stroke"
-                        >
-                          <div class="glowitem left"></div>
-                          <div class="glowitem"></div>
+                      </div>
+                      <div
+                        class="glowwrapper bg chnage-width"
+                        style="
+                          opacity: 0;
+                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                            rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
+                            skew(0deg, 0deg);
+                          transform-style: preserve-3d;
+                          will-change: transform;
+                        "
+                      >
+                        <div class="glowitem left bg"></div>
+                        <div class="glowitem bg"></div>
+                      </div>
+                    </a>
+                    <a href="#" class="hero__btn btn">
+                      <div class="overflowhidden">
+                        <div>
+                          <div class="peddingstroke">
+                            <div class="insidebutton _2 chnage-color-gredient">
+                              <div class="button-font change-position">
+                                Explore more
+                              </div>
+                              <div class="hoverline chnage-gredient"></div>
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              opacity: 0.4;
+                              transform: translate3d(0px, 0px, 0px)
+                                scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                                rotateZ(217.41deg) skew(0deg, 0deg);
+                              transform-style: preserve-3d;
+                              will-change: transform;
+                            "
+                            class="glowwrapper stroke"
+                          >
+                            <div class="glowitem left"></div>
+                            <div class="glowitem"></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="glowwrapper bg chnage-width"
-                      style="
-                        opacity: 0;
-                        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                        will-change: transform;
-                      "
-                    >
-                      <div class="glowitem left bg"></div>
-                      <div class="glowitem bg"></div>
-                    </div>
-                  </a>
-                  <a href="#" class="default-white-btn">
-                    Explore more
-                  </a>
+                      <div
+                        class="glowwrapper bg chnage-width"
+                        style="
+                          opacity: 0;
+                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                            rotateX(0deg) rotateY(0deg) rotateZ(217.41deg)
+                            skew(0deg, 0deg);
+                          transform-style: preserve-3d;
+                          will-change: transform;
+                        "
+                      >
+                        <div class="glowitem left bg"></div>
+                        <div class="glowitem bg"></div>
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div class="insights__img-area anim-from-bottom">
@@ -226,8 +280,16 @@
                     alt=""
                     class="insights__img mouse-follow"
                   />
-                  <img src="../assets/img/insights/blur-1.png" alt="" class="insights__blur insights__blur_1">
-                  <img src="../assets/img/insights/blur-2.png" alt="" class="insights__blur insights__blur_2">
+                  <img
+                    src="../assets/img/insights/blur-1.png"
+                    alt=""
+                    class="insights__blur insights__blur_1"
+                  />
+                  <img
+                    src="../assets/img/insights/blur-2.png"
+                    alt=""
+                    class="insights__blur insights__blur_2"
+                  />
                 </div>
               </div>
             </div>
@@ -249,7 +311,7 @@
               </div>
             </div>
           </div>
-          <img src="../assets/img/empover/bg.png" alt="" class="empower__bg">
+          <img src="../assets/img/empover/bg.png" alt="" class="empower__bg" />
         </section>
         <section class="clients anim-section">
           <div class="clients__container _container">
@@ -272,7 +334,10 @@
                     <img src="../assets/img/clients/meta.svg" alt="meta" />
                   </li>
                   <li class="clients__item">
-                    <img src="../assets/img/clients/hubspot.svg" alt="hubspot" />
+                    <img
+                      src="../assets/img/clients/hubspot.svg"
+                      alt="hubspot"
+                    />
                   </li>
                   <li class="clients__item">
                     <img src="../assets/img/clients/apollo.svg" alt="apollo" />
@@ -293,7 +358,10 @@
                     <img src="../assets/img/clients/meta.svg" alt="meta" />
                   </li>
                   <li class="clients__item">
-                    <img src="../assets/img/clients/hubspot.svg" alt="hubspot" />
+                    <img
+                      src="../assets/img/clients/hubspot.svg"
+                      alt="hubspot"
+                    />
                   </li>
                   <li class="clients__item">
                     <img src="../assets/img/clients/apollo.svg" alt="apollo" />
@@ -314,7 +382,10 @@
                     <img src="../assets/img/clients/meta.svg" alt="meta" />
                   </li>
                   <li class="clients__item">
-                    <img src="../assets/img/clients/hubspot.svg" alt="hubspot" />
+                    <img
+                      src="../assets/img/clients/hubspot.svg"
+                      alt="hubspot"
+                    />
                   </li>
                   <li class="clients__item">
                     <img src="../assets/img/clients/apollo.svg" alt="apollo" />
@@ -461,7 +532,11 @@
                         Strategic Research & Setup
                       </h4>
                       <button class="accordion-trigger">
-                        <img id="marketing-accordion-trigger-icon" src="../assets/img/icons/plus.svg" alt="" />
+                        <img
+                          id="marketing-accordion-trigger-icon"
+                          src="../assets/img/icons/plus.svg"
+                          alt=""
+                        />
                       </button>
                     </div>
                     <p class="accordion-digital__content">
@@ -471,15 +546,17 @@
                     </p>
                     <hr />
                   </div>
-                  <div
-                    class="accordion-digital__item anim-from-bottom"
-                  >
+                  <div class="accordion-digital__item anim-from-bottom">
                     <div class="accordion-digital__top-area">
                       <h4 class="accordion-digital__title">
                         Value Proposition & Design
                       </h4>
                       <button class="accordion-trigger">
-                        <img id="marketing-accordion-trigger-icon" src="../assets/img/icons/plus.svg" alt="" />
+                        <img
+                          id="marketing-accordion-trigger-icon"
+                          src="../assets/img/icons/plus.svg"
+                          alt=""
+                        />
                       </button>
                     </div>
                     <p class="accordion-digital__content">
@@ -495,7 +572,11 @@
                         Digital Marketing & Support
                       </h4>
                       <button class="accordion-trigger">
-                        <img id="marketing-accordion-trigger-icon" src="../assets/img/icons/plus.svg" alt="" />
+                        <img
+                          id="marketing-accordion-trigger-icon"
+                          src="../assets/img/icons/plus.svg"
+                          alt=""
+                        />
                       </button>
                     </div>
                     <p class="accordion-digital__content">

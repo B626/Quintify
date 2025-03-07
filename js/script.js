@@ -69,6 +69,10 @@ triggers.forEach((trigger) => {
 
 // footer accordion
 
+function hasParentFromBurgerMenu(child, parentClass) {
+  return child.closest(`.`) !== null;
+}
+
 const footerAccordionItems = document.querySelectorAll(
   ".footer-bottom__column"
 );
@@ -90,7 +94,9 @@ footerTriggers.forEach((trigger) => {
       img.style.transform = "rotate(0deg)";
     } else {
       parentItem.classList.add("active");
-      content.style.paddingTop = "1.5rem";
+      content.closest(".burger-menu__dropdown-link-wrapper") !== null 
+      ? content.style.paddingTop = 0 
+      : content.style.paddingTop = "1.5rem";
       const totalHeight =
         content.scrollHeight + parseInt(getComputedStyle(content).paddingTop);
       content.style.height = `${totalHeight + 30}px`;
