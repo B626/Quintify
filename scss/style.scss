@@ -642,6 +642,12 @@ main {
     font-size: 1.5rem;
     margin: 1rem 0;
   }
+  &__dropdown-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
   & .close-btn {
     position: absolute;
     right: 1.875rem;
@@ -1195,7 +1201,7 @@ main {
 
   &__text-area {
     position: relative;
-    height: 0 !important;
+    height: auto;
     flex: 0 1 37.5rem;
   }
 

@@ -69,10 +69,6 @@ triggers.forEach((trigger) => {
 
 // footer accordion
 
-function hasParentFromBurgerMenu(child, parentClass) {
-  return child.closest(`.`) !== null;
-}
-
 const footerAccordionItems = document.querySelectorAll(
   ".footer-bottom__column"
 );
